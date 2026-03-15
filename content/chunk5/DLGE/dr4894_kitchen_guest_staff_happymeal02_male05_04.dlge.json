@@ -1,0 +1,14 @@
+{
+    "$schema": "https://tonytools.win/schemas/dlge.schema.json",
+    "hash": "[assembly:/localization/hitman6/conversations/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_04.sweetdialog].pc_dialogevent",
+    "DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+    "CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+    "rootContainer": {
+        "type": "WavFile",
+        "wavName": "dr4894_kitchen_guest_staff_happymeal02_male05_04",
+        "soundtag": "In-world_Mission_UnImportant",
+        "defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_004.wav].pc_wes",
+        "defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_004.animset].pc_animset",
+        "languages": {}
+    }
+}

@@ -1,0 +1,68 @@
+{
+	"tempHash": "00E41D4DA565ADFC",
+	"tbluHash": "004716E09BBA2F43",
+	"rootEntity": "cafe7ab9e09d3958",
+	"entities": {
+		"cafe2c06503dde87": {
+			"parent": "cafe7ab9e09d3958",
+			"name": "Keyword_PROF_POTATO_GUARD_COMPETITION_TIGER_ELITE",
+			"factory": "[modules:/zkeywordentity.class].pc_entitytype",
+			"blueprint": "[modules:/zkeywordentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sKeyword": {
+					"type": "ZString",
+					"value": "PROF_POTATO_GUARD_COMPETITION_TIGER_ELITE"
+				},
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe7ab9e09d3958",
+					"postInit": true
+				}
+			}
+		},
+		"cafec6a0d94d45d4": {
+			"parent": "cafe7ab9e09d3958",
+			"name": "OutfitProfession",
+			"factory": "[modules:/zoutfitprofessionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitprofessionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_rKeywordProfession": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe2c06503dde87"
+				}
+			}
+		},
+		"cafe7ab9e09d3958": {
+			"parent": null,
+			"name": "prof_potato_guard_competition_siberian_tiger_ELITE",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"propertyAliases": {
+				"m_aHolders": [
+					{
+						"originalProperty": "m_aHolders",
+						"originalEntity": "cafe2c06503dde87"
+					}
+				]
+			},
+			"exposedInterfaces": {
+				"ZKeywordEntity": "cafe2c06503dde87",
+				"ZOutfitProfessionEntity": "cafec6a0d94d45d4"
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

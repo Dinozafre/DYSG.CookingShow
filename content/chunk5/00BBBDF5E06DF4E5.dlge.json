@@ -1,0 +1,24 @@
+{
+    "$schema": "https://tonytools.win/schemas/dlge.schema.json",
+    "hash": "[assembly:/localization/hitman6/conversations/elegant/llama/44000_story/dr44102_yatesloopcellar1.sweetdialog?/dr44102_yatesloopcellar1_yates_003_potato.sweetdialogitem].pc_dialogevent",
+    "DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+    "CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+    "rootContainer": {
+        "type": "WavFile",
+        "wavName": "dr44102_yatesloopcellar1_yates_003_potato",
+        "soundtag": "In-world_Telephoneprocessed",
+        "defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/elegant/llama/44000_story/dr44102_yatesloopcellar1_yates_003.wav].pc_wes",
+        "defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/elegant/llama/44000_story/dr44102_yatesloopcellar1_yates_003.animset].pc_animset",
+        "languages": {
+            "en": "//(0,7)\\\\You should take a good hard look at this graceful woman with the ensuringly professional demeanor,//(7,37)\\\\and imagine her hands soaked in the blood of your colleagues including my friend and business partner, Ken Morgan.",
+            "fr": "//(0.45,6.95)\\\\Regardez bien les traits gracieux de cette femme à l'assurance professionnelle débordante,//(6.95,10.68)\\\\et imaginez-vous ses mains, couvertes du sang de vos pairs...//(10.68,40.68)\\\\de mon ami et partenaire, Ken Morgan.",
+            "it": "//(0.55,7.11)\\\\Dovreste guardare bene questa donna aggraziata, dal portamento professionale accattivante,//(7.11,10.77)\\\\e immaginarvi le sue mani sporche del sangue dei vostri colleghi,//(10.77,40.77)\\\\fra cui il mio amico e socio d'affari Ken Morgan.",
+            "de": "//(0.5,7)\\\\Sie sollten diese gnadenlose Frau mit dem scheinbar ach so professionellen Verhalten sehen//(7,10.6)\\\\und daran denken, dass ihre Hände mit dem Blut Ihrer Kollegen besudelt sind –//(10.6,40.6)\\\\einschließlich dem meines Freundes und Geschäftspartners Ken Morgan.",
+            "es": "//(0,6.9)\\\\Deberíais mirar bien a esta elegante mujer de conducta tan profesional//(6.9,10.4)\\\\e imaginar sus manos empapadas con la sangre de vuestros colegas,//(10.4,40.4)\\\\incluido la de mi amigo y socio, Ken Morgan.",
+            "ru": "//(0,4.5)\\\\Хорошенько вглядитесь в благородное лицо этой женщины,//(4.5,8.4)\\\\источающее профессионализм, и представьте, что ее руки//(8.4,13.6)\\\\обагрены кровью ваших коллег, в том числе Кена Моргана,//(13.6,43.6)\\\\моего друга и делового партнера.",
+            "cn": "//(0,7.042)\\\\好好看清楚这个举止庄重、道貌岸然的女人，//(7.042,10.8)\\\\想象一下她的双手沾满你们同僚鲜血的样子，//(10.8,40.8)\\\\受害人还包括我的朋友和生意伙伴肯恩·摩根。",
+            "tc": "//(0,6.8)\\\\你應該好好看看這名女子的優雅舉止和滿滿的職業態度，//(6.8,13.6)\\\\現在想像她的雙手染滿了你的同事和我的朋友兼合作伙伴－－//(13.6,43.6)\\\\肯‧摩根的鮮血。",
+            "jp": "//(0,7)\\\\君たちにはしっかりと見てもらいたい、この上品で、プロフェッショナルな物腰の女性を。//(7,10.635)\\\\彼女の手は、君たちの仲間の血で染まっている。//(10.635,40.635)\\\\その中には、私の友人、そしてビジネス・パートナーでもあるケン・モーガンも含まれている..."
+        }
+    }
+}

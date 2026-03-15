@@ -1,0 +1,1271 @@
+{
+	"tempHash": "005FEE591FF74E27",
+	"tbluHash": "00D0B630C957437F",
+	"rootEntity": "cafeba6c77d8473e",
+	"entities": {
+		"cafecdc0fa8875ed": {
+			"parent": "cafeb38113c0c7ee",
+			"name": "Food_Canape_A_07",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 161.3921678293898,
+							"y": 7.599859445187238,
+							"z": -148.2695190793917
+						},
+						"position": {
+							"x": 0.0041160001419484615,
+							"y": 0.040389999747276306,
+							"z": 0.08826400339603424
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 0.7045329809188843
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb38113c0c7ee",
+					"postInit": true
+				}
+			}
+		},
+		"cafebb786a41055c": {
+			"parent": "cafeba6c77d8473e",
+			"name": "VRHelper_IsNeoVR_Poll_01",
+			"factory": "[assembly:/_pro/design/gamecore/vrhelpers.template?/vrhelper_isneovr_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/vrhelpers.template?/vrhelper_isneovr_poll.entitytemplate].pc_entityblueprint",
+			"events": { "True": { "Trigger": ["cafed73440e27b0c"] } }
+		},
+		"cafe510b4af97c23": {
+			"parent": "cafe6960a6b57baf",
+			"name": "dish_bar_g_03",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_bar_hokaido_a.template?/dish_bar_g.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_bar_hokaido_a.template?/dish_bar_g.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0.7942749770529643,
+							"y": -2.3105053510845877,
+							"z": -75.32695661752996
+						},
+						"position": {
+							"x": 0.013903999701142313,
+							"y": -0.0030900000128895044,
+							"z": 0.05920900031924248
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe6960a6b57baf",
+					"postInit": true
+				}
+			}
+		},
+		"cafe72f6fcee77bf": {
+			"parent": "cafeba6c77d8473e",
+			"name": "bowl_fruit_bar_a_01",
+			"factory": "[assembly:/_pro/environment/templates/props/utensils/kitchen_utensils_a.template?/bowl_fruit_bar_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/utensils/kitchen_utensils_a.template?/bowl_fruit_bar_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": -35.91178510603915
+						},
+						"position": {
+							"x": -0.0201990008354187,
+							"y": -0.39928099513053894,
+							"z": 1.0
+						}
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeba6c77d8473e",
+					"postInit": true
+				}
+			}
+		},
+		"cafe68846a3c388a": {
+			"parent": "cafeba6c77d8473e",
+			"name": "VRHelper_IsNeoVR_Poll",
+			"factory": "[assembly:/_pro/design/gamecore/vrhelpers.template?/vrhelper_isneovr_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/vrhelpers.template?/vrhelper_isneovr_poll.entitytemplate].pc_entityblueprint",
+			"events": { "True": { "Trigger": ["cafe8402d4bb38e5"] } }
+		},
+		"cafeb38113c0c7ee": {
+			"parent": "cafeba6c77d8473e",
+			"name": "bowl_fruit_bar_a_02",
+			"factory": "[assembly:/_pro/environment/templates/props/utensils/kitchen_utensils_a.template?/bowl_fruit_bar_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/utensils/kitchen_utensils_a.template?/bowl_fruit_bar_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": -35.91178510603915
+						},
+						"position": {
+							"x": 0.3612790107727051,
+							"y": -0.3114599883556366,
+							"z": 1.0
+						}
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeba6c77d8473e",
+					"postInit": true
+				}
+			}
+		},
+		"cafe5aad19ba48c1": {
+			"parent": "cafe6960a6b57baf",
+			"name": "dish_bar_g_02",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_bar_hokaido_a.template?/dish_bar_g.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_bar_hokaido_a.template?/dish_bar_g.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 1.5794721118454949,
+							"y": -0.34366218504727314,
+							"z": 58.84707461085096
+						},
+						"position": {
+							"x": -0.01549999974668026,
+							"y": 0.00774900009855628,
+							"z": 0.0501520000398159
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 0.9392330050468444,
+						"y": 0.902658998966217,
+						"z": 1.0
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe6960a6b57baf",
+					"postInit": true
+				}
+			}
+		},
+		"cafe55edc02c5602": {
+			"parent": "cafeba6c77d8473e",
+			"name": "CanPrepareFood",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe1d461b59dd6b"],
+					"postInit": true
+				}
+			}
+		},
+		"cafe6960a6b57baf": {
+			"parent": "cafeba6c77d8473e",
+			"name": "bowl_fruit_bar_a",
+			"factory": "[assembly:/_pro/environment/templates/props/utensils/kitchen_utensils_a.template?/bowl_fruit_bar_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/utensils/kitchen_utensils_a.template?/bowl_fruit_bar_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": -35.91178510603915
+						},
+						"position": {
+							"x": -0.39406201243400574,
+							"y": -0.30486899614334106,
+							"z": 1.0
+						}
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeba6c77d8473e",
+					"postInit": true
+				}
+			}
+		},
+		"cafe5d5e8f6a4f21": {
+			"parent": "cafeb38113c0c7ee",
+			"name": "Food_Canape_A_03",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -121.56465406194444,
+							"y": -14.618862132317377,
+							"z": 135.65086369154332
+						},
+						"position": {
+							"x": 0.05053500086069107,
+							"y": -0.0516120009124279,
+							"z": 0.0523190014064312
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.100000023841858,
+						"y": 1.100000023841858,
+						"z": 0.7333660125732422
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb38113c0c7ee"
+				}
+			}
+		},
+		"cafe5708fedbccc7": {
+			"parent": "cafeb38113c0c7ee",
+			"name": "Food_Canape_A_02",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -180.0,
+							"y": 0.0,
+							"z": -144.08821489396084
+						},
+						"position": {
+							"x": 0.030812999233603477,
+							"y": -0.021178999915719032,
+							"z": 0.05152999982237816
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb38113c0c7ee"
+				}
+			}
+		},
+		"cafed1b09673e9db": {
+			"parent": "cafeba6c77d8473e",
+			"name": "Food_Plate_A_Empty_00_02",
+			"factory": "[assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/templates/props/food/food_props_a.template?/food_plate_a_empty_00.entitytemplate].entitytype,[modules:/zvisibilitysaveaspect.class].entitytype).pc_entitytype",
+			"blueprint": "[assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/templates/props/food/food_props_a.template?/food_plate_a_empty_00.entitytemplate].entitytype,[modules:/zvisibilitysaveaspect.class].entitytype).pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 1.008553981781006
+						}
+					}
+				},
+				"m_bDestructionEnabled": {
+					"type": "bool",
+					"value": false
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeba6c77d8473e",
+					"postInit": true
+				}
+			},
+			"events": {
+				"OnFirstShatter": {
+					"SetFalse": [],
+					"FoodInvisible": ["cafed1b09673e9db"]
+				}
+			},
+			"subsets": { "AudioEmitters": ["cafeba6c77d8473e"] }
+		},
+		"cafe93ac71880b2a": {
+			"parent": "cafee1b09e34c0de",
+			"name": "CurveTrajectoryItem",
+			"factory": "[modules:/zeulerangletrajectorysource.class].pc_entitytype",
+			"blueprint": "[modules:/zeulerangletrajectorysource.class].pc_entityblueprint",
+			"properties": {
+				"m_startTime": {
+					"type": "ZGameTime",
+					"value": { "m_nTicks": 0 }
+				},
+				"m_duration": {
+					"type": "ZGameTime",
+					"value": { "m_nTicks": 524288 }
+				},
+				"m_CurveX": {
+					"type": "ZCurve",
+					"value": {
+						"data": [
+							[0.0, 0.0, 0.0, 0.0, 0.0, -0.0, 0.0, 0.0],
+							[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+						]
+					}
+				},
+				"m_CurveRotX": {
+					"type": "ZCurve",
+					"value": {
+						"data": [
+							[0.0, 0.0, 0.0, 0.0, 0.0, -0.0, 0.0, 0.0],
+							[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+						]
+					}
+				},
+				"m_CurveY": {
+					"type": "ZCurve",
+					"value": {
+						"data": [
+							[0.0, 0.0, 0.0, 0.0, 0.0, -0.0, 0.0, 0.0],
+							[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+						]
+					}
+				},
+				"m_CurveRotY": {
+					"type": "ZCurve",
+					"value": {
+						"data": [
+							[0.0, 0.0, 0.0, 0.0, 0.0, -0.0, 0.0, 0.0],
+							[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+						]
+					}
+				},
+				"m_CurveZ": {
+					"type": "ZCurve",
+					"value": {
+						"data": [
+							[
+								0.0, 1.0, -0.025661945343017575,
+								0.06415486335754395, -0.06843185424804688,
+								0.03849291801452637, 0.0, 1.0
+							],
+							[
+								1.0, 1.008553981781006, 0.0, 0.0, 0.0, 0.0,
+								0.0, 1.008553981781006
+							]
+						]
+					}
+				},
+				"m_CurveRotZ": {
+					"type": "ZCurve",
+					"value": {
+						"data": [
+							[0.0, 0.0, 0.0, 0.0, 0.0, -0.0, 0.0, 0.0],
+							[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+						]
+					}
+				}
+			}
+		},
+		"cafefcaf511357a2": {
+			"parent": "cafeb38113c0c7ee",
+			"name": "Food_Canape_A_01",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -180.0,
+							"y": 0.0,
+							"z": -144.08821489396084
+						},
+						"position": {
+							"x": -0.028651999309659004,
+							"y": -0.027840999886393547,
+							"z": 0.05152999982237816
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb38113c0c7ee"
+				}
+			}
+		},
+		"cafe9a57115ed884": {
+			"parent": "cafeba6c77d8473e",
+			"name": "FoodOnPlate",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+		},
+		"cafe9fdd338ce3a6": {
+			"parent": "cafeba6c77d8473e",
+			"name": "NewPlate",
+			"factory": "[modules:/zsequenceentity.class].pc_entitytype",
+			"blueprint": "[modules:/zsequenceentity.class].pc_entityblueprint",
+			"properties": {
+				"m_duration": {
+					"type": "ZGameTime",
+					"value": { "m_nTicks": 524288 }
+				},
+				"m_aTracksAndGroups": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe5526f9a10094"],
+					"postInit": true
+				}
+			},
+			"events": {
+				"OnStart": { "MakeVisible": ["cafed1b09673e9db"] },
+				"Stopped": { "SetTrue": ["cafe8499d03528dd"] }
+			}
+		},
+		"cafed73440e27b0c": {
+			"parent": "cafeba6c77d8473e",
+			"name": "VRConfig_Trigger_01",
+			"factory": "[assembly:/_pro/design/gamecore/vrhelpers.template?/vrconfig_trigger.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/vrhelpers.template?/vrconfig_trigger.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_eThirdPersonMode": {
+					"type": "EVRConfigThirdPerson",
+					"value": "EVRTPM_Disabled"
+				},
+				"m_eCameraRotationAllowed": {
+					"type": "EVRConfigCameraRotationAllowed",
+					"value": "EVRCCRA_RotationDisabled"
+				},
+				"m_eCameraZoomAllowed": {
+					"type": "EVRConfigCameraZoomAllowed",
+					"value": "EVRCCZA_ZoomDisabled"
+				}
+			}
+		},
+		"cafe56d993d2ce1c": {
+			"parent": "cafeba6c77d8473e",
+			"name": "FoodMade",
+			"factory": "[modules:/zsignalpipeentity_void.class].pc_entitytype",
+			"blueprint": "[modules:/zsignalpipeentity_void.class].pc_entityblueprint",
+			"events": {
+				"Out": {
+					"SetTrue": ["cafe9a57115ed884"],
+					"SpawnItem": ["cafe73d87d942425"],
+					"SetFalse": ["cafe8499d03528dd"]
+				}
+			}
+		},
+		"cafe1d461b59dd6b": {
+			"parent": "cafeba6c77d8473e",
+			"name": "NoFood",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe9a57115ed884"
+				}
+			}
+		},
+		"cafe8499d03528dd": {
+			"parent": "cafeba6c77d8473e",
+			"name": "EmptyPlatePresent",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": { "m_bValue": { "type": "bool", "value": true } }
+		},
+		"cafeae18fe29223a": {
+			"parent": "cafeba6c77d8473e",
+			"name": "SetPieceHelpers_InteractionSpatialsAndGizmos",
+			"factory": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelpers_interactionspatialsandgizmos.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelpers_interactionspatialsandgizmos.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": {
+							"x": 0.01699995994567871,
+							"y": 0.4530000984668732,
+							"z": -1.0175540447235107
+						}
+					}
+				},
+				"InteractionPoint": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": {
+							"x": 0.0,
+							"y": -0.44999998807907104,
+							"z": 1.25
+						}
+					}
+				},
+				"PromptPoint": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": { "x": 0.0, "y": 0.0, "z": 0.0 }
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafed1b09673e9db"
+				}
+			}
+		},
+		"cafe1a2e75b8a3f2": {
+			"parent": "cafeb38113c0c7ee",
+			"name": "Food_Canape_A_04",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -179.9995912470202,
+							"y": 11.125991431879235,
+							"z": 138.73327273333317
+						},
+						"position": {
+							"x": 0.05388600006699562,
+							"y": 0.01485699974000454,
+							"z": 0.08359599858522415
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb38113c0c7ee"
+				}
+			}
+		},
+		"cafe0b93c9eb6cd1": {
+			"parent": "cafeba6c77d8473e",
+			"name": "TimerSimple",
+			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"events": { "Out": { "Start": ["cafe9fdd338ce3a6"] } }
+		},
+		"cafe6d95e4731e28": {
+			"parent": "cafe72f6fcee77bf",
+			"name": "Octopus_Food_A_02",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_musetable_a.template?/octopus_food_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_musetable_a.template?/octopus_food_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 163.71230119552436,
+							"y": -12.30654518997961,
+							"z": -103.12956935269348
+						},
+						"position": {
+							"x": 0.001066999975591898,
+							"y": -0.009576999582350254,
+							"z": 0.06764499843120575
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 0.550000011920929,
+						"y": 0.550000011920929,
+						"z": 0.550000011920929
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe72f6fcee77bf"
+				}
+			}
+		},
+		"cafe331ceb76aa15": {
+			"parent": "cafeb38113c0c7ee",
+			"name": "Food_Canape_A_05",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -178.12814484270484,
+							"y": 2.87860631190314,
+							"z": 138.50450334881182
+						},
+						"position": {
+							"x": 0.0061160000041127205,
+							"y": -0.0017869999865069983,
+							"z": 0.0721689984202385
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 0.7045329809188843
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb38113c0c7ee"
+				}
+			}
+		},
+		"cafe73d87d942425": {
+			"parent": "cafeba6c77d8473e",
+			"name": "ItemSpawner",
+			"factory": "[modules:/zitemspawner.class].pc_entitytype",
+			"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -180.0 },
+						"position": {
+							"x": -0.010060999542474748,
+							"y": -0.021164000034332275,
+							"z": 1.0085999965667725
+						}
+					}
+				},
+				"m_bSpawnOnStart": { "type": "bool", "value": false },
+				"m_rMainItemKey": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeaf6511315935",
+					"postInit": true
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeba6c77d8473e",
+					"postInit": true
+				}
+			},
+			"events": {
+				"ItemReady": { "MakeInvisible": ["cafed1b09673e9db"] },
+				"OnActorPickup": { "MakeInvisible": ["cafed1b09673e9db"] }
+			},
+			"outputCopying": {
+				"ItemReady": { "FoodReady": ["cafeba6c77d8473e"] },
+				"OnItemDestroyed": {
+					"OnItemDestroyed": ["cafeba6c77d8473e"]
+				},
+				"OnActorPickup": { "OnActorPickup": ["cafeba6c77d8473e"] },
+				"ItemSpawned": { "FoodSpawned": ["cafeba6c77d8473e"] }
+			}
+		},
+		"cafe8402d4bb38e5": {
+			"parent": "cafeba6c77d8473e",
+			"name": "VRConfig_Trigger",
+			"factory": "[assembly:/_pro/design/gamecore/vrhelpers.template?/vrconfig_trigger.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/vrhelpers.template?/vrconfig_trigger.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_eAnimMode": {
+					"type": "EVRConfigAnimationMode",
+					"value": "EVRCAM_FullAnimation"
+				},
+				"m_eThirdPersonMode": {
+					"type": "EVRConfigThirdPerson",
+					"value": "EVRTPM_Enabled"
+				},
+				"m_eCameraRotationAllowed": {
+					"type": "EVRConfigCameraRotationAllowed",
+					"value": "EVRCCRA_RotationEnabled"
+				},
+				"m_eCameraZoomAllowed": {
+					"type": "EVRConfigCameraZoomAllowed",
+					"value": "EVRCCZA_ZoomEnabled"
+				}
+			}
+		},
+		"cafeaf6511315935": {
+			"parent": "cafeba6c77d8473e",
+			"name": "ItemKey_Poisonable_FoodPlate",
+			"factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+			"properties": {
+				"m_RepositoryId": {
+					"type": "ZGuid",
+					"value": "f174ec0e-da7a-46be-920a-782ecaf65cbc"
+				}
+			}
+		},
+		"cafe9c0e03d6b7b7": {
+			"parent": "cafeba6c77d8473e",
+			"name": "ChefCanPrepareFood",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe1d461b59dd6b"]
+				}
+			}
+		},
+		"cafee8a0bcf5d20c": {
+			"parent": "cafeb38113c0c7ee",
+			"name": "Food_Canape_A_09",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -165.3684907547556,
+							"y": -2.785672285139951,
+							"z": -168.91038052171828
+						},
+						"position": {
+							"x": -0.030674999579787254,
+							"y": -0.05323600023984909,
+							"z": 0.07240600138902664
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 0.7045329809188843
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb38113c0c7ee"
+				}
+			}
+		},
+		"cafee1b09e34c0de": {
+			"parent": "cafe5526f9a10094",
+			"name": "TrajectoryTrack",
+			"factory": "[modules:/ztrajectorytrack.class].pc_entitytype",
+			"blueprint": "[modules:/ztrajectorytrack.class].pc_entityblueprint",
+			"properties": {
+				"m_aItems": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe93ac71880b2a"]
+				},
+				"m_bRestoreValueAfterEnd": {
+					"type": "bool",
+					"value": false
+				},
+				"m_entityGroup": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe5526f9a10094",
+					"postInit": true
+				}
+			}
+		},
+		"cafe97d449e50d47": {
+			"parent": "cafeba6c77d8473e",
+			"name": "SetPieceHelpers_Activator_NoTool",
+			"factory": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelpers_activator_notool.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelpers_activator_notool.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": { "x": 0.0, "y": 0.0, "z": 0.0 }
+					}
+				},
+				"m_sId": {
+					"type": "ZGuid",
+					"value": "a5f5dd9e-93d9-48a3-9bf8-8c50e9980168"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeae18fe29223a"
+				},
+				"m_rContextLocation": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeae18fe29223a"
+				},
+				"m_aPromptPositions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafeae18fe29223a",
+							"externalScene": null,
+							"exposedEntity": "PromptSpatial"
+						}
+					]
+				},
+				"m_aUIHighlightGeom": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafed1b09673e9db"]
+				},
+				"m_TurnOnAnim": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/animationnetworks/hitman01/tampering/hm_intereact_prepare_plate_100cm.aln].pc_rtn",
+						"flag": "9F"
+					}
+				},
+				"m_rPromptTextResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/pro/setpieces.sweetmenutext?/setpieces_localization_prompt_preparefood.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
+				},
+				"m_bVRNoAlignmentON": { "type": "bool", "value": true },
+				"m_bVRForceSwipeAnimationON": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bVRNoAlignmentOFF": { "type": "bool", "value": true },
+				"m_bVRForceSwipeAnimationOFF": {
+					"type": "bool",
+					"value": true
+				},
+				"m_rContextObjectSpatial": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "cafeae18fe29223a",
+						"externalScene": null,
+						"exposedEntity": "InteractionPointSpatial"
+					},
+					"postInit": true
+				},
+				"VisibilityConditions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe55edc02c5602"],
+					"postInit": true
+				},
+				"m_bIsIllegal": { "type": "bool", "value": false }
+			},
+			"platformSpecificProperties": {
+				"VR": {
+					"m_bVRNoAlignmentON": {
+						"type": "bool",
+						"value": false
+					},
+					"m_bVRForceSwipeAnimationON": {
+						"type": "bool",
+						"value": false
+					},
+					"m_bVRNoAlignmentOFF": {
+						"type": "bool",
+						"value": false
+					},
+					"m_bVRForceSwipeAnimationOFF": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"VR_PS4": {
+					"m_bVRNoAlignmentON": {
+						"type": "bool",
+						"value": true
+					},
+					"m_bVRForceSwipeAnimationON": {
+						"type": "bool",
+						"value": true
+					},
+					"m_bVRNoAlignmentOFF": {
+						"type": "bool",
+						"value": true
+					},
+					"m_bVRForceSwipeAnimationOFF": {
+						"type": "bool",
+						"value": true
+					}
+				}
+			},
+			"events": {
+				"DelayedOn": { "In": ["cafe56d993d2ce1c"] },
+				"Started": { "Poll": ["cafe68846a3c388a"] },
+				"Completed": { "Poll": ["cafebb786a41055c"] }
+			}
+		},
+		"cafeba6c77d8473e": {
+			"parent": null,
+			"name": "Setpiece_Generic_Trap_PoisonPlate",
+			"factory": "[modules:/zcompositeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zcompositeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": {
+							"x": -1.25730299949646,
+							"y": -4.191381931304932,
+							"z": 0.0
+						}
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"inputCopying": {
+				"ChefPreparedFood": { "In": ["cafe56d993d2ce1c"] },
+				"DestroyPlate": { "Detach": ["cafe73d87d942425"] },
+				"FoodEaten": { "RepositoryId": ["cafeaf6511315935"] },
+				"SpawnEmptyPlate": {
+					"In": ["cafe0b93c9eb6cd1"],
+					"SetFalse": ["cafe9a57115ed884"]
+				}
+			},
+			"propertyAliases": {
+				"m_bIsIllegal": [
+					{
+						"originalProperty": "m_bIsIllegal",
+						"originalEntity": "cafe97d449e50d47"
+					}
+				],
+				"m_RepositoryId": [
+					{
+						"originalProperty": "m_RepositoryId",
+						"originalEntity": "cafeaf6511315935"
+					}
+				]
+			},
+			"exposedEntities": {
+				"ChefCanPrepareFood": {
+					"isArray": false,
+					"refersTo": ["cafe9c0e03d6b7b7"]
+				},
+				"FoodPlated": {
+					"isArray": false,
+					"refersTo": ["cafe9a57115ed884"]
+				},
+				"ItemKey_Poisonable_FoodPlate": {
+					"isArray": false,
+					"refersTo": ["cafeaf6511315935"]
+				},
+				"EmptyPlate": {
+					"isArray": false,
+					"refersTo": ["cafed1b09673e9db"]
+				},
+				"LegalProfession": {
+					"isArray": false,
+					"refersTo": [
+						{
+							"ref": "cafe97d449e50d47",
+							"externalScene": null,
+							"exposedEntity": "LegalProfession"
+						}
+					]
+				},
+				"PlatePosition": {
+					"isArray": false,
+					"refersTo": ["cafe73d87d942425"]
+				}
+			}
+		},
+		"cafe5526f9a10094": {
+			"parent": "cafe9fdd338ce3a6",
+			"name": "EntityTrack_ Food_Plate_A_Empty_00_02",
+			"factory": "[modules:/zentitygroup.class].pc_entitytype",
+			"blueprint": "[modules:/zentitygroup.class].pc_entityblueprint",
+			"properties": {
+				"m_targetEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafed1b09673e9db"
+				},
+				"m_aTracksAndGroups": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafee1b09e34c0de"]
+				}
+			}
+		},
+		"cafe6f787bafc608": {
+			"parent": "cafeb38113c0c7ee",
+			"name": "Food_Canape_A_08",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 169.27456527225343,
+							"y": 25.243239114848063,
+							"z": 125.4925175008146
+						},
+						"position": {
+							"x": 0.03664400056004524,
+							"y": 0.03828800097107887,
+							"z": 0.050356000661849976
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb38113c0c7ee"
+				}
+			}
+		},
+		"cafe09b12f76d780": {
+			"parent": "cafe72f6fcee77bf",
+			"name": "Octopus_Food_A_01",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_musetable_a.template?/octopus_food_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_musetable_a.template?/octopus_food_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 33.199654485519225,
+							"y": -2.6377981959648276,
+							"z": 167.99457152064238
+						},
+						"position": {
+							"x": 0.009561000391840936,
+							"y": 0.05854399874806404,
+							"z": 0.03412400186061859
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 0.6324999928474426,
+						"y": 0.5503990054130554,
+						"z": 0.6324999928474426
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe72f6fcee77bf"
+				}
+			}
+		},
+		"cafeddfc7cbd9830": {
+			"parent": "cafeb38113c0c7ee",
+			"name": "Food_Canape_A",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -138.0106866609561,
+							"y": 0.384973090341429,
+							"z": 172.50515891506663
+						},
+						"position": {
+							"x": 0.002981999889016151,
+							"y": 0.04773300141096115,
+							"z": 0.04740399867296219
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": { "x": 1.0, "y": 1.0, "z": 0.5 }
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb38113c0c7ee"
+				}
+			}
+		},
+		"cafee5766f88a57f": {
+			"parent": "cafeb38113c0c7ee",
+			"name": "Food_Canape_A_06",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_props_b.template?/food_canape_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 171.79329703630003,
+							"y": 0.5949702965316582,
+							"z": 138.81090772015338
+						},
+						"position": {
+							"x": -0.04745100066065788,
+							"y": 0.03815099969506264,
+							"z": 0.06868399679660797
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 0.7045329809188843
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb38113c0c7ee"
+				}
+			}
+		},
+		"cafe5a1acedd5b76": {
+			"parent": "cafe6960a6b57baf",
+			"name": "dish_bar_g",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_bar_hokaido_a.template?/dish_bar_g.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_bar_hokaido_a.template?/dish_bar_g.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -2.0045621041271406,
+							"y": 0.11562296092200092,
+							"z": -163.55842690442233
+						},
+						"position": {
+							"x": 0.026523999869823456,
+							"y": 0.006725999992340803,
+							"z": 0.04182400181889534
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.0,
+						"y": 0.8306339979171753,
+						"z": 1.0
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe6960a6b57baf"
+				}
+			}
+		},
+		"cafe5d390d45138b": {
+			"parent": "cafe6960a6b57baf",
+			"name": "dish_bar_g_01",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_bar_hokaido_a.template?/dish_bar_g.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_bar_hokaido_a.template?/dish_bar_g.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -10.548010225521056,
+							"y": 2.450027521638722,
+							"z": -89.62075346871408
+						},
+						"position": {
+							"x": 0.02422199957072735,
+							"y": -0.026871999725699425,
+							"z": 0.029590999707579613
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe6960a6b57baf"
+				}
+			}
+		},
+		"cafe615c3592cb2d": {
+			"parent": "cafe72f6fcee77bf",
+			"name": "Octopus_Food_A",
+			"factory": "[assembly:/_pro/environment/templates/props/food/food_musetable_a.template?/octopus_food_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/food/food_musetable_a.template?/octopus_food_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 2.050727430166222,
+							"y": 12.433775594191292,
+							"z": 47.84136965852823
+						},
+						"position": {
+							"x": 0.03576600179076195,
+							"y": -0.029097000136971474,
+							"z": 0.06005699932575226
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 0.550000011920929,
+						"y": 0.550000011920929,
+						"z": 0.550000011920929
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe72f6fcee77bf"
+				}
+			}
+		},
+		"cafe7454f27d7e17": {
+			"parent": "cafeba6c77d8473e",
+			"name": "Keyword_ITEM_PLATE",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_plate.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_plate.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafed1b09673e9db"]
+				}
+			}
+		},
+		"cafe3fc8eb04c509": {
+			"parent": "cafeba6c77d8473e",
+			"name": "PlateKeywords",
+			"factory": "[modules:/zitemkeywordproxyentity.class].pc_entitytype",
+			"blueprint": "[modules:/zitemkeywordproxyentity.class].pc_entityblueprint"
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

@@ -1,0 +1,59 @@
+{
+	"tempHash": "002514503C74D46E",
+	"tbluHash": "001933DA654C580E",
+	"rootEntity": "bc92df3a6f78d532",
+	"entities": {
+		"e8b451825c2affea": {
+			"parent": "bc92df3a6f78d532",
+			"name": "entity_QUESTITEM_POTATO_COMPROMISINGMETIRIALS",
+			"factory": "[modules:/zkeywordentity.class].pc_entitytype",
+			"blueprint": "[modules:/zkeywordentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sKeyword": {
+					"type": "ZString",
+					"value": "QUESTITEM_POTATO_COMPROMISINGMETIRIALS"
+				},
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "bc92df3a6f78d532",
+					"postInit": true
+				}
+			},
+			"outputCopying": {
+				"Keyword": { "Keyword": ["bc92df3a6f78d532"] }
+			}
+		},
+		"bc92df3a6f78d532": {
+			"parent": null,
+			"name": "Keyword_QUESTITEM_POTATO_COMPROMISINGMETIRIALS",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"inputCopying": {
+				"GetKeyword": { "GetKeyword": ["e8b451825c2affea"] }
+			},
+			"propertyAliases": {
+				"m_aHolders": [
+					{
+						"originalProperty": "m_aHolders",
+						"originalEntity": "e8b451825c2affea"
+					}
+				]
+			},
+			"exposedInterfaces": { "ZKeywordEntity": "e8b451825c2affea" }
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

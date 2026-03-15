@@ -1,0 +1,113 @@
+{
+	"b76faa87-cc54-4e39-bee0-406f1405b575": {
+		"AIPerceptibleOnRelease": false,
+		"ActionRewardType": "AR_None",
+		"AdditionalKeywords": [
+			""
+		],
+		"AmmoItem": "00000000-0000-0000-0000-000000000000",
+		"AppliedModifiers": [
+			"00000000-0000-0000-0000-000000000000"
+		],
+		"CanBeDropped": false,
+		"CanPistolWhip": false,
+		"CarryAnimSetType": "EAST_SMALLOBJ",
+		"CheatGroup": "eCGNone",
+		"CheatSpawnGroup_Everything": true,
+		"CheatSpawnGroup_Keys": false,
+		"CheatSpawnGroup_Standard": false,
+		"CheatSpawnGroup_Tools": false,
+		"CommonName": "Compromising Meterials",
+		"CompareItem": "00000000-0000-0000-0000-000000000000",
+		"Description": "b76faa87-cc54-4e39-bee0-406f1405b575_key_et_potato_description",
+		"DetectShots": true,
+		"DisplayItemCategoryOnlineTraitsIndex": 0,
+		"DualBackSupport": false,
+		"EnablePickUpOnRelease": true,
+		"EnablePickUpOnSpawn": true,
+		"EnablePickUpOnThrowRelease": true,
+		"EquipAbility": "EA_CANNOT_BE_EQUIPPED",
+		"Evergreen_CapacityCost": 0,
+		"Evergreen_GiveWhenUnlocked": true,
+		"Evergreen_LoseOnWounded": false,
+		"Evergreen_Price": 0,
+		"Evergreen_Rarity": 0,
+		"Evergreen_UnlockChallenge": "00000000-0000-0000-0000-000000000000",
+		"Evergreen_UnlockEntitlement": "",
+		"Evergreen_UnlockMastery": 0,
+		"ForbidCloseCombat": false,
+		"GripAnimType": "IGT_Suitcase",
+		"GripAnimTypeVR": "IGT_Gadget_C4",
+		"HarmlessImpact": false,
+		"HitmanCanConceal": false,
+		"HolsterAbility": "eHolsterQuestStorage",
+		"HudIcon": "59232048178103194",
+		"Image": "images/unlockables/item_perspective_92a71bd8-471e-49c9-b698-16771121ac05_0.jpg",
+		"InteractionTimeMultiplier": 1,
+		"InventoryCategoryIcon": "QuestItem",
+		"InventoryCategoryName": "QuestItem",
+		"IsCheckedWhenFrisked": false,
+		"IsCoin": false,
+		"IsExplosive": false,
+		"IsPerceivedAsWeapon": false,
+		"ItemHUDType": "EIHT_None",
+		"ItemHandsCoverAnimLayer": "IH_NONE",
+		"ItemHandsIdle": "IH_ONEHANDED",
+		"ItemHandsUse": "IH_ONEHANDED",
+		"ItemImpactForce": 0,
+		"ItemImpactUpkick": 0,
+		"ItemSize": "ITEMSIZE_SMALL",
+		"ItemType": "eOther_GenericPickup",
+		"KillItemCategoryOnlineTraitsIndex": 0,
+		"KinematicWhileCarried": false,
+		"LocaKey": "",
+		"MainAnimSetType": "EAST_UNDEFINED",
+		"MeleeDamageBehavior": "EIMDB_Undefined",
+		"ModifierSlot1": [
+			"00000000-0000-0000-0000-000000000000"
+		],
+		"ModifierSlot2": [
+			"00000000-0000-0000-0000-000000000000"
+		],
+		"ModifierSlot3": [
+			"00000000-0000-0000-0000-000000000000"
+		],
+		"ModifierSlot4": [
+			"00000000-0000-0000-0000-000000000000"
+		],
+		"ModifierSlot5": [
+			"00000000-0000-0000-0000-000000000000"
+		],
+		"MugshotIsTransparent": false,
+		"MugshotTransformation": "6.123032E-17, -1, 6.123032E-17, 7.498304E-33, -6.123032E-17, -1, 1, 6.123032E-17, 3.749152E-33, 0, 0, 0",
+		"Name_LOC": "b76faa87-cc54-4e39-bee0-406f1405b575_key_et_potato_title",
+		"NeverInvestigateDistractions": false,
+		"OnlineTraits": [
+			"NONE"
+		],
+		"OverrideItemThrowRotation": false,
+		"PlaceableType": "PLACEABLE_NOT",
+		"PlacementOrientToHM": true,
+		"PlacementUseHitNormal": true,
+		"PoisonType": "POISONTYPE_NONE",
+		"RagdollImpactForce": 0,
+		"RagdollImpactForceGlobal": 0,
+		"RagdollImpactUpkick": 0,
+		"RagdollImpactUpkickGlobal": 0,
+		"Rarity": "ITEMRARITY_COMMON",
+		"RecognizableByCivilians": true,
+		"ReverseItemThrowRotationDirection": false,
+		"Runtime": "17607248295089839",
+		"SpawnKinematic": false,
+		"Stackable": false,
+		"SupportItem": "00000000-0000-0000-0000-000000000000",
+		"ThrowImpactVisualRadius": 1.4,
+		"ThrowType": "THROW_NONE",
+		"ThrowVelocity": 50,
+		"ThrownCollisionLoudness": "eLoudness_Default",
+		"Title": "Documents",
+		"TokenID": "PROP_QUESTITEM_MENDOZA_POTATO_COMPORMISINGMETERIALS",
+		"UseFakePutDownPhysics": false,
+		"ID_": "b76faa87-cc54-4e39-bee0-406f1405b575"
+	}
+}

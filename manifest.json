@@ -1,0 +1,389 @@
+{
+	"version": "1.0.0",
+	"id": "DYSG.CookingShow",
+	"name": "The Cooking Show",
+	"description": "Cooking show desc",
+	"authors": [
+		"DoYouSellGlue Team"
+	],
+	"frameworkVersion": "2.0.0",
+	"contentFolders": [
+		"content"
+	],
+	"localisation": {
+		"english": {
+			"FF2D44F1-133B-466A-BB63-CDC5ED21D440_ROMANKHABKO_NAME": "Roman Khabko",
+			"UI_CONTRACT_POTATO_TITLE": "The Cooking Show",
+			"UI_CONTRACT_POTATO_DESC": "Placeholder value",
+			"actor_wtl_desc": "Placeholder value"
+		},
+		"french": {},
+		"italian": {},
+		"german": {},
+		"spanish": {},
+		"russian": {
+			"FF2D44F1-133B-466A-BB63-CDC5ED21D440_ROMANKHABKO_NAME": "Роман Хабко",
+			"UI_CONTRACT_POTATO_TITLE": "Битва шефов"
+		},
+		"chineseSimplified": {},
+		"chineseTraditional": {},
+		"japanese": {}
+	},
+	"loadAfter": [],
+	"localisedLines": {
+		"00F8DEBE6BB62697": "FF2D44F1-133B-466A-BB63-CDC5ED21D440_ROMANKHABKO_NAME"
+	},
+	"packagedefinition": [
+		{
+			"type": "entity",
+			"partition": "elegant",
+			"path": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].entitytype"
+		}
+	],
+	"dependencies": [
+		{
+			"runtimeID": "007002DD1534DFD7",
+			"toChunk": 0,
+			"portFromChunk1": true
+		},
+		{
+			"runtimeID": "009E8B8C3E0E60E2",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00108253003B87A4",
+			"toChunk": 5,
+			"portFromChunk1": true
+		},
+		{
+			"runtimeID": "000F9690EFDE38C7",
+			"toChunk": 5,
+			"portFromChunk1": true
+		},
+		{
+			"runtimeID": "00BC202E8734209C",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "006920F70B13BCB1",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00D7940D276F112C",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "004367655275D4F4",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00859791D1863C1D",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "0066F062CDF46FAA",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00BCA7B0181BA083",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00DD293C15B41216",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "002E356716F620FC",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00A4B3785D4F3947",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00EB0039FAAA9E8D",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00A8025FD3629D4F",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00DE1348CC30B89D",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00FD4D61A2349117",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "000F8B102F7C9AA5",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00078FDE2FC3BEBD",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "003B1902027AB665",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00694938B2D8164C",
+			"toChunk": 5,
+			"portFromChunk1": true
+		},
+		{
+			"runtimeID": "00D392B0DE2B1E2B",
+			"toChunk": 5,
+			"portFromChunk1": true
+		},
+		{
+			"runtimeID": "00AE3163FE7072C5",
+			"toChunk": 5,
+			"portFromChunk1": true
+		},
+		{
+			"runtimeID": "0052A66DC416CFD8",
+			"toChunk": 5,
+			"portFromChunk1": true
+		},
+		{
+			"runtimeID": "00196615D0AACA5F",
+			"toChunk": 5,
+			"portFromChunk1": true
+		},
+		{
+			"runtimeID": "00AD5F835BC95112",
+			"toChunk": 5,
+			"portFromChunk1": true
+		},
+		{
+			"runtimeID": "0082E262947CA7C4",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00F58BF264A84516",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00C58057557314C6",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00A632B74DDEBA64",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "000D53BE3B56C1DE",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "0073CD021457ED8E",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00DBD131D6B56C3B",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00B2F3EF9BDE3A21",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00343A38F9716410",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "007DD8AE82EDEAE2",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "0024E2C9CF6690CC",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00841C423350B073",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00FA8D062B338818",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00411B57C322B7B3",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00FC46EF9471814A",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "0089790A9E6F4C5E",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00E26195C3F61BE6",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00EDFACCF83BC81E",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "007D0D82F2ED78C5",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00D9AAC4E762BF19",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "0083B1265820600B",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "0091D051B80268C6",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00416F0D1EC6280C",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "006AC8E673B808FF",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "000E5079C3AC1962",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00430FBCA15E4681",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00823839A4CAD257",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00D0ACF83AE5E852",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00D1E32E1E2E6333",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "002F910495262093",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00AF3F8578346933",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00E7283604140AE8",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "007AC61B86C3C0C9",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "002FFC9B47845750",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00E6DC2BA887E00C",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00B68CB50C88E1F2",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "0061B0D952F8090F",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "009923187356FACB",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00578F63388DFA39",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00B26832B34CF792",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "002662B9942D950C",
+			"toChunk": 1,
+			"portFromChunk1": false
+		}
+	],
+	"peacockPlugins": [],
+	"blobsFolders": [
+		"blobs"
+	]
+}

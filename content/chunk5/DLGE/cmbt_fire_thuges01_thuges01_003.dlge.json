@@ -1,0 +1,14 @@
+{
+    "$schema": "https://tonytools.win/schemas/dlge.schema.json",
+    "hash": "[assembly:/localization/hitman6/conversations/elegant/llama/44000_ambient/da45000_potato.sweetdialog?/cmbt_fire_thuges01_thuges01_003.sweetdialogitem].pc_dialogevent",
+    "DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+    "CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+    "rootContainer": {
+        "type": "WavFile",
+        "wavName": "cmbt_fire_thuges01_thuges01_003",
+        "soundtag": "In-world_Mission_UnImportant",
+        "defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/thuges01/cmbt_fire_thuges01_thuges01_003.wav].pc_wes",
+        "defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/thuges01/cmbt_fire_thuges01_thuges01_003.animset].pc_animset",
+        "languages": {}
+    }
+}

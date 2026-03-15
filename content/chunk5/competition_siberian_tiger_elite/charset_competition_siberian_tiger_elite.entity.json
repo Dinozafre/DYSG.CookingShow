@@ -1,0 +1,147 @@
+{
+	"tempHash": "00574F0BC7AAE885",
+	"tbluHash": "0039A19368EF0193",
+	"rootEntity": "cafe3c6c14d51aa2",
+	"entities": {
+		"cafe0ba501f40c69": {
+			"parent": "cafe3c6c14d51aa2",
+			"name": "Actor",
+			"factory": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe75c3661d8b41", "cafe0ce93537b927"],
+					"postInit": true
+				}
+			}
+		},
+		"cafe039d6dec13f4": {
+			"parent": "cafe3c6c14d51aa2",
+			"name": "Nude",
+			"factory": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe5bf4c36721f2", "cafe69b53c0b3301"],
+					"postInit": true
+				}
+			}
+		},
+		"cafe0ed93da6c3d7": {
+			"parent": "cafe3c6c14d51aa2",
+			"name": "HeroA",
+			"factory": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe82a0fd21f2db"],
+					"postInit": true
+				}
+			}
+		},
+		"cafe5bf4c36721f2": {
+			"parent": "cafe039d6dec13f4",
+			"name": "0",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/characters/templates/llama/char_llama_unique.template?/outfit_competition_siberian_tiger_elite_nude_v0.entitytemplate].pc_entitytemplate",
+						"flag": "9F"
+					}
+				}
+			}
+		},
+		"cafe82a0fd21f2db": {
+			"parent": "cafe0ed93da6c3d7",
+			"name": "0",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "008764F717AC0720",
+						"flag": "9F"
+					}
+				}
+			}
+		},
+		"cafe3c6c14d51aa2": {
+			"parent": null,
+			"name": "charset_competition_siberian_tiger_elite",
+			"factory": "[assembly:/_pro/characters/templates/_sourcefiles/outfit.template?/charset_base.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/characters/templates/_sourcefiles/outfit.template?/charset_base.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aCharacters": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						"cafe0ba501f40c69",
+						"cafe039d6dec13f4",
+						"cafe0ed93da6c3d7"
+					]
+				}
+			}
+		},
+		"cafe0ce93537b927": {
+			"parent": "cafe0ba501f40c69",
+			"name": "1",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/characters/templates/llama/char_llama_unique.template?/outfit_competition_siberian_tiger_elite_actor_v1.entitytemplate].pc_entitytemplate",
+						"flag": "9F"
+					}
+				}
+			}
+		},
+		"cafe75c3661d8b41": {
+			"parent": "cafe0ba501f40c69",
+			"name": "0",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/characters/templates/llama/char_llama_unique.template?/outfit_competition_siberian_tiger_elite_actor_v0.entitytemplate].pc_entitytemplate",
+						"flag": "9F"
+					}
+				}
+			}
+		},
+		"cafe69b53c0b3301": {
+			"parent": "cafe039d6dec13f4",
+			"name": "1",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/characters/templates/llama/char_llama_unique.template?/outfit_competition_siberian_tiger_elite_nude_v1.entitytemplate].pc_entitytemplate",
+						"flag": "9F"
+					}
+				}
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

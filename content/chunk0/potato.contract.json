@@ -1,0 +1,140 @@
+{
+    "SMF": {
+        "destinations": {
+            "addToDestinations": true,
+            "peacockIntegration": true,
+            "narrativeContext": "Mission"
+        }
+    },
+	"Data": {
+        "EnableExits": {
+			"$eq": [
+				"$b73d740a-4b05-499f-95c8-cb243205eccc",
+				"Completed"
+			]
+		},
+		"Objectives": [
+			{
+                "_comment": "----- Kill White Team Leader -----",
+                "Id": "b73d740a-4b05-499f-95c8-cb243205eccc",
+                "Category": "primary",
+                "SuccessEvent": {
+                    "EventName": "Kill",
+                    "EventValues": {
+                        "RepositoryId": "227a86cb-3ce3-4de9-9106-f2729c88f302"
+                    }
+                }
+            },
+			{
+                "_comment": "----- Kill Judger -----",
+                "Id": "0aa53f22-b1b8-4a9b-a178-2d136f4b880e",
+                "Category": "primary",
+                "SuccessEvent": {
+                    "EventName": "Kill",
+                    "EventValues": {
+                        "RepositoryId": "8dd7dc42-948e-4884-8581-5b4a9e8279c9"
+                    }
+                }
+            },
+			{
+				"_comment": "----- Silent objective to start habko elimination -----",
+				"Id": "2e093efc-f342-4c4c-a12f-720286ddcc8d",
+				"Type": "statemachine",
+				"Category": "condition",
+				"ExcludeFromScoring": true,
+				"OnActive": {
+					"IfInProgress": {
+						"Visible": false
+					},
+					"IfCompleted": {
+						"Visible": false
+					},
+					"IfFailed": {
+						"Visible": false
+					}
+				},
+				"Definition": {
+					"States": {
+						"Start": {
+							"MetWithStone": {
+							    "Transition": "Success"
+							}
+						}
+					}
+				}
+			},
+			{
+                "_comment": "--- Eliminate Habko (optional) ---",
+                "Id": "e1fd6037-304c-45d4-af3c-93df692ee3a2",
+				"Activation": {
+					"$eq": [
+						"$2e093efc-f342-4c4c-a12f-720286ddcc8d",
+						"Completed"
+					]
+				},
+				"ExcludeFromScoring": true,
+                "Category": "secondary",
+                "SuccessEvent": {
+                    "EventName": "Kill",
+                    "EventValues": {
+                        "RepositoryId": "c4f56dd4-a8f0-4893-9da3-a5f1394245e3"
+                    }
+                }
+            }
+		],
+		"Bricks": [
+			"assembly:/_pro/scenes/missions/elegant/scenario_potato.brick"
+		],
+		"VR": [
+			{
+				"Quality": "ps4_vr1",
+				"Bricks": [
+					"assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+					"assembly:/_pro/scenes/missions/elegant/vr_overrides_llama_ps4_vr1.brick",
+					"assembly:/_pro/scenes/missions/elegant/vr_overrides_low_performance.brick"
+				]
+			},
+			{
+				"Quality": "base",
+				"Bricks": [
+					"assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+					"assembly:/_pro/scenes/missions/elegant/vr_overrides_llama.brick",
+					"assembly:/_pro/scenes/missions/elegant/vr_overrides_low_performance.brick"
+				]
+			},
+			{
+				"Quality": "better",
+				"Bricks": [
+					"assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+					"assembly:/_pro/scenes/missions/elegant/vr_overrides_llama.brick"
+				]
+			}
+		],
+		"GameChangers": [],
+		"GameChangerReferences": [],
+		"GameDifficulties": [
+
+		],
+        "Entrances": [
+            "cef7b74a-bd2c-4ee9-94cd-4af5b4613556"
+        ]
+	},
+	"Metadata": {
+		"Id": "358e3f41-9acc-4896-a22a-4a3107611520",
+		"IsPublished": true,
+		"TileImage": "images/contracts/assrace/tile.jpg",
+		"CreationTimestamp": "2019-09-18T11:49:25.5705635+02:00",
+		"CreatorUserId": "00000000-0000-0000-0000-000000000000",
+		"Title": "UI_CONTRACT_POTATO_TITLE",
+		"Description": "UI_CONTRACT_POTATO_DESC",
+		"CodeName_Hint": "Potato",
+		"Location": "LOCATION_ELEGANT_LLAMA",
+		"ScenePath": "assembly:/_pro/scenes/missions/elegant/scene_llama.entity",
+		"Type": "flashback",
+		"Release": "3.0.x",
+		"RequiredUnlockable": "ACCESS_HIT_LLAMA",
+		"Drops": ["ACCESS_HIT_WOLVERINE"],
+		"Entitlements": ["LOCATION_ELEGANT"]
+	},
+    "UserData": {}
+}

@@ -1,0 +1,99 @@
+{
+	"tempHash": "00153DCB80205654",
+	"tbluHash": "00ACF4E451C48D53",
+	"rootEntity": "cafeea0ca8ede6ce",
+	"entities": {
+		"cafe474534cdce57": {
+			"parent": "cafeea0ca8ede6ce",
+			"name": "Actor",
+			"factory": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafee41be0b0e109"],
+					"postInit": true
+				}
+			}
+		},
+		"cafef690e421c52f": {
+			"parent": "cafeea0ca8ede6ce",
+			"name": "Nude",
+			"factory": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe94cab6b2f1e4"],
+					"postInit": true
+				}
+			}
+		},
+		"cafee41be0b0e109": {
+			"parent": "cafe474534cdce57",
+			"name": "0",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/characters/templates/llama/char_llama_unique.template?/outfit_unique_ex_prisoner_actor_v0.entitytemplate].pc_entitytemplate",
+						"flag": "9F"
+					}
+				}
+			}
+		},
+		"cafe49581d909f88": {
+			"parent": "cafeea0ca8ede6ce",
+			"name": "HeroA",
+			"factory": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe6f665f5b3634"],
+					"postInit": true
+				}
+			}
+		},
+		"cafe94cab6b2f1e4": {
+			"parent": "cafef690e421c52f",
+			"name": "Var0",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint"
+		},
+		"cafe6f665f5b3634": {
+			"parent": "cafe49581d909f88",
+			"name": "Var0",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint"
+		},
+		"cafeea0ca8ede6ce": {
+			"parent": null,
+			"name": "charset_unique_ex_prisoner",
+			"factory": "004470A9E6A7722D",
+			"blueprint": "00E21A11EC782D9E",
+			"properties": {
+				"m_aCharacters": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						"cafe474534cdce57",
+						"cafef690e421c52f",
+						"cafe49581d909f88"
+					]
+				}
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}
