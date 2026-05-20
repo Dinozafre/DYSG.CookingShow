@@ -1,0 +1,131 @@
+{
+	"tempHash": "00BA6B939370001F",
+	"tbluHash": "0045792002B93333",
+	"rootEntity": "cafe6e79235e3028",
+	"entities": {
+		"cafe6e79235e3028": {
+			"parent": null,
+			"name": "Conversation",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			},
+			"inputCopying": { "Start": { "In": ["cafe1366b7d5b40d"] } },
+			"propertyAliases": {
+				"m_rCharacter": [
+					{
+						"originalProperty": "m_rCharacter",
+						"originalEntity": "cafe3aab1effb3f6"
+					},
+					{
+						"originalProperty": "m_rCharacter",
+						"originalEntity": "cafe53bf887237ff"
+					}
+				]
+			},
+			"exposedEntities": {
+				"da46085_hubslaprefcall_001_DIALOGCONDITION": {
+					"isArray": false,
+					"refersTo": ["cafeef61c085cf6b"]
+				},
+				"da46085_hubslaprefcall_002_DIALOGCONDITION": {
+					"isArray": false,
+					"refersTo": ["cafec92cc88390bc"]
+				}
+			}
+		},
+		"cafe53bf887237ff": {
+			"parent": "cafe6e79235e3028",
+			"name": "da46085_hubslaprefcall_002",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/rocky/dugong/46000_ambient/da46085_hubslaprefcall_02.sweetdialog].pc_dialogevent",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			}
+		},
+		"cafec92cc88390bc": {
+			"parent": "cafe6e79235e3028",
+			"name": "da46085_hubslaprefcall_002_DIALOGCONDITION",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_fTimeOffset": { "type": "float32", "value": 0.0 },
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe53bf887237ff",
+					"postInit": true
+				}
+			}
+		},
+		"cafe3aab1effb3f6": {
+			"parent": "cafe6e79235e3028",
+			"name": "da46085_hubslaprefcall_001",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/rocky/dugong/46000_ambient/da46085_hubslaprefcall_01.sweetdialog].pc_dialogevent",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			}
+		},
+		"cafeef61c085cf6b": {
+			"parent": "cafe6e79235e3028",
+			"name": "da46085_hubslaprefcall_001_DIALOGCONDITION",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_fTimeOffset": { "type": "float32", "value": 0.0 },
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe3aab1effb3f6",
+					"postInit": true
+				}
+			}
+		},
+		"cafe1366b7d5b40d": {
+			"parent": "cafe6e79235e3028",
+			"name": "SignalRandomRoute_Void",
+			"factory": "[modules:/zsignalrandomrouteentity_void.class].pc_entitytype",
+			"blueprint": "[modules:/zsignalrandomrouteentity_void.class].pc_entityblueprint",
+			"properties": {
+				"m_nMaxOutPinNum": { "type": "int32", "value": 2 }
+			},
+			"events": {
+				"Out1": { "Start": ["cafe3aab1effb3f6"] },
+				"Out2": { "Start": ["cafe53bf887237ff"] }
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

@@ -1,0 +1,222 @@
+{
+	"tempHash": "00E169FB047E9922",
+	"tbluHash": "0052FA96278D134B",
+	"rootEntity": "cafebbd2a3422642",
+	"entities": {
+		"cafee45934aee33b": {
+			"parent": "cafebbd2a3422642",
+			"name": "dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_003",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_03.sweetdialog].pc_dialogevent",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			}
+		},
+		"cafeddc83b3e8c45": {
+			"parent": "cafebbd2a3422642",
+			"name": "dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_004_DIALOGCONDITION",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_fTimeOffset": { "type": "float32", "value": 0.0 },
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe090fc563ac99",
+					"postInit": true
+				}
+			},
+			"outputCopying": {
+				"OnTrue": { "OnDone": ["cafebbd2a3422642"] }
+			}
+		},
+		"cafeae3041aa3423": {
+			"parent": "cafebbd2a3422642",
+			"name": "dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_001",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_01.sweetdialog].pc_dialogevent",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			}
+		},
+		"cafea5d1701fc2a8": {
+			"parent": "cafebbd2a3422642",
+			"name": "dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_002",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_02.sweetdialog].pc_dialogevent",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			}
+		},
+		"cafe090fc563ac99": {
+			"parent": "cafebbd2a3422642",
+			"name": "dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_004",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_04.sweetdialog].pc_dialogevent",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			}
+		},
+		"cafe191a0fd2e11e": {
+			"parent": "cafebbd2a3422642",
+			"name": "dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_002_DIALOGCONDITION",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_fTimeOffset": { "type": "float32", "value": 0.0 },
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "cafea5d1701fc2a8",
+					"postInit": true
+				}
+			},
+			"outputCopying": {
+				"OnTrue": { "OnDone": ["cafebbd2a3422642"] }
+			}
+		},
+		"cafe97b5cd67541f": {
+			"parent": "cafebbd2a3422642",
+			"name": "dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_001_DIALOGCONDITION",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_fTimeOffset": { "type": "float32", "value": 0.0 },
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeae3041aa3423",
+					"postInit": true
+				}
+			},
+			"events": { "OnTrue": { "Start": ["cafee45934aee33b"] } },
+			"outputCopying": {
+				"OnTrue": { "OnDone": ["cafebbd2a3422642"] }
+			}
+		},
+		"cafef5feccc6c394": {
+			"parent": "cafebbd2a3422642",
+			"name": "dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_003_DIALOGCONDITION",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_fTimeOffset": { "type": "float32", "value": 0.0 },
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "cafee45934aee33b",
+					"postInit": true
+				}
+			},
+			"outputCopying": {
+				"OnTrue": { "OnDone": ["cafebbd2a3422642"] }
+			}
+		},
+		"cafe1a97fdb83bc4": {
+			"parent": "cafebbd2a3422642",
+			"name": "SignalRandomRoute_Void",
+			"factory": "[modules:/zsignalrandomrouteentity_void.class].pc_entitytype",
+			"blueprint": "[modules:/zsignalrandomrouteentity_void.class].pc_entityblueprint",
+			"properties": {
+				"m_nMaxOutPinNum": { "type": "int32", "value": 4 }
+			},
+			"events": {
+				"Out1": { "Start": ["cafeae3041aa3423"] },
+				"Out2": { "Start": ["cafea5d1701fc2a8"] },
+				"Out3": { "Start": ["cafee45934aee33b"] },
+				"Out4": { "Start": ["cafe090fc563ac99"] }
+			}
+		},
+		"cafebbd2a3422642": {
+			"parent": null,
+			"name": "Conversation",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"inputCopying": { "Start": { "In": ["cafe1a97fdb83bc4"] } },
+			"propertyAliases": {
+				"m_rCharacter": [
+					{
+						"originalProperty": "m_rCharacter",
+						"originalEntity": "cafeae3041aa3423"
+					},
+					{
+						"originalProperty": "m_rCharacter",
+						"originalEntity": "cafea5d1701fc2a8"
+					},
+					{
+						"originalProperty": "m_rCharacter",
+						"originalEntity": "cafee45934aee33b"
+					},
+					{
+						"originalProperty": "m_rCharacter",
+						"originalEntity": "cafe090fc563ac99"
+					}
+				]
+			},
+			"exposedEntities": {
+				"dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_001_DIALOGCONDITION": {
+					"isArray": false,
+					"refersTo": ["cafe97b5cd67541f"]
+				},
+				"dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_002_DIALOGCONDITION": {
+					"isArray": false,
+					"refersTo": ["cafe191a0fd2e11e"]
+				},
+				"dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_003_DIALOGCONDITION": {
+					"isArray": false,
+					"refersTo": ["cafef5feccc6c394"]
+				},
+				"dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_004_DIALOGCONDITION": {
+					"isArray": false,
+					"refersTo": ["cafeddc83b3e8c45"]
+				}
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

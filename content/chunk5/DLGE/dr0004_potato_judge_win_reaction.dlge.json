@@ -1,0 +1,29 @@
+{
+    "$schema": "https://tonytools.win/schemas/dlge.schema.json",
+    "hash": "[assembly:/localization/hitman6/conversations/mendoza/0001_mission/dr0004_potato_judge_win_reaction.sweetdialog].pc_dialogevent",
+    "DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+    "CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer": {
+		"type": "Random",
+		"containers": [
+			{
+				"type": "WavFile",
+				"wavName": "cmbt_scrm_civmale05_civmale05_002",
+				"weight": 0.2,
+				"soundtag": "In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/civmale05/cmbt_scrm_civmale05_civmale05_002.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/civmale05/cmbt_scrm_civmale05_civmale05_002.animset].pc_animset",
+				"languages": {}
+			},
+			{
+				"type": "WavFile",
+				"wavName": "cmbt_scrm_civmale05_civmale05_003",
+				"weight": 0.2,
+				"soundtag": "In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/civmale05/cmbt_scrm_civmale05_civmale05_003.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/civmale05/cmbt_scrm_civmale05_civmale05_003.animset].pc_animset",
+				"languages": {}
+			}
+		]
+	}
+}

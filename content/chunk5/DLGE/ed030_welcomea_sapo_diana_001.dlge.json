@@ -1,0 +1,24 @@
+{
+    "$schema": "https://tonytools.win/schemas/dlge.schema.json",
+    "hash": "[assembly:/localization/hitman6/conversations/bangkok/handler/ed030_welcome/ed030_welcomea_sapo_diana_001.sweetdialog].pc_dialogevent",
+    "DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+    "CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+    "rootContainer": {
+		"type": "WavFile",
+		"wavName": "ed030_welcomea_sapo_diana_001",
+		"soundtag": "Voiceover_Handler",
+		"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/evergreen/handler/ed030_welcome/ed030_welcomea_sapo_diana_001.wav].pc_wes",
+		"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/evergreen/handler/ed030_welcome/ed030_welcomea_sapo_diana_001.animset].pc_animset",
+		"languages": {
+			"en": "//[DIANA]\\\\//(0,30)\\\\Welcome to Vinedo Yates, Argentina.",
+			"fr": "//[DIANA]\\\\//(0,30)\\\\Bienvenue au Viñedo Yates, en Argentine.",
+			"it": "//[DIANA]\\\\//(0,30)\\\\Benvenuto al Viñedo Yates, Argentina.",
+			"de": "//[DIANA]\\\\//(0,30)\\\\Willkommen in der Viñedo Yates in Argentinien.",
+			"es": "//[DIANA]\\\\//(0,30)\\\\Bienvenido a Viñedo Yates, Argentina.",
+			"ru": "//[DIANA]\\\\//(0,30)\\\\Добро пожаловать в Виньедо Йейтс, Аргентина.",
+			"cn": "//[DIANA]\\\\//(0,30)\\\\欢迎来到阿根廷的耶茨葡萄园。",
+			"tc": "//[DIANA]\\\\//(0,30)\\\\歡迎來到阿根廷，耶茨葡萄園。",
+			"jp": "//[DIANA]\\\\//(0,30)\\\\アルゼンチン、ビニェード・イエーツへようこそ。"
+		}
+    }
+}

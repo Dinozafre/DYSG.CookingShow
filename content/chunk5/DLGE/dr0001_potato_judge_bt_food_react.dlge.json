@@ -1,0 +1,65 @@
+{
+    "$schema": "https://tonytools.win/schemas/dlge.schema.json",
+    "hash": "[assembly:/localization/hitman6/conversations/mendoza/0001_mission/dr0002_potato_judge_bt_food_react.sweetdialog].pc_dialogevent",
+    "DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+    "CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer": {
+		"type": "Random",
+		"containers": [
+			{
+				"type": "WavFile",
+				"wavName": "dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_001",
+				"weight": 0.24999995529651375,
+				"soundtag": "In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_001.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_001.animset].pc_animset",
+				"languages": {}
+			},
+			{
+				"type": "WavFile",
+				"wavName": "dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_002",
+				"weight": 0.24999995529651375,
+				"soundtag": "In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_002.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_002.animset].pc_animset",
+				"languages": {}
+			},
+			{
+				"type": "WavFile",
+				"wavName": "dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_003",
+				"weight": 0.24999995529651375,
+				"soundtag": "In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_003.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_003.animset].pc_animset",
+				"languages": {}
+			},
+			{
+				"type": "WavFile",
+				"wavName": "dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_004",
+				"weight": 0.24999995529651375,
+				"soundtag": "In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_004.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_ambient/dr4894_kitchen_guest_staff_happymeal02_male05_richmale05_004.animset].pc_animset",
+				"languages": {}
+			},
+			{
+				"type": "WavFile",
+				"wavName": "dr4504_genrecbantercomment_civmale05_001",
+				"weight": 0.24999995529651375,
+				"soundtag": "In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_cross/4000_story/dr4504_genrecbantercomment_civmale05_001.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_cross/4000_story/dr4504_genrecbantercomment_civmale05_001.animset].pc_animset",
+				"languages": {}
+			},
+            {
+				"type": "WavFile",
+				"wavName": "inst_sickacknormal_civmale05_civmale05_002",
+				"weight": 0.24999995529651375,
+				"soundtag": "In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/civmale05/inst_sickack_civmale05/inst_sickacknormal_civmale05_civmale05_002.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/civmale05/inst_sickack_civmale05/inst_sickacknormal_civmale05_civmale05_002.animset].pc_animset",
+				"languages": {}
+			}
+		]
+	}
+}

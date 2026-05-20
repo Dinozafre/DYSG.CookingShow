@@ -6,7 +6,7 @@
     "rootContainer": {
         "type": "WavFile",
         "wavName": "dr44102_yatesloopcellar1_yates_003_potato",
-        "soundtag": "In-world_Telephoneprocessed",
+        "soundtag": "In-world_Megaphoneprocessed",
         "defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/elegant/llama/44000_story/dr44102_yatesloopcellar1_yates_003.wav].pc_wes",
         "defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/elegant/llama/44000_story/dr44102_yatesloopcellar1_yates_003.animset].pc_animset",
         "languages": {

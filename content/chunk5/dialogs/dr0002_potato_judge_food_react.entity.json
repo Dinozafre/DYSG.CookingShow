@@ -1,0 +1,121 @@
+{
+	"tempHash": "00701B0DEC79F9CF",
+	"tbluHash": "008C4B6DC3470DEB",
+	"rootEntity": "cafee5d78dcb121d",
+	"entities": {
+		"cafeb0c8cc856f44": {
+			"parent": "cafee5d78dcb121d",
+			"name": "dr0002_potato_judge_wt_food_react",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/mendoza/0001_mission/dr0001_potato_judge_wt_food_react.sweetdialog].pc_dialogevent",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			}
+		},
+		"cafe5898e6fb8bfb": {
+			"parent": "cafee5d78dcb121d",
+			"name": "dr0002_potato_judge_wt_food_react_DIALOGCONDITION",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_fTimeOffset": { "type": "float32", "value": 0.0 },
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb0c8cc856f44",
+					"postInit": true
+				}
+			},
+			"outputCopying": {
+				"OnTrue": { "OnDone": ["cafee5d78dcb121d"] }
+			}
+		},
+		"cafee5d78dcb121d": {
+			"parent": null,
+			"name": "Conversation",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"inputCopying": {
+				"StartWT": { "Start": ["cafeb0c8cc856f44"] },
+				"StartBT": { "Start": ["cafe8309aace688d"] }
+			},
+			"propertyAliases": {
+				"m_rCharacter": [
+					{
+						"originalProperty": "m_rCharacter",
+						"originalEntity": "cafeb0c8cc856f44"
+					},
+					{
+						"originalProperty": "m_rCharacter",
+						"originalEntity": "cafe8309aace688d"
+					}
+				]
+			},
+			"exposedEntities": {
+				"dr0002_potato_judge_wt_food_react_DIALOGCONDITION": {
+					"isArray": false,
+					"refersTo": ["cafe5898e6fb8bfb"]
+				},
+				"dr0002_potato_judge_bt_food_react_DIALOGCONDITION": {
+					"isArray": false,
+					"refersTo": ["cafe1b7b643ccbc0"]
+				}
+			}
+		},
+		"cafe8309aace688d": {
+			"parent": "cafee5d78dcb121d",
+			"name": "dr0002_potato_judge_bt_food_react",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/mendoza/0001_mission/dr0002_potato_judge_bt_food_react.sweetdialog].pc_dialogevent",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			}
+		},
+		"cafe1b7b643ccbc0": {
+			"parent": "cafee5d78dcb121d",
+			"name": "dr0002_potato_judge_bt_food_react_DIALOGCONDITION",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_fTimeOffset": { "type": "float32", "value": 0.0 },
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe8309aace688d",
+					"postInit": true
+				}
+			},
+			"outputCopying": {
+				"OnTrue": { "OnDone": ["cafee5d78dcb121d"] }
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

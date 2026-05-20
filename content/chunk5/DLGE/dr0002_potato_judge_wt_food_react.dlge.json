@@ -1,0 +1,83 @@
+{
+    "$schema": "https://tonytools.win/schemas/dlge.schema.json",
+    "hash": "[assembly:/localization/hitman6/conversations/mendoza/0001_mission/dr0001_potato_judge_wt_food_react.sweetdialog].pc_dialogevent",
+    "DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+    "CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer": {
+		"type": "Random",
+		"containers": [
+			{
+				"type": "WavFile",
+				"wavName": "dr4504_genrecbantercomment_civmale05_006",
+				"weight": 0.2,
+				"soundtag": "In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_cross/4000_story/dr4504_genrecbantercomment_civmale05_006.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_cross/4000_story/dr4504_genrecbantercomment_civmale05_006.animset].pc_animset",
+				"languages": {}
+			},
+        	{
+				"type": "WavFile",
+				"wavName": "accdnt_inv_civmale05_civmale05_002",
+				"weight": 0.2,
+				"soundtag":"In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/civmale05/accdnt_inv_civmale05_civmale05_002.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/civmale05/accdnt_inv_civmale05_civmale05_002.animset].pc_animset",
+				"languages": {}
+			},
+			{
+				"type": "WavFile",
+				"wavName": "gen_noway7horrible_civmale05_civmale05_001",
+				"weight": 0.2,
+				"soundtag":"In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/civmale05/gen_noway7horrible_civmale05_civmale05_001.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/civmale05/gen_noway7horrible_civmale05_civmale05_001.animset].pc_animset",
+				"languages": {}
+			},
+			{
+				"type": "WavFile",
+				"wavName": "gen_noway7horrible_civmale05_civmale05_002",
+				"weight": 0.2,
+				"soundtag": "In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/civmale05/gen_noway7horrible_civmale05_civmale05_002.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/civmale05/gen_noway7horrible_civmale05_civmale05_002.animset].pc_animset",
+				"languages": {}
+			},
+			{
+				"type": "WavFile",
+				"wavName": "gen_noway7horrible_civmale05_civmale05_003",
+				"weight": 0.2,
+				"soundtag": "In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/civmale05/gen_noway7horrible_civmale05_civmale05_003.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/civmale05/gen_noway7horrible_civmale05_civmale05_003.animset].pc_animset",
+				"languages": {}
+			},
+			{
+				"type": "WavFile",
+				"wavName": "gen_noway7horrible_civmale05_civmale05_004",
+				"weight": 0.2,
+				"soundtag": "In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/civmale05/gen_noway7horrible_civmale05_civmale05_004.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/civmale05/gen_noway7horrible_civmale05_civmale05_004.animset].pc_animset",
+				"languages": {}
+			},
+			{
+				"type": "WavFile",
+				"wavName": "gen_noway7horrible_civmale05_civmale05_005",
+				"weight": 0.2,
+				"soundtag": "In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/civmale05/gen_noway7horrible_civmale05_civmale05_005.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/civmale05/gen_noway7horrible_civmale05_civmale05_005.animset].pc_animset",
+				"languages": {}
+			},
+			{
+				"type": "WavFile",
+				"wavName": "gen_noway7horrible_civmale05_civmale05_006",
+				"weight": 0.2,
+				"soundtag": "In-world_Mission_UnImportant",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/civmale05/gen_noway7horrible_civmale05_civmale05_006.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/civmale05/gen_noway7horrible_civmale05_civmale05_006.animset].pc_animset",
+				"languages": {}
+			}
+		]
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"$schema": "https://tonytools.win/schemas/dlge.schema.json",
+	"hash": "[assembly:/localization/hitman6/conversations/colombia/23000_hippo/23000_story/dr23756_halfbakedfrancoguardfollowme.sweetdialog?/dr23756_halfbakedfrancoguardfollowme_thuges01_001.sweetdialogitem].pc_dialogevent",
+	"DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+	"CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer": {
+		"type": "WavFile",
+		"wavName": "dr23756_halfbakedfrancoguardfollowme_thuges01_001",
+		"soundtag": "In-world_Megaphoneprocessed",
+		"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/colombia/23000_hippo/23000_story/dr23756_halfbakedfrancoguardfollowme_thuges01_001.wav].pc_wes",
+		"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/colombia/23000_hippo/23000_story/dr23756_halfbakedfrancoguardfollowme_thuges01_001.animset].pc_animset",
+		"languages": {
+			"en": "//(0,30)\\\\All right everyone. Follow me.",
+			"fr": "//(0,30)\\\\OK, tout le monde, suivez-moi.",
+			"it": "//(0,30)\\\\Va bene, gente. Seguitemi.",
+			"de": "//(0,30)\\\\Okay, Leute. Mir nach.",
+			"es": "//(0,30)\\\\Vale, chicos. Seguidme.",
+			"ru": "//(0,30)\\\\Так, господа. За мной.",
+			"cn": "//(0,30)\\\\好了，各位。跟我来。",
+			"tc": "//(0,30)\\\\好了，各位。跟我來。",
+			"jp": "//(0,30)\\\\よし、みんな、俺についてこい。"
+		}
+	}
+}

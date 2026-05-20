@@ -75,20 +75,13 @@
 		},
 		"cafe428b73d0488d": {
 			"parent": "87387eb69af8a05f",
-			"name": "head",
-			"factory": "[assembly:/templates/aspectdummy.aspect]([modules:/zbodypartentity.class].entitytype,[modules:/zclothcollidergroupaspect.class].entitytype).pc_entitytype",
-			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zbodypartentity.class].entitytype,[modules:/zclothcollidergroupaspect.class].entitytype).pc_entityblueprint",
+			"name": "Head_Caucasian_30s_02_Beard",
+			"factory": "[assembly:/_pro/characters/templates/_part_library/male_parts/male_heads_caucasian.template?/head_base.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/characters/templates/_part_library/male_parts/male_heads_caucasian.template?/head_base.entitytemplate].pc_entityblueprint",
 			"properties": {
-				"m_pMeshResource": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "0061B0D952F8090F",
-						"flag": "5F"
-					}
-				},
-				"m_ClothColliders": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": []
+				"EyeShader_01_IrisBrightness": {
+					"type": "float32",
+					"value": 2.0
 				}
 			}
 		},

@@ -1,0 +1,68 @@
+{
+	"tempHash": "00D32FD9312420C2",
+	"tbluHash": "00B280C2DF368259",
+	"rootEntity": "cafe88085add4d98",
+	"entities": {
+		"cafea4e365dae481": {
+			"parent": "cafe88085add4d98",
+			"name": "Keyword_PROF_POTATO",
+			"factory": "[modules:/zkeywordentity.class].pc_entitytype",
+			"blueprint": "[modules:/zkeywordentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sKeyword": {
+					"type": "ZString",
+					"value": "PROF_POTATO"
+				},
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe88085add4d98",
+					"postInit": true
+				}
+			}
+		},
+		"cafe8c5e4c4a6c68": {
+			"parent": "cafe88085add4d98",
+			"name": "OutfitProfession",
+			"factory": "[modules:/zoutfitprofessionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitprofessionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_rKeywordProfession": {
+					"type": "SEntityTemplateReference",
+					"value": "cafea4e365dae481"
+				}
+			}
+		},
+		"cafe88085add4d98": {
+			"parent": null,
+			"name": "prof_potato",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"propertyAliases": {
+				"m_aHolders": [
+					{
+						"originalProperty": "m_aHolders",
+						"originalEntity": "cafea4e365dae481"
+					}
+				]
+			},
+			"exposedInterfaces": {
+				"ZKeywordEntity": "cafea4e365dae481",
+				"ZOutfitProfessionEntity": "cafe8c5e4c4a6c68"
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

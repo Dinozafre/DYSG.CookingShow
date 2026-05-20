@@ -1,0 +1,14 @@
+{
+    "$schema": "https://tonytools.win/schemas/dlge.schema.json",
+    "hash": "[assembly:/localization/hitman6/conversations/mendoza/ambient/001_ambient/phone_male_civmale_jorn.sweetdialog].pc_dialogevent",
+    "DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+    "CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+    "rootContainer": {
+		"type": "WavFile",
+		"wavName": "phone_male_civmale_jorn",
+		"soundtag": "In-world_Mission_UnImportant",
+		"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/crowd/miami_possession/miami_phone/phone_male_civmale06_006.wav].pc_wes",
+		"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/crowd/miami_possession/miami_phone/phone_male_civmale06_006.animset].pc_animset",
+		"languages": {}
+    }
+}
