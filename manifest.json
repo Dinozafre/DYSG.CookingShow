@@ -2,7 +2,7 @@
 	"version": "1.0.0",
 	"id": "DYSG.CookingShow",
 	"name": "The Cooking Show",
-	"description": "Cooking show desc",
+	"description": "Be a viewer of the cooking show or participate in it.",
 	"authors": [
 		"DoYouSellGlue Team"
 	],
@@ -15,7 +15,47 @@
 			"FF2D44F1-133B-466A-BB63-CDC5ED21D440_ROMANKHABKO_NAME": "Roman Khabko",
 			"UI_CONTRACT_POTATO_TITLE": "The Cooking Show",
 			"UI_CONTRACT_POTATO_DESC": "Placeholder value",
-			"actor_wtl_desc": "Placeholder value"
+			"actor_wtl_desc": "Placeholder value",
+			"UI_CONTRACT_POTATO_ELIMINATE_PRODUCER_NAME": "Eliminate Roman Habko",
+			"UI_CONTRACT_POTATO_ELIMINATE_PRODUCER_OBJ": "Eliminate Roman Habko",
+			"c4f56dd4-a8f0-4893-9da3-a5f1394245e3_Producer_Llama_Description": "Placeholder value",
+			"INTEL_POTATO_TABLET_NAME": "White Team Assistant's Tablet",
+			"INTEL_POTATO_TABLET_DESC": "A mobile device belonging to a White Team staff member. Encrypted logs on the device reveal a series of clandestine messages exchanged with the show’s judge.",
+			"OUTFIT_POTATO_HABKO_BODYGUARD_ELITE": "Elite Sibirian Tiger Bodyguard",
+			"OUTFIT_POTATO_HABKO_BODYGUARD": "Sibirian Tiger Bodyguard",
+			"OUTFIT_POTATO_WHITETEAM_LEADER": "White team leader",
+			"OUTFIT_POTATO_WHITETEAM_ASSISTANT": "Placeholder value",
+			"OUTFIT_POTATO_BLACKTEAM_LEADER": "Black team leader",
+			"OUTFIT_POTATO_BLACKTEAM_ASSISTANT": "Placeholder value",
+			"OUTFIT_POTATO_JUDGE": "Placeholder value",
+			"OUTFITS_HIPS_PROMPTS_POTATO_JOURNALIST": "as Journalist",
+			"POTATO_TABLET_TITLE_INFO_NAME": "Habko's Correspondence",
+			"POTATO_TABLET_TITLE_INFO_DESC": "\"I suspect that one of the contestants is secretly collaborating with the show's judge. The nature of their interactions suggests a pre-arranged outcome, though I currently lack direct evidence to prove this collusion. I will need to dig deeper to find something more substantial than just my own intuition.\" — Written in one of his private messages.",
+			"POTATO_INTEL_GROUP_PRODUCER": "Producer",
+			"OPPORTUNITY_JUDGECONSPIRICY_TITLE": "The Conspiracy Behind the Show",
+			"OPPORTUNITY_JUDGECONSPIRICY_DESC": "According to information on the laptop, Habko, the Producer of the show, suspects that one of the team members is cooperating with the judge. This could damage the show and its results.",
+			"OPPORTUNITY_JUDGECONSPIRICY_STAGE1": "Get a tablet",
+			"OPPORTUNITY_JUDGECONSPIRICY_STAGE2": "Talk to the Producer",
+			"OPPORTUNITY_JUDGECONSPIRICY_STAGE3": "Wait for the end of the drama",
+			"OPPORTUNITY_JUDGECONSPIRICY_STAGE4": "Give a tablet to the Producer",
+			"OPPORTUNITY_JUDGECONSPIRICY_REASON1": "The Producer is dead",
+			"OPPORTUNITY_JUDGECONSPIRICY_REASON2": "The Producer is escaping",
+			"OPPORTUNITY_JUDGECONSPIRICY_REASON3": "The Producer knows about the Judge's death",
+			"UI_OBJECTIVE_GENERIC_TARGET_ESCAPING_TITLE": "Target is escaping",
+			"UI_OBJECTIVE_POTATO_TARGET_ESCAPING_JUDGE_FAILED": "Wisdom Booker has escaped",
+			"UI_CONTRACT_POTATO_ELIMINATE_JUDGE_NAME": "Wisdom Booker",
+			"UI_CONTRACT_POTATO_ELIMINATE_JUDGE_HUD": "Eliminate Wisdom Booker",
+			"OPPORTUNITY_JUDGECONSPIRICY_FLAVOR_DESC": "Quite interesting events happen behind the scenes of the show.",
+			"OPPORTUNITY_STONEHOSTAGE_TITLE": "The Old Friend",
+			"OPPORTUNITY_STONEHOSTAGE_FLAVOR_DESC": "Placeholder value",
+			"OPPORTUNITY_STONEHOSTAGE_DESC": "Placeholder value",
+			"OPPORTUNITY_STONEHOSTAGE_STAGE1": "Pacify or eliminate the guards",
+			"OPPORTUNITY_STONEHOSTAGE_STAGE2": "Talk wtih Stone",
+			"OPPORTUNITY_STONEHOSTAGE_STAGE3": "Help Stone escape",
+			"POTATO_INTEL_DOCUMENT_STONE_NAME": "Placeholder value",
+			"POTATO_INTEL_DOCUMENT_STONE_DESC": "Placeholder value",
+			"b76faa87-cc54-4e39-bee0-406f1405b575_key_potato_title": "White Team Assistant's Tablet",
+			"b76faa87-cc54-4e39-bee0-406f1405b575_key_potato_description": "A mobile device belonging to a White Team staff member. Encrypted logs on the device reveal a series of clandestine messages exchanged with the show’s judge."
 		},
 		"french": {},
 		"italian": {},
@@ -31,13 +71,57 @@
 	},
 	"loadAfter": [],
 	"localisedLines": {
-		"00F8DEBE6BB62697": "FF2D44F1-133B-466A-BB63-CDC5ED21D440_ROMANKHABKO_NAME"
+		"00F8DEBE6BB62697": "FF2D44F1-133B-466A-BB63-CDC5ED21D440_ROMANKHABKO_NAME",
+		"00AD4C605BA35C30": "INTEL_POTATO_TABLET_NAME",
+		"00314C0E7FE0C004": "INTEL_POTATO_TABLET_DESC",
+		"00B944E24502E76D": "OUTFIT_POTATO_HABKO_BODYGUARD_ELITE",
+		"001684FBFA260C63": "OUTFIT_POTATO_HABKO_BODYGUARD",
+		"006DA4A837B17C9A": "OUTFIT_POTATO_WHITETEAM_LEADER",
+		"00228EFCED928488": "OUTFIT_POTATO_WHITETEAM_ASSISTANT",
+		"004C419166A77CA2": "OUTFIT_POTATO_BLACKTEAM_LEADER",
+		"00E2FE990D0CF8E3": "OUTFIT_POTATO_BLACKTEAM_ASSISTANT",
+		"00AB02B285750ACC": "OUTFIT_POTATO_JUDGE",
+		"003B9F006E48B9B5": "OUTFITS_HIPS_PROMPTS_POTATO_JOURNALIST",
+		"004099F4F85C5E97": "UI_CONTRACT_POTATO_TITLE",
+		"00E63728C49BEA8E": "POTATO_TABLET_TITLE_INFO_NAME",
+		"00E3DEF8FA6129F1": "POTATO_TABLET_TITLE_INFO_DESC",
+		"00C6C6BBAB265875": "POTATO_INTEL_GROUP_PRODUCER",
+		"00D5CA792623203E": "OPPORTUNITY_JUDGECONSPIRICY_DESC",
+		"00C26F0C1BD5F1F6": "OPPORTUNITY_JUDGECONSPIRICY_TITLE",
+		"00E206A03F32212B": "OPPORTUNITY_JUDGECONSPIRICY_FLAVOR_DESC",
+		"00BCF8217FDC2082": "OPPORTUNITY_JUDGECONSPIRICY_STAGE1",
+		"0004A48A55345CF0": "OPPORTUNITY_JUDGECONSPIRICY_STAGE2",
+		"00F470D92E2EBD11": "OPPORTUNITY_JUDGECONSPIRICY_STAGE3",
+		"00BC1CF65088E2E4": "OPPORTUNITY_JUDGECONSPIRICY_STAGE4",
+		"00EDA7A1A914E65F": "OPPORTUNITY_JUDGECONSPIRICY_REASON1",
+		"0083BDC76D06F761": "OPPORTUNITY_JUDGECONSPIRICY_REASON2",
+		"0028F68832B4A7D7": "OPPORTUNITY_JUDGECONSPIRICY_REASON3",
+		"0028120A39689642": "UI_OBJECTIVE_GENERIC_TARGET_ESCAPING_TITLE",
+		"0052FAF0F4107CDA": "POTATO_INTEL_GROUP_STONE",
+		"00A9C4ED2B90EAA0": "OPPORTUNITY_STONEHOSTAGE_TITLE",
+		"00D08D82A84CF22A": "OPPORTUNITY_STONEHOSTAGE_FLAVOR_DESC",
+		"0064C24AE63FF646": "OPPORTUNITY_STONEHOSTAGE_DESC",
+		"00B14A494179BF52": "OPPORTUNITY_STONEHOSTAGE_STAGE1",
+		"00973F141AB36FD5": "OPPORTUNITY_STONEHOSTAGE_STAGE2",
+		"0000344727666F87": "OPPORTUNITY_STONEHOSTAGE_STAGE3",
+		"0013A1908B22863A": "POTATO_INTEL_DOCUMENT_STONE_NAME",
+		"0066964CE020550E": "POTATO_INTEL_DOCUMENT_STONE_DESC"
 	},
 	"packagedefinition": [
 		{
 			"type": "entity",
 			"partition": "elegant",
-			"path": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].entitytype"
+			"path": "[assembly:/_pro/scenes/missions/elegant/scene_potato.entity].entitytemplate"
+		},
+		{
+			"type": "entity",
+			"partition": "elegant",
+			"path": "[assembly:/_pro/scenes/missions/elegant/difficulty_hard_potato.brick].entitytype"
+		},
+		{
+			"type": "entity",
+			"partition": "elegant",
+			"path": "[assembly:/_pro/scenes/missions/elegant/difficulty_easy_potato.brick].entitytype"
 		}
 	],
 	"dependencies": [
@@ -175,11 +259,6 @@
 			"runtimeID": "00AD5F835BC95112",
 			"toChunk": 5,
 			"portFromChunk1": true
-		},
-		{
-			"runtimeID": "0082E262947CA7C4",
-			"toChunk": 5,
-			"portFromChunk1": false
 		},
 		{
 			"runtimeID": "00F58BF264A84516",
@@ -337,11 +416,6 @@
 			"portFromChunk1": false
 		},
 		{
-			"runtimeID": "007AC61B86C3C0C9",
-			"toChunk": 5,
-			"portFromChunk1": false
-		},
-		{
 			"runtimeID": "002FFC9B47845750",
 			"toChunk": 5,
 			"portFromChunk1": false
@@ -380,6 +454,212 @@
 			"runtimeID": "002662B9942D950C",
 			"toChunk": 1,
 			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "007AC61B86C3C0C9",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00F708789C8CC038",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00EDF45A1CBFCFD8",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "008989984DCC2BD1",
+			"toChunk": 5,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00AF0697C7D9840C",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00A465790C188526",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00E7A9469039D581",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00A6962CBB0C09AB",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "009781027C4EEC26",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "000DA3E1E1260A6F",
+			"toChunk": 1,
+			"portFromChunk1": false
+		},
+		{
+			"runtimeID": "00724F8C33E6D09E",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "dr16015_cafeconversation01civfem03"
+		},
+		{
+			"runtimeID": "00AE13D1BC59DFDD",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "dr16015_cafeconversation02civfem03"
+		},
+		{
+			"runtimeID": "00F9367CEFEF34B6",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "dr16025_cafeconversation02civmale01"
+		},
+		{
+			"runtimeID": "00177AFD51001270",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "dr16041_cafeconversation04civmale01"
+		},
+		{
+			"runtimeID": "00DCF450979C81F9",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "act_mr_stand_drink_waterbottle_75cm"
+		},
+		{
+			"runtimeID": "0091D57A8961A947",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "ui_hud_camera_message_paperwork_scanned"
+		},
+		{
+			"runtimeID": "004FDC6627929DBA",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "act_fr_stand_armsinside"
+		},
+		{
+			"runtimeID": "001CCBD00BACC659",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "fh_stand_drink_glass_100cm"
+		},
+		{
+			"runtimeID": "00030CB57B332DAC",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "act_mr_stand_shake_hands_a"
+		},
+		{
+			"runtimeID": "00E4EA3A1737B20B",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "act_mr_stand_shake_hands_b"
+		},
+		{
+			"runtimeID": "00311CCE8DAA6042",
+			"toChunk": 5,
+			"portFromChunk1": false,
+			"comment": "dr4504_genrecbantercomment"
+		},
+		{
+			"runtimeID": "000021342048801A",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "opportunitystep_actoritem"
+		},
+		{
+			"runtimeID": "00721A39BA317321",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "act_mr_sit_relaxed_reading_book"
+		},
+		{
+			"runtimeID": "001DA6734B66ECB6",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "act_mr_edward_stand_pose_for_camera"
+		},
+		{
+			"runtimeID": "00C2F17006083437",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "act_mr_stand_armsside"
+		},
+		{
+			"runtimeID": "008E05B416AB0308",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "ds25072_missionaccomplished_diana_001"
+		},
+		{
+			"runtimeID": "00EA8804C7325A10",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "act_mr_protester_leader_megaphone_full_behaviour"
+		},
+		{
+			"runtimeID": "007D5F31B93F5BE7",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "dr23756_halfbakedfrancoguardfollowme_thuges01_001"
+		},
+		{
+			"runtimeID": "00B01F50CFD2E26C",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "act_mr_cross_stand_angry_pace"
+		},
+		{
+			"runtimeID": "000D528D5BC94C0D",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "act_mr_morgue_doctor_stand_sad"
+		},
+		{
+			"runtimeID": "00E550F198012B63",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "seq_cross_push_morgan"
+		},
+		{
+			"runtimeID": "00646E5CF9942645",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "seq_morgan"
+		},
+		{
+			"runtimeID": "008B59D617CB47D6",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "movie_set_lamp_interactive"
+		},
+		{
+			"runtimeID": "009A136B69B4D215",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "act_fh_photographer_stand_takepictures"
+		},
+		{
+			"runtimeID": "00323D0A0D0A8B39",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "act_fh_sit_headinhands"
+		},
+		{
+			"runtimeID": "00C27739954CF551",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "act_mr_military_stand_attention"
 		}
 	],
 	"peacockPlugins": [],
