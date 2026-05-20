@@ -1,0 +1,27 @@
+{
+	"tempHash": "0000EC8E53C34D0F",
+	"tbluHash": "009E7169BA598D69",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafea1501b14c33c",
+				{
+					"parent": "34a395c36bc6af3c",
+					"name": "scene_Potato",
+					"factory": "[assembly:/templates/ui/mapmarkup.template?/menumap.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/templates/ui/mapmarkup.template?/menumap.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_pMetaDataResource": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/_pro/scenes/missions/elegant/scene_potato.worldmapmetadata.json].pc_json",
+								"flag": "5F"
+							}
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

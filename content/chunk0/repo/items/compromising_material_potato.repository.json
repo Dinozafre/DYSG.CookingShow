@@ -19,7 +19,7 @@
 		"CheatSpawnGroup_Tools": false,
 		"CommonName": "Compromising Meterials",
 		"CompareItem": "00000000-0000-0000-0000-000000000000",
-		"Description": "b76faa87-cc54-4e39-bee0-406f1405b575_key_et_potato_description",
+		"Description": "b76faa87-cc54-4e39-bee0-406f1405b575_key_potato_description",
 		"DetectShots": true,
 		"DisplayItemCategoryOnlineTraitsIndex": 0,
 		"DualBackSupport": false,
@@ -80,7 +80,7 @@
 		],
 		"MugshotIsTransparent": false,
 		"MugshotTransformation": "6.123032E-17, -1, 6.123032E-17, 7.498304E-33, -6.123032E-17, -1, 1, 6.123032E-17, 3.749152E-33, 0, 0, 0",
-		"Name_LOC": "b76faa87-cc54-4e39-bee0-406f1405b575_key_et_potato_title",
+		"Name_LOC": "b76faa87-cc54-4e39-bee0-406f1405b575_key_potato_title",
 		"NeverInvestigateDistractions": false,
 		"OnlineTraits": [
 			"NONE"
@@ -97,7 +97,7 @@
 		"Rarity": "ITEMRARITY_COMMON",
 		"RecognizableByCivilians": true,
 		"ReverseItemThrowRotationDirection": false,
-		"Runtime": "17607248295089839",
+		"Runtime": "15195269126081229",
 		"SpawnKinematic": false,
 		"Stackable": false,
 		"SupportItem": "00000000-0000-0000-0000-000000000000",

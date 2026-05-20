@@ -104,6 +104,14 @@
 					"value": "cafeba6c77d8473e",
 					"postInit": true
 				}
+			},
+			"events": {
+				"OnInitialFracture": { "SetFalse": ["cafe83b95bcb4a45"] }
+			},
+			"outputCopying": {
+				"OnInitialFracture": {
+					"BowlBroken02": ["cafeba6c77d8473e"]
+				}
 			}
 		},
 		"cafe68846a3c388a": {
@@ -143,6 +151,14 @@
 					"value": "cafeba6c77d8473e",
 					"postInit": true
 				}
+			},
+			"events": {
+				"OnInitialFracture": { "SetFalse": ["cafe83b95bcb4a45"] }
+			},
+			"outputCopying": {
+				"OnInitialFracture": {
+					"BowlBroken03": ["cafeba6c77d8473e"]
+				}
 			}
 		},
 		"cafe5aad19ba48c1": {
@@ -181,19 +197,6 @@
 				}
 			}
 		},
-		"cafe55edc02c5602": {
-			"parent": "cafeba6c77d8473e",
-			"name": "CanPrepareFood",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_aValues": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafe1d461b59dd6b"],
-					"postInit": true
-				}
-			}
-		},
 		"cafe6960a6b57baf": {
 			"parent": "cafeba6c77d8473e",
 			"name": "bowl_fruit_bar_a",
@@ -223,6 +226,14 @@
 					"type": "SEntityTemplateReference",
 					"value": "cafeba6c77d8473e",
 					"postInit": true
+				}
+			},
+			"events": {
+				"OnInitialFracture": { "SetFalse": ["cafe83b95bcb4a45"] }
+			},
+			"outputCopying": {
+				"OnInitialFracture": {
+					"BowlBroken01": ["cafeba6c77d8473e"]
 				}
 			}
 		},
@@ -305,10 +316,7 @@
 						}
 					}
 				},
-				"m_bDestructionEnabled": {
-					"type": "bool",
-					"value": false
-				},
+				"m_bDestructionEnabled": { "type": "bool", "value": true },
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "cafeba6c77d8473e",
@@ -317,8 +325,13 @@
 			},
 			"events": {
 				"OnFirstShatter": {
-					"SetFalse": [],
+					"SetTrue": ["cafeb0adb6a72bde"],
 					"FoodInvisible": ["cafed1b09673e9db"]
+				}
+			},
+			"outputCopying": {
+				"OnFirstShatter": {
+					"OnPlateDestroyed": ["cafeba6c77d8473e"]
 				}
 			},
 			"subsets": { "AudioEmitters": ["cafeba6c77d8473e"] }
@@ -681,8 +694,22 @@
 				}
 			},
 			"events": {
-				"ItemReady": { "MakeInvisible": ["cafed1b09673e9db"] },
-				"OnActorPickup": { "MakeInvisible": ["cafed1b09673e9db"] }
+				"Item": {
+					"SetItem": ["cafe3fc8eb04c509"],
+					"AddKeyword": ["cafe3fc8eb04c509"]
+				},
+				"ItemReady": {
+					"MakeInvisible": ["cafed1b09673e9db"],
+					"SetFalse": ["cafeb0adb6a72bde", "cafe93d567f2b17c"]
+				},
+				"OnActorPickup": {
+					"MakeInvisible": ["cafed1b09673e9db"],
+					"SetTrue": ["cafe93d567f2b17c"]
+				},
+				"OnItemDestroyed": {
+					"SetTrue": ["cafeb0adb6a72bde"],
+					"SetFalse": ["cafe9a57115ed884"]
+				}
 			},
 			"outputCopying": {
 				"ItemReady": { "FoodReady": ["cafeba6c77d8473e"] },
@@ -690,7 +717,8 @@
 					"OnItemDestroyed": ["cafeba6c77d8473e"]
 				},
 				"OnActorPickup": { "OnActorPickup": ["cafeba6c77d8473e"] },
-				"ItemSpawned": { "FoodSpawned": ["cafeba6c77d8473e"] }
+				"ItemSpawned": { "FoodSpawned": ["cafeba6c77d8473e"] },
+				"Item": { "Item": ["cafeba6c77d8473e"] }
 			}
 		},
 		"cafe8402d4bb38e5": {
@@ -737,7 +765,11 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafe1d461b59dd6b"]
+					"value": [
+						"cafe1d461b59dd6b",
+						"cafe83b95bcb4a45",
+						"cafefb0846f18663"
+					]
 				}
 			}
 		},
@@ -871,7 +903,7 @@
 				},
 				"VisibilityConditions": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafe55edc02c5602"],
+					"value": ["cafe9c0e03d6b7b7"],
 					"postInit": true
 				},
 				"m_bIsIllegal": { "type": "bool", "value": false }
@@ -995,6 +1027,22 @@
 				"PlatePosition": {
 					"isArray": false,
 					"refersTo": ["cafe73d87d942425"]
+				},
+				"PlateDestroyed": {
+					"isArray": false,
+					"refersTo": ["cafeb0adb6a72bde"]
+				},
+				"ItemKeywordProxy": {
+					"isArray": false,
+					"refersTo": ["cafe3fc8eb04c509"]
+				},
+				"NoActorPickup": {
+					"isArray": false,
+					"refersTo": ["cafe856d925c248b"]
+				},
+				"BowlBroken": {
+					"isArray": false,
+					"refersTo": ["cafe405d6f069748"]
 				}
 			}
 		},
@@ -1247,7 +1295,7 @@
 			"properties": {
 				"m_aHolders": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafed1b09673e9db"]
+					"value": ["cafe73d87d942425"]
 				}
 			}
 		},
@@ -1255,7 +1303,69 @@
 			"parent": "cafeba6c77d8473e",
 			"name": "PlateKeywords",
 			"factory": "[modules:/zitemkeywordproxyentity.class].pc_entitytype",
-			"blueprint": "[modules:/zitemkeywordproxyentity.class].pc_entityblueprint"
+			"blueprint": "[modules:/zitemkeywordproxyentity.class].pc_entityblueprint",
+			"events": { "OnItemSet": {} }
+		},
+		"cafeb0adb6a72bde": {
+			"parent": "cafeba6c77d8473e",
+			"name": "Plate is destroyed",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe93d567f2b17c": {
+			"parent": "cafeba6c77d8473e",
+			"name": "Plate was picked up",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe856d925c248b": {
+			"parent": "cafeba6c77d8473e",
+			"name": "NoActorPickUpValue",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe93d567f2b17c"
+				}
+			}
+		},
+		"cafe83b95bcb4a45": {
+			"parent": "cafeba6c77d8473e",
+			"name": "Any bowl is not broken",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": { "m_bValue": { "type": "bool", "value": true } }
+		},
+		"cafe405d6f069748": {
+			"parent": "cafeba6c77d8473e",
+			"name": "Any bowl is broken",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe83b95bcb4a45"
+				}
+			}
+		},
+		"cafefb0846f18663": {
+			"parent": "cafeba6c77d8473e",
+			"name": "Plate is available",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb0adb6a72bde"
+				}
+			}
 		}
 	},
 	"propertyOverrides": [],

@@ -73,7 +73,8 @@
 			"properties": {
 				"m_aHolders": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["908c96445e793718"]
+					"value": ["908c96445e793718"],
+					"postInit": true
 				}
 			}
 		},

@@ -11,7 +11,7 @@
 			"properties": {
 				"m_sKeyword": {
 					"type": "ZString",
-					"value": "QUESTITEM_POTATO_COMPROMISINGMETIRIALS"
+					"value": "Keyword_QUESTITEM_POTATO_COMPROMISINGMETIRIALS"
 				},
 				"m_aHolders": {
 					"type": "TArray<SEntityTemplateReference>",

@@ -1,0 +1,41 @@
+{
+	"tempHash": "00AC3F4B1F07E191",
+	"tbluHash": "004385D6575C166B",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"872126bf3c3257cd",
+				{
+					"AddProperty": [
+						"m_Outfit",
+						{
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/_pro/characters/templates/hero/freelance/char_freelance_outfits.template?/outfit_hawk_hero_stone_m_heroa_v0.entitytemplate].pc_entitytemplate",
+								"flag": "9F"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"0da23ef64d8251b4",
+				{
+					"AddProperty": [
+						"m_Outfit",
+						{
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/_pro/characters/templates/hero/freelance/char_freelance_outfits.template?/outfit_hawk_hero_stone_m_heroa_v1.entitytemplate].pc_entitytemplate",
+								"flag": "9F"
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

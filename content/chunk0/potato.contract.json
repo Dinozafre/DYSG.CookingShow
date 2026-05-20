@@ -6,15 +6,25 @@
             "narrativeContext": "Mission"
         }
     },
-	"Data": {
+    "Data": {
         "EnableExits": {
-			"$eq": [
-				"$b73d740a-4b05-499f-95c8-cb243205eccc",
-				"Completed"
-			]
-		},
-		"Objectives": [
-			{
+            "$and": [
+                {
+                    "$eq": [
+                        "$0aa53f22-b1b8-4a9b-a178-2d136f4b880e",
+                        "Completed"
+                    ]
+                },
+                {
+                    "$eq": [
+                        "$b73d740a-4b05-499f-95c8-cb243205eccc",
+                        "Completed"
+                    ]
+                }
+            ]
+        },
+        "Objectives": [
+            {
                 "_comment": "----- Kill White Team Leader -----",
                 "Id": "b73d740a-4b05-499f-95c8-cb243205eccc",
                 "Category": "primary",
@@ -25,8 +35,8 @@
                     }
                 }
             },
-			{
-                "_comment": "----- Kill Judger -----",
+            {
+                "_comment": "----- Kill Judge -----",
                 "Id": "0aa53f22-b1b8-4a9b-a178-2d136f4b880e",
                 "Category": "primary",
                 "SuccessEvent": {
@@ -36,105 +46,237 @@
                     }
                 }
             },
-			{
-				"_comment": "----- Silent objective to start habko elimination -----",
-				"Id": "2e093efc-f342-4c4c-a12f-720286ddcc8d",
-				"Type": "statemachine",
-				"Category": "condition",
-				"ExcludeFromScoring": true,
-				"OnActive": {
-					"IfInProgress": {
-						"Visible": false
-					},
-					"IfCompleted": {
-						"Visible": false
-					},
-					"IfFailed": {
-						"Visible": false
-					}
-				},
-				"Definition": {
-					"States": {
-						"Start": {
-							"MetWithStone": {
-							    "Transition": "Success"
-							}
-						}
-					}
-				}
-			},
-			{
+          {
+                "_comment": "----- Hide target escaping objective -----",
+                "Id": "831abbcb-7d11-49a3-a3ff-bc9b7dc2ee41",
+                "Type": "statemachine",
+                "Category": "condition",
+                "ExcludeFromScoring": true,
+                "Definition": {
+                    "Scope": "session",
+                    "Context": {},
+                    "States": {
+                        "Start": {
+                            "EscapeStartedJudger": { "Transition": "Success" }
+                        }
+                    }
+                }
+            },
+            {
+                "_comment": "----- Judger Escape -----",
+                "Id": "0cd57def-5e6b-455c-866c-e807237510c5",
+                "Activation": {
+                    "$eq": [
+                        "$0aa53f22-b1b8-4a9b-a178-2d136f4b880e",
+                        "Completed"
+                    ]
+                },
+                "Category": "primary",
+                "ExcludeFromScoring": true,
+                "OnActive": {
+                    "IfInProgress": {
+                        "Visible": false
+                    },
+                    "IfCompleted": {
+                        "Visible": false
+                    },
+                    "IfFailed": {
+                        "Visible": false
+                    }
+                },
+                "OnInactive": { "IfCompleted": { "State": "Completed" } },
+                "BriefingText": "$loc UI_OBJECTIVE_POTATO_TARGET_ESCAPING_JUDGE_FAILED",
+                "HUDTemplate": {
+                    "display": "$loc UI_OBJECTIVE_POTATO_TARGET_ESCAPING_JUDGE_FAILED"
+                },
+                "Type": "statemachine",
+                "Definition": {
+                    "display": { "iconType": 3 },
+                    "States": {
+                        "Start": {
+                            "JudgeEscaped": { "Transition": "Failure" },
+                            "ObjectiveCompleted": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.Id",
+                                            "0aa53f22-b1b8-4a9b-a178-2d136f4b880e"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+
+            },
+            {
+                "_comment": "----- Silent objective to start habko elimination -----",
+                "Id": "2e093efc-f342-4c4c-a12f-720286ddcc8d",
+                "Type": "statemachine",
+                "Category": "condition",
+                "ExcludeFromScoring": true,
+                "OnActive": {
+                    "IfInProgress": {
+                        "Visible": false
+                    },
+                    "IfCompleted": {
+                        "Visible": false
+                    },
+                    "IfFailed": {
+                        "Visible": false
+                    }
+                },
+                "Definition": {
+                    "States": {
+                        "Start": {
+                            "MetWithStone": {
+                                "Transition": "Success"
+                            }
+                        }
+                    }
+                }
+            },
+            {
                 "_comment": "--- Eliminate Habko (optional) ---",
-                "Id": "e1fd6037-304c-45d4-af3c-93df692ee3a2",
-				"Activation": {
-					"$eq": [
-						"$2e093efc-f342-4c4c-a12f-720286ddcc8d",
-						"Completed"
-					]
-				},
-				"ExcludeFromScoring": true,
+                "Id": "301de7a7-3e79-4200-ba67-67e03c5c0add",
                 "Category": "secondary",
-                "SuccessEvent": {
-                    "EventName": "Kill",
-                    "EventValues": {
-                        "RepositoryId": "c4f56dd4-a8f0-4893-9da3-a5f1394245e3"
+                "ObjectiveType": "setpiece",
+                "Activation": {
+                    "$eq": [
+                        "$2e093efc-f342-4c4c-a12f-720286ddcc8d",
+                        "Completed"
+                    ]
+                },
+                "Image": "images/actors/actor_64b6958b-1f65-44d5-aadb-61ac370dcf91_0_0_0.jpg",
+                "BriefingName": "$loc UI_CONTRACT_POTATO_ELIMINATE_PRODUCER_NAME",
+                "BriefingText": "$loc UI_CONTRACT_POTATO_ELIMINATE_PRODUCER_OBJ",
+                "LongBriefingText": "$loc c4f56dd4-a8f0-4893-9da3-a5f1394245e3_Producer_Llama_Description",
+                "HUDTemplate": {
+                    "display": "$loc UI_CONTRACT_POTATO_ELIMINATE_PRODUCER_OBJ"
+                },
+                "OnInactive": {
+					"IfCompleted": {
+						"State": "Completed",
+						"Visible": true
+					}
+				},
+				"OnActive": { 
+                    "IfCompleted": { 
+                        "Visible": true 
+                    } 
+                },
+                "UpdateActivationWhileCompleted": true,
+                "DisplayAsKillObjective": true,
+                "Type": "statemachine",
+                "Definition": {
+                    "Context": {
+                        "Targets": [
+                            "c4f56dd4-a8f0-4893-9da3-a5f1394245e3"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$inarray": {
+                                            "in": "$.Targets",
+                                            "?": {
+                                                "$eq": [
+                                                    "$.#",
+                                                    "$Value.RepositoryId"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ],
+                            "ProducerEscaped": [
+                                {
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
                     }
                 }
             }
-		],
-		"Bricks": [
-			"assembly:/_pro/scenes/missions/elegant/scenario_potato.brick"
-		],
-		"VR": [
+        ],
+        "Bricks": [],
+        "VR": [
+            {
+                "Quality": "ps4_vr1",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/elegant/vr_overrides_llama_ps4_vr1.brick",
+                    "assembly:/_pro/scenes/missions/elegant/vr_overrides_low_performance.brick"
+                ]
+            },
+            {
+                "Quality": "base",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/elegant/vr_overrides_llama.brick",
+                    "assembly:/_pro/scenes/missions/elegant/vr_overrides_low_performance.brick"
+                ]
+            },
+            {
+                "Quality": "better",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/elegant/vr_overrides_llama.brick"
+                ]
+            }
+        ],
+        "GameChangers": [],
+        "GameChangerReferences": [],
+		"GameDifficulties": [
 			{
-				"Quality": "ps4_vr1",
+				"Difficulty": "easy",
 				"Bricks": [
-					"assembly:/_pro/Scenes/Bricks/vr_setup.brick",
-					"assembly:/_pro/scenes/missions/elegant/vr_overrides_llama_ps4_vr1.brick",
-					"assembly:/_pro/scenes/missions/elegant/vr_overrides_low_performance.brick"
+					"assembly:/_pro/scenes/missions/elegant/difficulty_easy_potato.brick"
 				]
 			},
+			{ 
+                "Difficulty": "normal", 
+                "Bricks": [
+                    
+                ] 
+            },
 			{
-				"Quality": "base",
+				"Difficulty": "hard",
 				"Bricks": [
-					"assembly:/_pro/Scenes/Bricks/vr_setup.brick",
-					"assembly:/_pro/scenes/missions/elegant/vr_overrides_llama.brick",
-					"assembly:/_pro/scenes/missions/elegant/vr_overrides_low_performance.brick"
-				]
-			},
-			{
-				"Quality": "better",
-				"Bricks": [
-					"assembly:/_pro/Scenes/Bricks/vr_setup.brick",
-					"assembly:/_pro/scenes/missions/elegant/vr_overrides_llama.brick"
+					"assembly:/_pro/scenes/missions/elegant/difficulty_hard_potato.brick"
 				]
 			}
-		],
-		"GameChangers": [],
-		"GameChangerReferences": [],
-		"GameDifficulties": [
-
 		],
         "Entrances": [
             "cef7b74a-bd2c-4ee9-94cd-4af5b4613556"
         ]
-	},
-	"Metadata": {
-		"Id": "358e3f41-9acc-4896-a22a-4a3107611520",
-		"IsPublished": true,
-		"TileImage": "images/contracts/assrace/tile.jpg",
-		"CreationTimestamp": "2019-09-18T11:49:25.5705635+02:00",
-		"CreatorUserId": "00000000-0000-0000-0000-000000000000",
-		"Title": "UI_CONTRACT_POTATO_TITLE",
-		"Description": "UI_CONTRACT_POTATO_DESC",
-		"CodeName_Hint": "Potato",
-		"Location": "LOCATION_ELEGANT_LLAMA",
-		"ScenePath": "assembly:/_pro/scenes/missions/elegant/scene_llama.entity",
-		"Type": "flashback",
-		"Release": "3.0.x",
-		"RequiredUnlockable": "ACCESS_HIT_LLAMA",
-		"Drops": ["ACCESS_HIT_WOLVERINE"],
-		"Entitlements": ["LOCATION_ELEGANT"]
-	},
+    },
+    "Metadata": {
+        "Id": "358e3f41-9acc-4896-a22a-4a3107611520",
+        "IsPublished": true,
+        "TileImage": "images/contracts/assrace/tile.jpg",
+        "CreationTimestamp": "2019-09-18T11:49:25.5705635+02:00",
+        "CreatorUserId": "00000000-0000-0000-0000-000000000000",
+        "Title": "UI_CONTRACT_POTATO_TITLE",
+        "Description": "UI_CONTRACT_POTATO_DESC",
+        "CodeName_Hint": "Potato",
+        "Location": "LOCATION_ELEGANT_LLAMA",
+        "ScenePath": "assembly:/_pro/scenes/missions/elegant/scene_potato.entity",
+        "Type": "flashback",
+        "Opportunities": [],
+        "Release": "3.0.x",
+        "RequiredUnlockable": "ACCESS_HIT_LLAMA",
+        "Drops": [
+            "ACCESS_HIT_WOLVERINE"
+        ],
+        "Entitlements": [
+            "LOCATION_ELEGANT"
+        ]
+    },
     "UserData": {}
 }
