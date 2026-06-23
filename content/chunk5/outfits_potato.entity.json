@@ -1029,14 +1029,34 @@
 		"cafe394c7a09bce6": {
 			"parent": "cafe78112b67d8f6",
 			"name": "White Team",
-			"factory": "[modules:/zentity.class].pc_entitytype",
-			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+			"factory": "[modules:/zkeywordentity.class].pc_entitytype",
+			"blueprint": "[modules:/zkeywordentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sKeyword": {
+					"type": "ZString",
+					"value": "WhiteTeam_Keyword"
+				},
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe9d4e02840736", "cafe608c5c66111a"]
+				}
+			}
 		},
 		"cafe1ab55413f1ed": {
 			"parent": "cafe78112b67d8f6",
 			"name": "Black Team",
-			"factory": "[modules:/zentity.class].pc_entitytype",
-			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+			"factory": "[modules:/zkeywordentity.class].pc_entitytype",
+			"blueprint": "[modules:/zkeywordentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sKeyword": {
+					"type": "ZString",
+					"value": "BlackTeam_Keyword"
+				},
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe9d0d8fef9b59", "cafefc1018a8da68"]
+				}
+			}
 		},
 		"cafee65eee6a119b": {
 			"parent": "cafe1e9fcb733c57",
@@ -1988,7 +2008,42 @@
 			}
 		}
 	},
-	"propertyOverrides": [],
+	"propertyOverrides": [
+		{
+			"entities": [
+				{
+					"ref": "3bcb097af10d4d5a",
+					"externalScene": "[assembly:/_pro/scenes/bricks/globaldata.brick].pc_entitytype"
+				}
+			],
+			"properties": {
+				"m_pParentOutfit": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "6736fcbbd3e73209",
+						"externalScene": "[assembly:/_pro/scenes/bricks/globaldata.brick].pc_entitytype"
+					}
+				},
+				"m_eActorCCClass": {
+					"type": "EActorCCPreset",
+					"value": "ACCP_CivilianeMale"
+				},
+				"m_eActorType": {
+					"type": "EActorType",
+					"value": "eAT_Civilian"
+				},
+				"m_eSoundFootwearType": {
+					"type": "EHM5SoundFootwearType",
+					"value": "EFWT_LEATHER"
+				},
+				"m_bHeroDisguiseAvailable": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bIsHitmanSuit": { "type": "bool", "value": false }
+			}
+		}
+	],
 	"overrideDeletes": [],
 	"pinConnectionOverrides": [],
 	"pinConnectionOverrideDeletes": [],

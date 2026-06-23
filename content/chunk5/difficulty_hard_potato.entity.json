@@ -1072,16 +1072,13 @@
 				"m_mTransform": {
 					"type": "SMatrix43",
 					"value": {
-						"rotation": {
-							"x": -0.0,
-							"y": -0.0,
-							"z": 34.99516064657192
-						},
+						"rotation": { "x": -0.0, "y": 0, "z": 34.99516 },
 						"position": {
-							"x": 2.7492828,
-							"y": -161.91455,
-							"z": -7.1473913
-						}
+							"x": 2.640896,
+							"y": -161.84311,
+							"z": -7.1473875
+						},
+						"scale": { "x": 1, "y": 1, "z": 1 }
 					}
 				},
 				"m_fActTimeout": { "type": "float32", "value": -1 },
@@ -1329,7 +1326,7 @@
 				}
 			],
 			"properties": {
-				"DetectionDistance": { "type": "float32", "value": 15.0 }
+				"DetectionDistance": { "type": "float32", "value": 13.0 }
 			}
 		},
 		{
@@ -1345,9 +1342,45 @@
 					"value": []
 				}
 			}
+		},
+		{
+			"entities": [
+				{
+					"ref": "cafed6c59b9da4b7",
+					"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+				}
+			],
+			"properties": {
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe4109be29fd72",
+							"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+						},
+						{
+							"ref": "cafe0a97dfc64eba",
+							"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+						},
+						{
+							"ref": "cafe6a8c2f70ec5b",
+							"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+						},
+						{
+							"ref": "cafebbb4a7a6c5c1",
+							"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+						}
+					]
+				}
+			}
 		}
 	],
-	"overrideDeletes": [],
+	"overrideDeletes": [
+		{
+			"ref": "cafef8849284bdca",
+			"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+		}
+	],
 	"pinConnectionOverrides": [],
 	"pinConnectionOverrideDeletes": [],
 	"externalScenes": [

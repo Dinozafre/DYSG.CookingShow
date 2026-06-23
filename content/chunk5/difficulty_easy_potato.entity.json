@@ -16,8 +16,67 @@
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
 		}
 	},
-	"propertyOverrides": [],
-	"overrideDeletes": [],
+	"propertyOverrides": [
+		{
+			"entities": [
+				{
+					"ref": "cafed6c59b9da4b7",
+					"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+				}
+			],
+			"properties": {
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				}
+			}
+		},
+		{
+			"entities": [
+				{
+					"ref": "cafe45eaa9c7534a",
+					"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+				}
+			],
+			"properties": {
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe8b2848c35f23",
+							"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+						},
+						{
+							"ref": "cafeed683b0a22fa",
+							"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+						}
+					]
+				}
+			}
+		}
+	],
+	"overrideDeletes": [
+		{
+			"ref": "cafee9be38c470c9",
+			"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+		},
+		{
+			"ref": "cafe1973d26943b1",
+			"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+		},
+		{
+			"ref": "cafed73c9046cef5",
+			"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+		},
+		{
+			"ref": "cafed9022eab022c",
+			"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+		},
+		{
+			"ref": "cafedd2940ac2f86",
+			"externalScene": "[assembly:/_pro/scenes/missions/elegant/scenario_potato.brick].pc_entitytype"
+		}
+	],
 	"pinConnectionOverrides": [],
 	"pinConnectionOverrideDeletes": [],
 	"externalScenes": [
