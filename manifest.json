@@ -52,10 +52,48 @@
 			"OPPORTUNITY_STONEHOSTAGE_STAGE1": "Pacify or eliminate the guards",
 			"OPPORTUNITY_STONEHOSTAGE_STAGE2": "Talk wtih Stone",
 			"OPPORTUNITY_STONEHOSTAGE_STAGE3": "Help Stone escape",
-			"POTATO_INTEL_DOCUMENT_STONE_NAME": "Placeholder value",
-			"POTATO_INTEL_DOCUMENT_STONE_DESC": "Placeholder value",
+			"POTATO_INTEL_DOCUMENT_STONE_NAME": "Stone's Document",
+			"POTATO_INTEL_DOCUMENT_STONE_DESC": "The documents describe that Stone's mission is to spy on Habko. There is an intriguing note that Stone has been taken to the underground parts of the villa and its appointments.",
 			"b76faa87-cc54-4e39-bee0-406f1405b575_key_potato_title": "White Team Assistant's Tablet",
-			"b76faa87-cc54-4e39-bee0-406f1405b575_key_potato_description": "A mobile device belonging to a White Team staff member. Encrypted logs on the device reveal a series of clandestine messages exchanged with the show’s judge."
+			"b76faa87-cc54-4e39-bee0-406f1405b575_key_potato_description": "A mobile device belonging to a White Team staff member. Encrypted logs on the device reveal a series of clandestine messages exchanged with the show’s judge.",
+			"UI_CHALLENGES_POTATO_ASSASINATION_TARGETS_POISON_ONLY_NAME": "The Dance with Death",
+			"UI_CHALLENGES_POTATO_ASSASINATION_JUDGE_BY_PRODUCER_NAME": "The Last Meeting",
+			"UI_CHALLENGES_POTATO_ASSASINATION_JUDGE_BY_PRODUCER_DESC": "<li>Eliminate Wisdom Booker by proxy kill</li>",
+			"UI_CHALLENGES_POTATO_ASSASINATION_DELICIIOUS_FOOD_NAME": "A Truly Exquisite",
+			"UI_CHALLENGES_POTATO_ASSASINATION_DELICIIOUS_FOOD_DESC": "<li>Eliminate Wisdom Booker by poisoning one of the plates</li>",
+			"UI_CHALLENGES_POTATO_ASSASINATION_TARGET_WTL_NAME": "The Cook Master",
+			"UI_CHALLENGES_POTATO_ASSASINATION_TARGET_WTL_DESC": "<li>Eliminate Ryker Riley.</li>",
+			"UI_CHALLENGES_POTATO_ASSASINATION_TARGET_JUDGE_NAME": "The Judge",
+			"UI_CHALLENGES_POTATO_ASSASINATION_TARGET_JUDGE_DESC": "<li>Eliminate Wisdom Booker.</li>",
+			"UI_CHALLENGES_POTATO_ASSASINATION_TARGET_PRODUCER_NAME": "The Producer",
+			"UI_CHALLENGES_POTATO_ASSASINATION_TARGET_PRODUCER_DESC": "<li>Eliminate Roman Khabko.</li>",
+			"UI_CHALLENGES_POTATO_DISCOVARY_FROM_THE_ELITE_NAME": "The Crime's Elite",
+			"UI_CHALLENGES_POTATO_DISCOVARY_FROM_THE_ELITE_DESC": "<li>Disguise yourself as an elite Siberian tiger bodyguard.</li>",
+			"UI_CHALLENGES_POTATO_DISCOVARY_GET_BTL_DISGUISE_NAME": "The Master Chief",
+			"UI_CHALLENGES_POTATO_DISCOVARY_GET_BTL_DISGUISE_DESC": "<li>Disguise yourself as a Black team leader.</li>",
+			"UI_CHALLENGES_POTATO_DISCOVARY_GET_BTA_DISGUISE_NAME": "Mr. Helper",
+			"UI_CHALLENGES_POTATO_DISCOVARY_GET_WTA_DISGUISE_NAME": "The Master Chief",
+			"UI_CHALLENGES_POTATO_DISCOVARY_GET_WTA_DISGUISE_DESC": "<li>Disguise yourself as a White team assistant.</li>",
+			"UI_CHALLENGES_POTATO_DISCOVARY_GET_WTL_DISGUISE_NAME": "To Your Service",
+			"UI_CHALLENGES_POTATO_DISCOVARY_GET_WTL_DISGUISE_DESC": "<li>Disguise yourself as a White team leader.</li>",
+			"UI_CHALLENGES_POTATO_DISCOVARY_GET_JOURNALIST_DISGUISE_NAME": "The Free Press",
+			"UI_CHALLENGES_POTATO_DISCOVARY_GET_JOURNALIST_DISGUISE_DESC": "<li>Disguise yourself as a journalist.</li>",
+			"UI_CHALLENGES_POTATO_FEATS_OPP_STONEHOSTAGE_NAME": "Mission Story - The Old Friend",
+			"UI_CHALLENGES_POTATO_FEATS_OPP_STONEHOSTAGE_DESC": "<li>Complete the mission story: \"The Old Friend.\"</li>",
+			"UI_CHALLENGES_POTATO_FEATS_OPP_JUDGECOSPIRACY_NAME": "Mission Story - The Conspiracy Behind the Show",
+			"UI_CHALLENGES_POTATO_FEATS_OPP_JUDGECOSPIRACY_DESC": "<li>Complete the mission story: \"The Conspiracy Behind the Show.\"</li>",
+			"UI_CHALLENGES_POTATO_FEATS_COMPLETE_SHOW_CONTRACT_NAME": "The Dead Show",
+			"UI_CHALLENGES_POTATO_FEATS_COMPLETE_SHOW_CONTRACT_DESC": "<li>Complete \"The Cooking Show\".</li>",
+			"UI_CHALLENGES_POTATO_BIG5_HARD_DESC": "Complete all the Classic challenges on \\\"The Cook Showt\\\" on Master difficulty.<li>Silent Assassin</li><li>Silent Assassin, Suit Only</li><li>Sniper Assassin</li><li>Suit Only</li><li>No Evidence</li>",
+			"UI_CHALLENGES_POTATO_BIG5_EASY_DESC": "Complete all the Classic challenges in \\\"The Cook Show\\\".<li>Silent Assassin</li><li>Silent Assassin, Suit Only</li><li>Sniper Assassin</li><li>Suit Only</li>",
+			"UI_CHALLENGES_POTATO_BIG5_NORMAL_DESC": "Complete all the Classic challenges on \\\"The Cook Show\\\"' on Professional difficulty.<li>Silent Assassin</li><li>Silent Assassin, Suit Only</li><li>Sniper Assassin</li><li>Suit Only</li><li>No Evidence</li>",
+			"UI_CHALLENGES_POTATO_SILENT_ASSASSIN_SUIT_DIFFICULTY_EASY_DESC": "<li>Complete \\\"The Cooking Show\\\".</li><li>Only eliminate the target.</li><li>No bodies found.</li><li>Do not get spotted.</li><li>Do it all in your suit.</li>",
+			"UI_CHALLENGES_POTATO_SILENT_ASSASSIN_SUIT_DIFFICULTY_HARD_DESC": "<li>Complete \\\"The Cook Show\\\" on Master difficulty.</li><li>Only eliminate the target.</li><li>No bodies found.</li><li>Do not get spotted.</li><li>If you are detected by cameras, erase or destroy the evidence.</li><li>Do it all in your suit.</li>",
+			"UI_CHALLENGES_POTATO_SNIPER_ASSASSIN_DIFFICULTY_EASY_DESC": "<li>Complete \\\"The Cook Show.\\\"</li><li>Assassinate your targets with a sniper rifle.</li><li>Only eliminate the targets.</li><li>Do not get spotted.</li>",
+			"UI_CHALLENGES_POTATO_SILENT_ASSASSIN_DIFFICULTY_HARD_DESC": "<li>Complete \\\"The Cook Show\\\" on Master difficulty.</li><li>Only eliminate the target.</li><li>No bodies found.</li><li>Do not get spotted.</li><li>If you are detected by cameras, erase or destroy the evidence.</li>",
+			"UI_CHALLENGES_POTATO_SILENT_ASSASSIN_DIFFICULTY_EASY_DESC": "<li>Complete \\\"The Cooking Show.\\\"</li><li>Only eliminate the targets.</li><li>No bodies found.</li><li>Do not get spotted.</li>",
+			"UI_CHALLENGES_POTATO_SNIPER_ASSASSIN_DIFFICULTY_HARD_DESC": "<li>Complete \"The Cooking Show\" on Master difficulty.</li><li>Only eliminate the target.</li><li>No bodies found.</li><li>Do not get spotted.</li><li>If you are detected by cameras, erase or destroy the evidence.</li>",
+			"UI_CHALLENGES_STINGRAY_SNIPER_ASSASSIN_DIFFICULTY_HARD_DESC": "<li>Complete \"The Cooking Show\" on Master difficulty.</li><li>Assassinate your targets with a sniper rifle.</li><li>Only eliminate the targets.</li><li>Do not get spotted.</li><li>If you are detected by cameras, erase or destroy the evidence.</li>"
 		},
 		"french": {},
 		"italian": {},
@@ -105,7 +143,8 @@
 		"00973F141AB36FD5": "OPPORTUNITY_STONEHOSTAGE_STAGE2",
 		"0000344727666F87": "OPPORTUNITY_STONEHOSTAGE_STAGE3",
 		"0013A1908B22863A": "POTATO_INTEL_DOCUMENT_STONE_NAME",
-		"0066964CE020550E": "POTATO_INTEL_DOCUMENT_STONE_DESC"
+		"0066964CE020550E": "POTATO_INTEL_DOCUMENT_STONE_DESC",
+		"002153C4BFE07070": "UI_HUD_CAMERA_MASSAGE_SCANNING_DOCUMENTS"
 	},
 	"packagedefinition": [
 		{
@@ -125,11 +164,6 @@
 		}
 	],
 	"dependencies": [
-		{
-			"runtimeID": "007002DD1534DFD7",
-			"toChunk": 0,
-			"portFromChunk1": true
-		},
 		{
 			"runtimeID": "009E8B8C3E0E60E2",
 			"toChunk": 5,
@@ -252,11 +286,6 @@
 		},
 		{
 			"runtimeID": "00196615D0AACA5F",
-			"toChunk": 5,
-			"portFromChunk1": true
-		},
-		{
-			"runtimeID": "00AD5F835BC95112",
 			"toChunk": 5,
 			"portFromChunk1": true
 		},
@@ -656,13 +685,15 @@
 			"comment": "act_fh_sit_headinhands"
 		},
 		{
-			"runtimeID": "00C27739954CF551",
+			"runtimeID": "002C146C32CC331D",
 			"toChunk": 1,
 			"portFromChunk1": false,
-			"comment": "act_mr_military_stand_attention"
+			"comment": "setpiece_activator_boxingbell"
 		}
 	],
-	"peacockPlugins": [],
+	"peacockPlugins": [
+		"PotatoChallenges.plugin.js"
+	],
 	"blobsFolders": [
 		"blobs"
 	]
