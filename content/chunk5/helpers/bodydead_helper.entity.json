@@ -1,0 +1,108 @@
+{
+	"tempHash": "0086254D306640EC",
+	"tbluHash": "00C275AFBAE1995D",
+	"rootEntity": "fffffffffffffffe",
+	"entities": {
+		"fffffffffffffffe": {
+			"parent": null,
+			"name": "BodyDead_Helper",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			},
+			"inputCopying": {
+				"SetTrue": { "SetTrue": ["cafe4f17b93dad6f"] }
+			},
+			"propertyAliases": {
+				"m_rActor": [
+					{
+						"originalProperty": "m_rActor",
+						"originalEntity": "cafe24e6f00fda54"
+					},
+					{
+						"originalProperty": "m_rActor",
+						"originalEntity": "cafe749d7279cb39"
+					}
+				]
+			},
+			"exposedInterfaces": { "IBoolCondition": "cafe4f17b93dad6f" }
+		},
+		"cafe749d7279cb39": {
+			"parent": "fffffffffffffffe",
+			"name": "ActorDeath",
+			"factory": "[modules:/zactordeathentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactordeathentity.class].pc_entityblueprint",
+			"properties": {
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			},
+			"events": { "OnBodyNoticed": { "Poll": ["cafe016844b3cda9"] } }
+		},
+		"cafe4f17b93dad6f": {
+			"parent": "fffffffffffffffe",
+			"name": "Actor was found Dead",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe9be5b9de82d7": {
+			"parent": "fffffffffffffffe",
+			"name": "Actor is dead",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe24e6f00fda54"
+				}
+			}
+		},
+		"cafe24e6f00fda54": {
+			"parent": "fffffffffffffffe",
+			"name": "Actor is alive",
+			"factory": "[modules:/zactoralivecondition.class].pc_entitytype",
+			"blueprint": "[modules:/zactoralivecondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_bTreatUnconsciousAsAlive": {
+					"type": "bool",
+					"value": true
+				}
+			}
+		},
+		"cafe016844b3cda9": {
+			"parent": "fffffffffffffffe",
+			"name": "ValueBool_Poll",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe9be5b9de82d7"
+				}
+			},
+			"events": { "PollTrue": { "SetTrue": ["cafe4f17b93dad6f"] } }
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

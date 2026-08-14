@@ -1,0 +1,228 @@
+{
+	"tempHash": "00239970501151C0",
+	"tbluHash": "00486863256D9FD1",
+	"rootEntity": "fffffffffffffffe",
+	"entities": {
+		"fffffffffffffffe": {
+			"parent": null,
+			"name": "LookAtActor_Helper",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {
+				"m_rSeenerActor": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_rLookAtActor": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"Delay time (ms)": { "type": "int32", "value": 35000 }
+			},
+			"propertyAliases": {
+				"m_rLookAtActor": [
+					{
+						"originalProperty": "m_rEntity",
+						"originalEntity": "cafedf196fb77445"
+					},
+					{
+						"originalProperty": "m_rEntity",
+						"originalEntity": "cafe8b7e3a9072db"
+					}
+				],
+				"m_rSeenerActor": [
+					{
+						"originalProperty": "m_rActor",
+						"originalEntity": "cafedf196fb77445"
+					},
+					{
+						"originalProperty": "m_rActor",
+						"originalEntity": "cafe8b7e3a9072db"
+					}
+				],
+				"Delay time (ms)": [
+					{
+						"originalProperty": "Delay time (ms)",
+						"originalEntity": "cafea6aff697594b"
+					}
+				],
+				"m_bValue": [
+					{
+						"originalProperty": "m_bValue",
+						"originalEntity": "cafeede8091d0ac6"
+					}
+				],
+				"m_bEnabledTimer": [
+					{
+						"originalProperty": "m_bEnabled",
+						"originalEntity": "cafea6aff697594b"
+					}
+				],
+				"m_bCanSee": [
+					{
+						"originalProperty": "m_bValue",
+						"originalEntity": "cafedf196fb77445"
+					}
+				]
+			},
+			"exposedInterfaces": { "IBoolCondition": "cafeede8091d0ac6" }
+		},
+		"cafedf196fb77445": {
+			"parent": "fffffffffffffffe",
+			"name": "ActorCanSeeCondition",
+			"factory": "[modules:/zactorcanseecondition.class].pc_entitytype",
+			"blueprint": "[modules:/zactorcanseecondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_rEntity": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			}
+		},
+		"cafea6aff697594b": {
+			"parent": "fffffffffffffffe",
+			"name": "TimerSimple",
+			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": { "type": "int32", "value": 35000 }
+			},
+			"events": { "Out": { "Poll": ["cafe34e5b36ece75"] } }
+		},
+		"cafeed8235a8febc": {
+			"parent": "fffffffffffffffe",
+			"name": "ValueBool_Changed",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafedf196fb77445"
+				}
+			},
+			"events": {
+				"OnTrue": {
+					"SetTrue": ["cafe096d28f16fc3", "cafeaa48fa9177b8"]
+				}
+			}
+		},
+		"cafeede8091d0ac6": {
+			"parent": "fffffffffffffffe",
+			"name": "No longer seen actor",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			},
+			"outputCopying": {
+				"OnTrue": { "ActorMissing": ["fffffffffffffffe"] }
+			}
+		},
+		"cafe096d28f16fc3": {
+			"parent": "fffffffffffffffe",
+			"name": "Can see",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			},
+			"events": {
+				"OnTrue": { "Abort": ["cafea6aff697594b"] },
+				"OnFalse": { "In": ["cafea6aff697594b"] }
+			}
+		},
+		"cafeaa48fa9177b8": {
+			"parent": "fffffffffffffffe",
+			"name": "Saw actor",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe0f62810de3cf": {
+			"parent": "fffffffffffffffe",
+			"name": "InvertedCondition01",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafedf196fb77445"
+				}
+			}
+		},
+		"cafed0bc6a193a31": {
+			"parent": "fffffffffffffffe",
+			"name": "ValueBool_Operation",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafeaa48fa9177b8", "cafe0f62810de3cf"]
+				},
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "ALL"
+				}
+			},
+			"events": { "OnTrue": { "SetFalse": ["cafe096d28f16fc3"] } }
+		},
+		"cafe8b7e3a9072db": {
+			"parent": "fffffffffffffffe",
+			"name": "ActorKnowLedgeDead",
+			"factory": "[assembly:/_pro/design/gamecore/actorlogic.template?/actorknowledgedead.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/actorlogic.template?/actorknowledgedead.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_rEntity": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			}
+		},
+		"cafeb7d91f5fce72": {
+			"parent": "fffffffffffffffe",
+			"name": "InvertedCondition02",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe8b7e3a9072db"
+				}
+			}
+		},
+		"cafe34e5b36ece75": {
+			"parent": "fffffffffffffffe",
+			"name": "ValueBool_Poll",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb7d91f5fce72"
+				}
+			},
+			"events": { "PollTrue": { "SetTrue": ["cafeede8091d0ac6"] } }
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}
