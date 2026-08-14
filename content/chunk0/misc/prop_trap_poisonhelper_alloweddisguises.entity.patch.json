@@ -1,0 +1,135 @@
+{
+	"tempHash": "006D83222C463D0F",
+	"tbluHash": "000324052369C0E7",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"9b6a52532810e6b9",
+				{
+					"AddPropertyAliasConnection": [
+						"m_aHolders",
+						{
+							"originalProperty": "m_aHolders",
+							"originalEntity": "cafe9d88d5ce759e"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"9b6a52532810e6b9",
+				{
+					"AddPropertyAliasConnection": [
+						"m_aHolders",
+						{
+							"originalProperty": "m_aHolders",
+							"originalEntity": "cafe340697125a92"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"9b6a52532810e6b9",
+				{
+					"AddPropertyAliasConnection": [
+						"m_aHolders",
+						{
+							"originalProperty": "m_aHolders",
+							"originalEntity": "cafe02fcd12acf76"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"9b6a52532810e6b9",
+				{
+					"AddPropertyAliasConnection": [
+						"m_aHolders",
+						{
+							"originalProperty": "m_aHolders",
+							"originalEntity": "cafe8da5b88c6209"
+						}
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe9d88d5ce759e",
+				{
+					"parent": "9b6a52532810e6b9",
+					"name": "prof_potato_unique_black_team_assistant",
+					"factory": "[assembly:/_pro/design/actor/profession.template?/prof_potato_unique_black_team_assistant.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_potato_unique_black_team_assistant.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aHolders": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["9b6a52532810e6b9"],
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe340697125a92",
+				{
+					"parent": "9b6a52532810e6b9",
+					"name": "prof_potato_unique_black_team_leader",
+					"factory": "[assembly:/_pro/design/actor/profession.template?/prof_potato_unique_black_team_leader.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_potato_unique_black_team_leader.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aHolders": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["9b6a52532810e6b9"],
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe02fcd12acf76",
+				{
+					"parent": "9b6a52532810e6b9",
+					"name": "prof_potato_unique_white_team_assistant",
+					"factory": "[assembly:/_pro/design/actor/profession.template?/prof_potato_unique_white_team_assistant.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_potato_unique_white_team_assistant.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aHolders": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["9b6a52532810e6b9"],
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe8da5b88c6209",
+				{
+					"parent": "9b6a52532810e6b9",
+					"name": "prof_potato_unique_white_team_leader",
+					"factory": "[assembly:/_pro/design/actor/profession.template?/prof_potato_unique_white_team_leader.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_potato_unique_white_team_leader.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aHolders": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["9b6a52532810e6b9"],
+							"postInit": true
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

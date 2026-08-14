@@ -1,0 +1,73 @@
+{
+	"tempHash": "004E4068FDA76D78",
+	"tbluHash": "00BC07426132AA95",
+	"rootEntity": "2200dca199253494",
+	"entities": {
+		"a00fd5e963769dc0": {
+			"parent": "2200dca199253494",
+			"name": "entity_KEY_POTATO_CHANGINGROOM",
+			"factory": "[modules:/zkeywordentity.class].pc_entitytype",
+			"blueprint": "[modules:/zkeywordentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sKeyword": {
+					"type": "ZString",
+					"value": "KEY_POTATO_CHANGINGROOM"
+				},
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "2200dca199253494",
+					"postInit": true
+				}
+			}
+		},
+		"2667957b50ef7dfc": {
+			"parent": "2200dca199253494",
+			"name": "Keyword_STATE_GOT_KEY",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_got_key.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_got_key.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "2200dca199253494",
+					"postInit": true
+				}
+			}
+		},
+		"2200dca199253494": {
+			"parent": null,
+			"name": "Keyword_KEY_DUGONG_COVEBOATEXIT",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"propertyAliases": {
+				"m_aHolders": [
+					{
+						"originalProperty": "m_aHolders",
+						"originalEntity": "2667957b50ef7dfc"
+					},
+					{
+						"originalProperty": "m_aHolders",
+						"originalEntity": "a00fd5e963769dc0"
+					}
+				]
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

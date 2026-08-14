@@ -1,0 +1,16 @@
+{
+    "a3361887-bd9c-4cd6-acd9-f3fd6088ccc1": {
+        "Description": "ui_starting_location_potato_journ_desc",
+        "ID_":  "a3361887-bd9c-4cd6-acd9-f3fd6088ccc1",
+        "Image": "images/entrances/central_show_scene_journ.jpg",
+        "Name": "Journ",
+        "Name_LOC": "ui_starting_location_potato_journ_name"
+    },
+    "457feb5d-c481-4ab1-ab25-d6ea4b2b2b89": {
+        "Description": "ui_starting_location_potato_sibiriantigerstart_desc",
+        "ID_":  "457feb5d-c481-4ab1-ab25-d6ea4b2b2b89",
+        "Image": "images/entrances/sibirian_tiger_start.jpg",
+        "Name": "Skip 5 minutes",
+        "Name_LOC": "ui_starting_location_potato_sibiriantigerstart_name"
+    }
+}

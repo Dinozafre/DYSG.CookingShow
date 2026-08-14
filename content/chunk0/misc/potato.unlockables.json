@@ -1,0 +1,88 @@
+{
+    "TOKEN_OUTFIT_MIAMI_JOURN": {
+        "Guid": "d0c091c3-e8d7-41a1-ba35-9b2a05c62f23",
+        "Type": "disguise",
+        "Subtype": "disguise",
+        "ImageId": "",
+        "RMTPrice": 99,
+        "GamePrice": 99,
+        "IsPurchasable": false,
+        "IsPublished": true,
+        "Capabilities": [],
+        "Qualities": {},
+        "Properties": {
+            "Quality": 1,
+            "Rarity": "common",
+            "LoadoutSlot": "disguise",
+            "RepositoryId": "723e73f3-9fa4-40d8-bb11-b66184c9a795",
+            "OrderIndex": 9999,
+            "AllowUpSync": true
+        },
+        "Rarity": "common",
+        "IsDroppable": false
+    },
+    "STARTING_LOCATION_POTATO_JOURN_RECORD": {
+        "Guid": "f23fc743-db15-4754-a6ec-8e2e2c485745",
+        "Type": "access",
+        "Subtype": "startinglocation",
+        "RMTPrice": -1,
+        "GamePrice": -1,
+        "IsPurchasable": false,
+        "IsPublished": true,
+        "IsDroppable": false,
+        "Capabilities": [],
+        "Qualities": {},
+        "Properties": {
+            "Location": "LOCATION_PARENT_ELEGANT",
+            "RepositoryId": "a3361887-bd9c-4cd6-acd9-f3fd6088ccc1",
+            "Equip": [
+                "TOKEN_OUTFIT_MIAMI_JOURN"
+            ],
+            "UnlockOrder": 0,
+            "UnlockedByDefault": true
+        },
+        "Rarity": null
+    },
+    "TOKEN_OUTFIT_POTATO_SIBIRIAN_TIGER_GUARD": {
+        "Guid": "fbecef9c-7608-4a38-a3ff-793d7565bb61",
+        "Type": "disguise",
+        "Subtype": "disguise",
+        "ImageId": "",
+        "RMTPrice": 99,
+        "GamePrice": 99,
+        "IsPurchasable": false,
+        "IsPublished": true,
+        "Capabilities": [],
+        "Qualities": {},
+        "Properties": {
+            "Quality": 1,
+            "Rarity": "common",
+            "LoadoutSlot": "disguise",
+            "RepositoryId": "80be8a6f-708f-4645-9915-0b498171d479",
+            "OrderIndex": 10000,
+            "AllowUpSync": true
+        },
+        "Rarity": "common",
+        "IsDroppable": false
+    },
+    "STARTING_LOCATION_SKIP5MINUTES": {
+        "Guid": "b01ea86a-33e8-467e-a860-0cc3cb23733e",
+        "Type": "access",
+        "Subtype": "startinglocation",
+        "RMTPrice": -1,
+        "GamePrice": -1,
+        "IsPurchasable": false,
+        "IsPublished": true,
+        "IsDroppable": true,
+        "Capabilities": [],
+        "Qualities": {},
+        "Properties": {
+            "Location": "LOCATION_PARENT_ELEGANT",
+            "RepositoryId": "457feb5d-c481-4ab1-ab25-d6ea4b2b2b89",
+            "Equip": [
+                "TOKEN_OUTFIT_POTATO_SIBIRIAN_TIGER_GUARD"
+            ]
+        },
+        "Rarity": null
+    }
+}

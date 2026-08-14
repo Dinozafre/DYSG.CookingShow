@@ -16,7 +16,7 @@
         "Description": "",
         "Description_LOC": "actor_wtl_desc",
         "Image": "images/actors/wtl_face.jpg",
-        "Name": "Ryker Riley",
+        "Name": "Michael «Mickey» Moravitz",
         "Outfit": "d95d1c0b-98a1-49b0-9988-bf711db3d326",
         "OutfitVariationIndex": 0,
         "Tile": "images/actors/default_target.png"
@@ -47,9 +47,9 @@
         "ID_": "8dd7dc42-948e-4884-8581-5b4a9e8279c9",
         "CharacterSetIndex": 0,
         "Description": "",
-        "Description_LOC": "actor_description",
+        "Description_LOC": "judge_desc",
         "Image": "images/actors/actor_8d2d74e3-e314-45c9-a4d0-252ef21f3eb0_0_0_0.jpg",
-        "Name": "Wisdom Booker",
+        "Name": "Martin Vergopulo",
         "Outfit": "8d2d74e3-e314-45c9-a4d0-252ef21f3eb0",
         "OutfitVariationIndex": 0,
         "Tile": "images/actors/default_target.png"
