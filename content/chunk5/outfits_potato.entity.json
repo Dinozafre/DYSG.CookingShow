@@ -80,9 +80,17 @@
 					"type": "EActorCCPreset",
 					"value": "ACCP_CivilianeMale"
 				},
+				"m_eOutfitAICategory": {
+					"type": "EOutfitAICategory",
+					"value": "OAC_Cook"
+				},
+				"m_eOutfitType": {
+					"type": "EOutfitType",
+					"value": "eOT_Waiter"
+				},
 				"m_aAllowedWeaponKeys": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": []
+					"value": ["cafe26893750b173"]
 				}
 			}
 		},
@@ -149,9 +157,17 @@
 					"type": "EActorCCPreset",
 					"value": "ACCP_CivilianeMale"
 				},
+				"m_eOutfitAICategory": {
+					"type": "EOutfitAICategory",
+					"value": "OAC_Cook"
+				},
+				"m_eOutfitType": {
+					"type": "EOutfitType",
+					"value": "eOT_Waiter"
+				},
 				"m_aAllowedWeaponKeys": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": []
+					"value": ["cafe79c63354f5ec"]
 				}
 			}
 		},
@@ -218,9 +234,17 @@
 					"type": "EActorCCPreset",
 					"value": "ACCP_CivilianeMale"
 				},
+				"m_eOutfitAICategory": {
+					"type": "EOutfitAICategory",
+					"value": "OAC_Cook"
+				},
+				"m_eOutfitType": {
+					"type": "EOutfitType",
+					"value": "eOT_Waiter"
+				},
 				"m_aAllowedWeaponKeys": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": []
+					"value": ["cafe9a2d51055c9a"]
 				}
 			}
 		},
@@ -287,9 +311,17 @@
 					"type": "EActorCCPreset",
 					"value": "ACCP_CivilianeMale"
 				},
+				"m_eOutfitAICategory": {
+					"type": "EOutfitAICategory",
+					"value": "OAC_Cook"
+				},
+				"m_eOutfitType": {
+					"type": "EOutfitType",
+					"value": "eOT_Waiter"
+				},
 				"m_aAllowedWeaponKeys": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": []
+					"value": ["cafe76f49524d7b7"]
 				}
 			}
 		},
@@ -871,7 +903,7 @@
 				},
 				"m_eOutfitAICategory": {
 					"type": "EOutfitAICategory",
-					"value": "OAC_Bodyguard"
+					"value": "OAC_Elite"
 				},
 				"m_rDefaultVoiceVariations": {
 					"type": "TArray<EActorVoiceVariation>",
@@ -1016,7 +1048,8 @@
 			"properties": {
 				"m_aHolders": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafe4b395ebdcd53"]
+					"value": ["cafe4b395ebdcd53"],
+					"postInit": true
 				}
 			}
 		},
@@ -1104,7 +1137,7 @@
 				},
 				"m_sCommonName": {
 					"type": "ZString",
-					"value": "Hokkaido_Guard_BodyGuard_M_HPA1043"
+					"value": "Outfit_Competition_Siberian_Tiger"
 				},
 				"m_sTitle": {
 					"type": "ZString",
@@ -1835,7 +1868,8 @@
 			"properties": {
 				"m_aHolders": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafee65eee6a119b"]
+					"value": ["cafee65eee6a119b"],
+					"postInit": true
 				}
 			}
 		},
@@ -2004,6 +2038,170 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["cafee65eee6a119b"],
 					"postInit": true
+				}
+			}
+		},
+		"cafe19b982c7118d": {
+			"parent": "cafe9d4e02840736",
+			"name": "Keyword_Prof_Class_Default",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keywordgenericprofessionclasses.template?/keyword_prof_class_default.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordgenericprofessionclasses.template?/keyword_prof_class_default.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe9d4e02840736"]
+				}
+			}
+		},
+		"cafe5c4104f8a043": {
+			"parent": "cafe608c5c66111a",
+			"name": "Keyword_Prof_Class_Default",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keywordgenericprofessionclasses.template?/keyword_prof_class_default.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordgenericprofessionclasses.template?/keyword_prof_class_default.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe608c5c66111a"]
+				}
+			}
+		},
+		"cafe3d7aaed9e19a": {
+			"parent": "cafefc1018a8da68",
+			"name": "Keyword_Prof_Class_Default",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keywordgenericprofessionclasses.template?/keyword_prof_class_default.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordgenericprofessionclasses.template?/keyword_prof_class_default.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafefc1018a8da68"]
+				}
+			}
+		},
+		"cafed05dc62f937a": {
+			"parent": "cafe9d0d8fef9b59",
+			"name": "Keyword_Prof_Class_Default",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keywordgenericprofessionclasses.template?/keyword_prof_class_default.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordgenericprofessionclasses.template?/keyword_prof_class_default.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe9d0d8fef9b59"]
+				}
+			}
+		},
+		"cafebfe02ec73fef": {
+			"parent": "cafefc1018a8da68",
+			"name": "Foley_Suit47",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keywordentity_foley_outfit_civilian.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keywordentity_foley_outfit_civilian.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_sKeyword": {
+					"type": "ZString",
+					"value": "FOLEY_OUTFIT_SUIT47"
+				},
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "cafefc1018a8da68",
+					"postInit": true
+				}
+			}
+		},
+		"cafee7abc8c662f5": {
+			"parent": "cafe9d0d8fef9b59",
+			"name": "Foley_Suit47",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keywordentity_foley_outfit_civilian.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keywordentity_foley_outfit_civilian.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_sKeyword": {
+					"type": "ZString",
+					"value": "FOLEY_OUTFIT_SUIT47"
+				},
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe9d0d8fef9b59",
+					"postInit": true
+				}
+			}
+		},
+		"cafe74ef53baa4e7": {
+			"parent": "cafe608c5c66111a",
+			"name": "Foley_Suit47",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keywordentity_foley_outfit_civilian.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keywordentity_foley_outfit_civilian.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_sKeyword": {
+					"type": "ZString",
+					"value": "FOLEY_OUTFIT_SUIT47"
+				},
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe608c5c66111a",
+					"postInit": true
+				}
+			}
+		},
+		"cafe7f05b0f5f368": {
+			"parent": "cafe9d4e02840736",
+			"name": "Foley_Suit47",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keywordentity_foley_outfit_civilian.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keywordentity_foley_outfit_civilian.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_sKeyword": {
+					"type": "ZString",
+					"value": "FOLEY_OUTFIT_SUIT47"
+				},
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe9d4e02840736",
+					"postInit": true
+				}
+			}
+		},
+		"cafe76f49524d7b7": {
+			"parent": "cafe9d4e02840736",
+			"name": "ItemKey_Melee_KitchenKnife",
+			"factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+			"properties": {
+				"m_RepositoryId": {
+					"type": "ZGuid",
+					"value": "e17172cc-bf70-4df6-9828-d9856b1a24fd"
+				}
+			}
+		},
+		"cafe9a2d51055c9a": {
+			"parent": "cafe608c5c66111a",
+			"name": "ItemKey_Melee_KitchenKnife",
+			"factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+			"properties": {
+				"m_RepositoryId": {
+					"type": "ZGuid",
+					"value": "e17172cc-bf70-4df6-9828-d9856b1a24fd"
+				}
+			}
+		},
+		"cafe26893750b173": {
+			"parent": "cafe9d0d8fef9b59",
+			"name": "ItemKey_Melee_KitchenKnife",
+			"factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+			"properties": {
+				"m_RepositoryId": {
+					"type": "ZGuid",
+					"value": "e17172cc-bf70-4df6-9828-d9856b1a24fd"
+				}
+			}
+		},
+		"cafe79c63354f5ec": {
+			"parent": "cafefc1018a8da68",
+			"name": "ItemKey_Melee_KitchenKnife",
+			"factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+			"properties": {
+				"m_RepositoryId": {
+					"type": "ZGuid",
+					"value": "e17172cc-bf70-4df6-9828-d9856b1a24fd"
 				}
 			}
 		}
