@@ -1,6 +1,5 @@
 /**
  * @import {SavedChallengeGroup} from "@peacockproject/core/types/challenges.d.ts"
- * @import {MasteryPackage} from "@peacockproject/core/types/mastery.d.ts"
  * @import {Controller} from "@peacockproject/core/controller.d.ts"
  */
 const { log, LogLevel } = require("@peacockproject/core/loggingInterop")
@@ -10,9 +9,8 @@ const { defaultSuits } = require("@peacockproject/core/utils")
 /**
  * @type {SavedChallengeGroup[]}
  */
-
 const cookingshowChallenges = [
-		{
+	{
 		Name: "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_SIGNATUREKILL",
 		Image: "images/challenges/categories/assassination/tile.jpg",
 		Icon: "challenge_category_assassination",
@@ -99,7 +97,7 @@ const cookingshowChallenges = [
 					"Id": "4f4c5376-0ebd-4c09-92bf-ccceb5a273a0",
 		            "Name": "UI_CHALLENGES_POTATO_ASSASINATION_JUDGE_BY_PRODUCER_NAME",
 					"Description": "UI_CHALLENGES_POTATO_ASSASINATION_JUDGE_BY_PRODUCER_DESC",
-					"ImageName": "images/espresso/challenges/elementary_watson.jpg",
+					"ImageName": "images/challenges/potato/potato_ass_elimination_by_proxy.jpg",
                     "Rewards": {
                         "MasteryXP": 4000
                     },
@@ -120,7 +118,29 @@ const cookingshowChallenges = [
                         "Scope": "session",
                         "States": {
                             "Start": {
-                                "JudgeRagdoll": {
+                                "Kill": {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "8dd7dc42-948e-4884-8581-5b4a9e8279c9"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.KillType",
+                                                    4
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.TotalDamage",
+                                                    100000
+                                                ]
+                                            }
+                                        ]
+                                    },
                                     "Transition": "Success"
                                 }
                             }
@@ -167,19 +187,9 @@ const cookingshowChallenges = [
                                                 ]
                                             },
                                             {
-                                                "$or": [
-                                                    {
-                                                       "$eq": [
-                                                            "$Value.SetPieceId",
-                                                            "6780c29b-3b54-490e-aae4-42ea1d66d792"
-                                                        ]
-                                                    },
-                                                    {
-                                                        "$eq": [
-                                                            "$Value.SetPieceId",
-                                                            "9f5140b3-c7a3-45db-b34e-992b96cc6e31"
-                                                        ]
-                                                    }
+                                                "$eq": [
+                                                    "$Value.SetPieceType",
+                                                    "a56ee73f-1aec-4612-b9ff-48b9ed09137a"
                                                 ]
                                             }
                                         ]
@@ -198,7 +208,7 @@ const cookingshowChallenges = [
 					"Id": "3072cece-fd6c-4904-aab0-c945a1742dd5",
 					"Name": "UI_CHALLENGES_POTATO_ASSASINATION_TARGET_DOUBLE_KILL_NAME", //// kill judge and wtl in same time, one bullet
 					"Description": "UI_CHALLENGES_POTATO_ASSASINATION_TARGET_DOUBLE_KILL_DESC",
-					"ImageName": "images/challenges/potato/potato_targets_producer.jpg",
+					"ImageName": "images/challenges/potato/potato_ass_double_kill.jpg",
                     "Rewards": {
                         "MasteryXP": 4000
                     },
@@ -206,8 +216,8 @@ const cookingshowChallenges = [
                     "IsPlayable": true,
                     "IsLocked": false,
                     "HideProgression": false,
-                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_PROFESSIONAL",
-					"Icon": "challenge_category_targets",
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_SIGNATUREKILL",
+					"Icon": "challenge_category_assassination",
 					"LocationId": "LOCATION_PARENT_ELEGANT",
 					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
                     "Type": "contract",
@@ -217,12 +227,13 @@ const cookingshowChallenges = [
                     "RuntimeType": "Hit",
                     "Definition": {
                         "Scope": "session",
+                        "Context": {},
                         "States": {
                             "Start": {
                                 "Kill": {
                                     "Condition": {
                                         "$or": [
-                                            {
+                                             {
                                                 "$and": [
                                                     {
                                                         "$eq": [
@@ -256,15 +267,15 @@ const cookingshowChallenges = [
                                             }
                                         ]
                                     },
-                                    "Transition": "CheckDoubleKill"
+                                    "Transition": "Is_DoubleKill"
                                 }
                             },
-                            "CheckDoubleKill": {
+                            "Is_DoubleKill": {
                                 "$timer": {
                                     "Condition": {
-                                        "$after": 1
+                                        "$after": 0.1
                                     },
-                                    "Transition": "Start"
+                                    "Transition": "Failure"
                                 },
                                 "Kill": {
                                     "Condition": {
@@ -317,7 +328,7 @@ const cookingshowChallenges = [
 					"Id": "23912fec-9552-490d-ba1a-d4f1fc062e39",
 		            "Name": "UI_CHALLENGES_POTATO_ASSASINATION_SNIPER_TOWER_KILL_NAME", // kill main targets at tower by sniper rifle
 					"Description": "UI_CHALLENGES_POTATO_ASSASINATION_SNIPER_TOWER_KILL_DESC",
-					"ImageName": "images/espresso/challenges/elementary_watson.jpg",
+					"ImageName": "images/challenges/potato/potato_ass_tower_triple_kill.jpg",
                     "Rewards": {
                         "MasteryXP": 4000
                     },
@@ -351,7 +362,7 @@ const cookingshowChallenges = [
                         "Scope": "session",
                         "States": {
                             "Start": {
-                                "SniperTeamDealtWith": {
+                                "-": {
                                     "Transition": "InPosition"
                                 }
                             },
@@ -369,15 +380,15 @@ const cookingshowChallenges = [
                                         "Condition": {
                                             "$and": [
                                                 {
-                                                    "$eq": [
-                                                        "$Value.IsTarget",
-                                                        true
+                                                    "$contains": [
+                                                        "$Value.KillItemCategory",
+                                                        "sniperrifle"
                                                     ]
                                                 },
                                                 {
                                                     "$eq": [
-                                                        "$Value.KillItemRepositoryId",
-                                                        "7d64d9df-5d30-4e98-9af0-7562ee145d5c"
+                                                        "$Value.IsTarget",
+                                                        true
                                                     ]
                                                 }
                                             ]
@@ -400,10 +411,641 @@ const cookingshowChallenges = [
 						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
 					},
                     "Tags": ["story", "easy", "assassination"]
+                },
+                {
+					"Id": "29711c4e-02ba-43c7-924d-7e15617506aa",
+		            "Name": "UI_CHALLENGES_POTATO_ASSASINATION_WTL_BY_A_GAS_PLATE_NAME", // WTL ELIMINATION BY A GAS PLATE
+					"Description": "UI_CHALLENGES_POTATO_ASSASINATION_WTL_BY_A_GAS_PLATE_DESC",
+					"ImageName": "images/challenges/potato/potato_ass_gas_plate.jpg",
+                    "Rewards": {
+                        "MasteryXP": 4000
+                    },
+                    "Drops": [],
+                    "IsPlayable": true,
+                    "IsLocked": false,
+                    "HideProgression": false,
+					"CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_SIGNATUREKILL",
+					"Icon": "challenge_category_assassination",
+					"LocationId": "LOCATION_PARENT_ELEGANT",
+					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 10000,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Context": {},
+                        "Scope": "session",
+                        "States": {
+                            "Start": {
+                                "Kill": {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "227a86cb-3ce3-4de9-9106-f2729c88f302"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.SetPieceType",
+                                                    "fab9eacb-dcc6-41e5-894b-4b14acc34b78"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            }
+                        }
+                    },
+					"InclusionData": {
+						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
+					},
+                    "Tags": ["story", "easy", "assassination"]
+                },
+                {
+					"Id": "18d1ae28-9761-4fc5-aa92-94d52a2fca11",
+		            "Name": "UI_CHALLENGES_POTATO_ASSASINATION_DOUBLE_EXPLOSION_NAME", // WTL AND JUDGE A SINGLE EXPLOSION
+					"Description": "UI_CHALLENGES_POTATO_ASSASINATION_DOUBLE_EXPLOSION_DESC",
+					"ImageName": "images/challenges/potato/potato_ass_single_explosion_kill.jpg",
+                    "Rewards": {
+                        "MasteryXP": 4000
+                    },
+                    "Drops": [],
+                    "IsPlayable": true,
+                    "IsLocked": false,
+                    "HideProgression": false,
+					"CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_SIGNATUREKILL",
+					"Icon": "challenge_category_assassination",
+					"LocationId": "LOCATION_PARENT_ELEGANT",
+					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 10000,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Scope": "session",
+                        "States": {
+                            "Is_DoubleKill": {
+                                "$timer": {
+                                    "Condition": {
+                                        "$after": 0.1
+                                    },
+                                    "Transition": "Start"
+                                },
+                                "Kill": {
+                                    "Condition": {
+                                        "$or": [
+                                            {
+                                                "$and": [
+                                                    {
+                                                        "$eq": [
+                                                            "$Value.RepositoryId",
+                                                            "227a86cb-3ce3-4de9-9106-f2729c88f302"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "$eq": [
+                                                            "$Value.KillClass",
+                                                            "explosion"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "$and": [
+                                                    {
+                                                        "$eq": [
+                                                            "$Value.RepositoryId",
+                                                            "8dd7dc42-948e-4884-8581-5b4a9e8279c9"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "$eq": [
+                                                            "$Value.KillClass",
+                                                            "explosion"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            },
+                            "Start": {
+                                "Kill": {
+                                    "Condition": {
+                                        "$or": [
+                                            {
+                                                "$and": [
+                                                    {
+                                                        "$eq": [
+                                                            "$Value.RepositoryId",
+                                                            "227a86cb-3ce3-4de9-9106-f2729c88f302"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "$eq": [
+                                                            "$Value.KillClass",
+                                                            "explosion"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "$and": [
+                                                    {
+                                                        "$eq": [
+                                                            "$Value.RepositoryId",
+                                                            "8dd7dc42-948e-4884-8581-5b4a9e8279c9"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "$eq": [
+                                                            "$Value.KillClass",
+                                                            "explosion"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Is_DoubleKill"
+                                }
+                            }
+                        }
+                    },
+					"InclusionData": {
+						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
+					},
+                    "Tags": ["story", "easy", "assassination"]
+                },
+                {
+					"Id": "a7dc1a40-fd5c-4d42-af74-27fa3c9fbe21",
+		            "Name": "UI_CHALLENGES_POTATO_ASSASINATION_DOUBLE_ELECTRICITY_NAME", // WTL AND JUDGE BY ELECTICITY
+					"Description": "UI_CHALLENGES_POTATO_ASSASINATION_DOUBLE_ELECTRICITY_DESC",
+					"ImageName": "images/challenges/elegant/llama_electrocution_kill.jpg", // replace on other
+                    "Rewards": {
+                        "MasteryXP": 4000
+                    },
+                    "Drops": [],
+                    "IsPlayable": true,
+                    "IsLocked": false,
+                    "HideProgression": false,
+					"CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_SIGNATUREKILL",
+					"Icon": "challenge_category_assassination",
+					"LocationId": "LOCATION_PARENT_ELEGANT",
+					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 10000,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Constants": {
+                            "Goal": 2
+                        },
+                        "ContextListeners": {
+                            "Count": {
+                                "type": "challengecounter",
+                                "count": "$.Count",
+                                "total": "$.Goal"
+                            }
+                        },
+                        "Context": {
+                            "Count": 0
+                        },
+                        "Scope": "session",
+                        "States": {
+                            "Start": {
+                                "Kill": [
+                                    {
+                                    "Condition": {
+                                    "$or": [
+                                             {
+                                                "$and": [
+                                                    {
+                                                        "$eq": [
+                                                            "$Value.RepositoryId",
+                                                            "8dd7dc42-948e-4884-8581-5b4a9e8279c9"
+                                                        ]
+                                                    },
+                                             {
+                                                "$any": {
+                                                    "?": {
+                                                        "$eq": [
+                                                            "$.#",
+                                                            "accident_electric"
+                                                        ]
+                                                    },
+                                                    "in": [
+                                                        "$Value.KillMethodBroad",
+                                                        "$Value.KillMethodStrict"
+                                                    ]
+                                                }
+                                            }
+                                                ]
+                                            },
+                                            {
+                                                "$and": [
+                                                    {
+                                                          "$eq": [
+                                                            "$Value.RepositoryId",
+                                                            "227a86cb-3ce3-4de9-9106-f2729c88f302"
+                                                        ]
+                                                    },
+                                               {
+                                                "$any": {
+                                                    "?": {
+                                                        "$eq": [
+                                                            "$.#",
+                                                            "accident_electric"
+                                                        ]
+                                                    },
+                                                    "in": [
+                                                        "$Value.KillMethodBroad",
+                                                        "$Value.KillMethodStrict"
+                                                    ]
+                                                }
+                                            }
+                                                ]
+                                            }
+                                        ]
+                                        },
+                                        "Actions": {
+                                            "$inc": "Count"
+                                        }
+                                    },
+                                    {
+                                        "Condition": {
+                                            "$eq": ["$.Count", "$.Goal"]
+                                        },
+                                        "Transition": "Success"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+					"InclusionData": {
+						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
+					},
+                    "Tags": ["story", "easy", "assassination"]
+                },
+                {
+					"Id": "be3d3349-be13-44d9-9d46-aab6948fef5f",
+		            "Name": "UI_CHALLENGES_POTATO_ASSASINATION_JUDGE_CONSUME_POISON_NAME", // JUDGE ELIMINATION BY CONSUME POSION
+					"Description": "UI_CHALLENGES_POTATO_ASSASINATION_JUDGE_CONSUME_POISON_DESC",
+					"ImageName": "images/challenges/potato/potato_ass_consume_poison.jpg",
+                    "Rewards": {
+                        "MasteryXP": 4000
+                    },
+                    "Drops": [],
+                    "IsPlayable": true,
+                    "IsLocked": false,
+                    "HideProgression": false,
+					"CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_SIGNATUREKILL",
+					"Icon": "challenge_category_assassination",
+					"LocationId": "LOCATION_PARENT_ELEGANT",
+					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 10000,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Context": {},
+                        "Scope": "session",
+                        "States": {
+                            "Start": {
+                                "Kill": {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "8dd7dc42-948e-4884-8581-5b4a9e8279c9"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.KillMethodStrict",
+                                                    "consumed_poison"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            }
+                        }
+                    },
+					"InclusionData": {
+						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
+					},
+                    "Tags": ["story", "easy", "assassination"]
+                },
+                {
+					"Id": "9c8f70c5-6f81-4685-a65f-8b305c5f2505",
+		            "Name": "UI_CHALLENGES_POTATO_ASSASINATION_JUDGE_PUSH_NAME", // JUDGE ELIMINATION BY PUSH
+					"Description": "UI_CHALLENGES_POTATO_ASSASINATION_JUDGE_PUSH_DESC",
+					"ImageName": "images/challenges/potato/potato_ass_push_kill.jpg",
+                    "Rewards": {
+                        "MasteryXP": 4000
+                    },
+                    "Drops": [],
+                    "IsPlayable": true,
+                    "IsLocked": false,
+                    "HideProgression": false,
+					"CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_SIGNATUREKILL",
+					"Icon": "challenge_category_assassination",
+					"LocationId": "LOCATION_PARENT_ELEGANT",
+					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 10000,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Context": {},
+                        "Scope": "session",
+                        "States": {
+                            "Start": {
+                                "Kill": {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "8dd7dc42-948e-4884-8581-5b4a9e8279c9"
+                                                ]
+                                            },
+                                            {
+                                                "$any": {
+                                                    "?": {
+                                                        "$eq": [
+                                                            "$.#",
+                                                            "PushOver"
+                                                        ]
+                                                    },
+                                                    "in": "$Value.DamageEvents"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            }
+                        }
+                    },
+					"InclusionData": {
+						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
+					},
+                    "Tags": ["story", "easy", "assassination"]
+                },
+                {
+					"Id": "53cfd001-4b0e-4f3e-bad7-ab832bf6e95f",
+		            "Name": "UI_CHALLENGES_POTATO_ASSASINATION_JUDGE_GAS_HEATING_LAMP_NAME", // JUDGE ELIMINATION BY A GAS HEATING LAMP
+					"Description": "UI_CHALLENGES_POTATO_ASSASINATION_JUDGE_GAS_HEATING_LAMP_DESC",
+					"ImageName": "images/challenges/potato/potato_ass_gas_heating_lamp.jpg",
+                    "Rewards": {
+                        "MasteryXP": 4000
+                    },
+                    "Drops": [],
+                    "IsPlayable": true,
+                    "IsLocked": false,
+                    "HideProgression": false,
+					"CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_SIGNATUREKILL",
+					"Icon": "challenge_category_assassination",
+					"LocationId": "LOCATION_PARENT_ELEGANT",
+					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 10000,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Context": {},
+                        "Scope": "session",
+                        "States": {
+                            "Start": {
+                                "Kill": {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "8dd7dc42-948e-4884-8581-5b4a9e8279c9"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.SetPieceType",
+                                                    "518b6c2d-2a3d-4f87-afbf-2e84393d260d"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            }
+                        }
+                    },
+					"InclusionData": {
+						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
+					},
+                    "Tags": ["story", "easy", "assassination"]
+                },
+                {
+					"Id": "3472686d-9d5c-4518-8eac-143d001a2dde",
+		            "Name": "UI_CHALLENGES_POTATO_ASSASINATION_PRODUCER_CONSUME_POISON_NAME", // PRODUCER ELIMINATION BY CONSUME POISON
+					"Description": "UI_CHALLENGES_POTATO_ASSASINATION_PRODUCER_CONSUME_POISON_DESC",
+					"ImageName": "images/challenges/potato/potato_ass_the_great_legecy.jpg",
+                    "Rewards": {
+                        "MasteryXP": 4000
+                    },
+                    "Drops": [],
+                    "IsPlayable": true,
+                    "IsLocked": false,
+                    "HideProgression": false,
+					"CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_SIGNATUREKILL",
+					"Icon": "challenge_category_assassination",
+					"LocationId": "LOCATION_PARENT_ELEGANT",
+					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 10000,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Context": {},
+                        "Scope": "session",
+                        "States": {
+                            "Start": {
+                                "Kill": {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "c4f56dd4-a8f0-4893-9da3-a5f1394245e3"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.KillMethodStrict",
+                                                    "consumed_poison"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            }
+                        }
+                    },
+					"InclusionData": {
+						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
+					},
+                    "Tags": ["story", "easy", "assassination"]
+                },
+                {
+					"Id": "5a4a7686-5ce8-4e95-89ef-78f6403dafe1",
+		            "Name": "UI_CHALLENGES_POTATO_ASSASINATION_PRODUCER_AFTER_MEETING_NAME", // PRODUCER ELIMINATION BY A BUSH AFTER MEETING
+					"Description": "UI_CHALLENGES_POTATO_ASSASINATION_PRODUCER_AFTER_MEETING_DESC",
+					"ImageName": "images/challenges/potato/potato_ass_after_meeting.jpg",
+                    "Rewards": {
+                        "MasteryXP": 4000
+                    },
+                    "Drops": [],
+                    "IsPlayable": true,
+                    "IsLocked": false,
+                    "HideProgression": false,
+					"CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_SIGNATUREKILL",
+					"Icon": "challenge_category_assassination",
+					"LocationId": "LOCATION_PARENT_ELEGANT",
+					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 10000,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Context": {},
+                        "Scope": "session",
+                        "States": {
+                            "Start": {
+                                "Meeting_Over_Event": {
+                                    "Transition": "CheckKill"
+                                }
+                            },
+                            "CheckKill": {
+                                "Kill": {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "c4f56dd4-a8f0-4893-9da3-a5f1394245e3"
+                                                ]
+                                            },
+                                            {
+                                                "$any": {
+                                                    "?": {
+                                                        "$eq": [
+                                                            "$.#",
+                                                            "PushOver"
+                                                        ]
+                                                    },
+                                                    "in": "$Value.DamageEvents"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                "$timer": {
+                                    "Condition": {
+                                        "$after": 30
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            }
+                        }
+                    },
+					"InclusionData": {
+						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
+					},
+                    "Tags": ["story", "easy", "assassination"]
+                },
+                {
+					"Id": "39b36ce9-e10b-42f8-a853-2166eeb6813c",
+		            "Name": "UI_CHALLENGES_POTATO_ASSASINATION_WTL_FLOWER_POT_NAME", // WTL ELIMINATION BY A FLOWER POT
+					"Description": "UI_CHALLENGES_POTATO_ASSASINATION_WTL_FLOWER_POT_DESC",
+					"ImageName": "images/challenges/potato/potato_ass_flower_pot.jpg",
+                    "Rewards": {
+                        "MasteryXP": 4000
+                    },
+                    "Drops": [],
+                    "IsPlayable": true,
+                    "IsLocked": false,
+                    "HideProgression": false,
+					"CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_SIGNATUREKILL",
+					"Icon": "challenge_category_assassination",
+					"LocationId": "LOCATION_PARENT_ELEGANT",
+					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 10000,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Context": {},
+                        "Scope": "session",
+                        "States": {
+                            "Start": {
+                                "Kill": {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "227a86cb-3ce3-4de9-9106-f2729c88f302"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.SetPieceType",
+                                                    "26353452-9302-4fd6-bd1d-d26051728d23"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            }
+                        }
+                    },
+					"InclusionData": {
+						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
+					},
+                    "Tags": ["story", "easy", "assassination"]
                 }
-			]
-		},
-		{
+                /// ADD HERE CHALLANGE FOR ELIMINATION JUDGE BY POISINING THE BOTTLE OF WATER (done)
+                /// ADD HERE CHALLANGE FOR ELIMINATION JUDGE BY ELECTRICITY (united in one challenge) (done)
+                /// ADD HERE CHALLANGE FOR ELIMINATION WTL BY ELECTRICITY (united in one challenge) (done)
+                /// ADD HERE CHALLANGE FOR ELIMINATION JUDGE BY PUSHING (done)
+                /// ADD HERE CHALLANGE FOR ELIMINATION JUDGE BY EXPLOSING DURING SMOKING (done)
+                /// ADD HERE CHALLANGE FOR ELIMINATION JUDGE BY A GAS HEATING LAMP (done)
+                /// ADD HERE CHALLANGE FOR ELIMINATION WTL BY A FALLING OBJECT (done)
+                /// CHALLANGE FOR ELIMINATION HABKO BY CONSUME POSION
+                /// CHALLANGE FOR ELIMINATION HABKO AFER MEETING WITH JUDGE
+        ]
+	},
+	{
 		Name: "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_PROFESSIONAL",
 		Image: "images/challenges/categories/targets/tile.jpg",
 		Icon: "challenge_category_targets",
@@ -490,7 +1132,7 @@ const cookingshowChallenges = [
                     "Tags": ["story", "easy", "targets"]
                 },
 				{
-					"Id": "dbbb394f-d358-4809-b674-97d8f7ca015b",
+					"Id": "f891c47d-a90c-4e81-ba3b-436fb722a8e5",
 					"Name": "UI_CHALLENGES_POTATO_ASSASINATION_TARGET_PRODUCER_NAME",
 					"Description": "UI_CHALLENGES_POTATO_ASSASINATION_TARGET_PRODUCER_DESC",
 					"ImageName": "images/challenges/potato/potato_targets_producer.jpg",
@@ -542,7 +1184,7 @@ const cookingshowChallenges = [
 					"Id": "e98242df-b053-4c9f-a71d-1ce2b71b6c10",
 					"Name": "UI_CHALLENGES_POTATO_DISCOVARY_FROM_THE_ELITE_NAME",
 					"Description": "UI_CHALLENGES_POTATO_DISCOVARY_FROM_THE_ELITE_DESC",
-					"ImageName": "images/espresso/challenges/witness_protection.jpg",
+					"ImageName": "images/challenges/potato/potato_discovery_elite_st.jpg",
                     "Rewards": {
                         "MasteryXP": 2000
                     },
@@ -550,7 +1192,7 @@ const cookingshowChallenges = [
                     "IsPlayable": true,
                     "IsLocked": false,
                     "HideProgression": false,
-                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_COMMUNITY",
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_EXPLORATION",
 					"Icon": "challenge_category_discovery",
 					"LocationId": "LOCATION_PARENT_ELEGANT",
 					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
@@ -578,13 +1220,13 @@ const cookingshowChallenges = [
 					"InclusionData": {
 						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
 					},
-                    "Tags": ["story", "easy", "feats"]
+                    "Tags": ["story", "medium", "discovery"]
                 },
 				{
 					"Id": "0bae73bd-db82-40fd-8203-a44935f8a26e",
 					"Name": "UI_CHALLENGES_POTATO_DISCOVARY_GET_BTL_DISGUISE_NAME",
 					"Description": "UI_CHALLENGES_POTATO_DISCOVARY_GET_BTL_DISGUISE_DESC",
-					"ImageName": "images/challenges/potato/potato_discovery_master_chief.jpg",
+					"ImageName": "images/challenges/potato/potato_discovery_master_chief.jpg", // update image
                     "Rewards": {
                         "MasteryXP": 2000
                     },
@@ -592,7 +1234,7 @@ const cookingshowChallenges = [
                     "IsPlayable": true,
                     "IsLocked": false,
                     "HideProgression": false,
-                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_COMMUNITY",
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_EXPLORATION",
 					"Icon": "challenge_category_discovery",
 					"LocationId": "LOCATION_PARENT_ELEGANT",
 					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
@@ -620,13 +1262,13 @@ const cookingshowChallenges = [
 					"InclusionData": {
 						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
 					},
-                    "Tags": ["story", "easy", "feats"]
+                    "Tags": ["story", "medium", "discovery"]
                 },
 				{
 					"Id": "eb2c0bae-cb12-44f8-9dff-baeead62e8c8",
 					"Name": "UI_CHALLENGES_POTATO_DISCOVARY_GET_BTA_DISGUISE_NAME",
 					"Description": "UI_CHALLENGES_POTATO_DISCOVARY_GET_BTA_DISGUISE_DESC",
-					"ImageName": "images/challenges/potato/potato_discovery_mr_helper.jpg",
+					"ImageName": "images/challenges/potato/potato_discovery_mr_helper.jpg", // update image
                     "Rewards": {
                         "MasteryXP": 2000
                     },
@@ -634,7 +1276,7 @@ const cookingshowChallenges = [
                     "IsPlayable": true,
                     "IsLocked": false,
                     "HideProgression": false,
-                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_COMMUNITY",
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_EXPLORATION",
 					"Icon": "challenge_category_discovery",
 					"LocationId": "LOCATION_PARENT_ELEGANT",
 					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
@@ -662,13 +1304,13 @@ const cookingshowChallenges = [
 					"InclusionData": {
 						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
 					},
-                    "Tags": ["story", "easy", "feats"]
+                    "Tags": ["story", "medium", "discovery"]
                 },
 				{
 					"Id": "88f216bc-561e-43e1-81dc-5151396b2a70",
 					"Name": "UI_CHALLENGES_POTATO_DISCOVARY_GET_WTA_DISGUISE_NAME",
 					"Description": "UI_CHALLENGES_POTATO_DISCOVARY_GET_WTA_DISGUISE_DESC",
-					"ImageName": "images/challenges/potato/potato_discovery_rookie_oguzok.jpg",
+					"ImageName": "images/challenges/potato/potato_discovery_rookie_oguzok.jpg", // update image
                     "Rewards": {
                         "MasteryXP": 2000
                     },
@@ -676,7 +1318,7 @@ const cookingshowChallenges = [
                     "IsPlayable": true,
                     "IsLocked": false,
                     "HideProgression": false,
-                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_COMMUNITY",
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_EXPLORATION",
 					"Icon": "challenge_category_discovery",
 					"LocationId": "LOCATION_PARENT_ELEGANT",
 					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
@@ -704,13 +1346,13 @@ const cookingshowChallenges = [
 					"InclusionData": {
 						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
 					},
-                    "Tags": ["story", "easy", "feats"]
+                    "Tags": ["story", "medium", "discovery"]
                 },
 								{
 					"Id": "e9b664d5-6a82-4943-a239-00abdb3ebe6a",
 					"Name": "UI_CHALLENGES_POTATO_DISCOVARY_GET_WTL_DISGUISE_NAME",
 					"Description": "UI_CHALLENGES_POTATO_DISCOVARY_GET_WTL_DISGUISE_DESC",
-					"ImageName": "images/challenges/potato/potato_discovery_mr_chief_to_your_service.jpg",
+					"ImageName": "images/challenges/potato/potato_discovery_mr_chief_to_your_service.jpg", // update image
                     "Rewards": {
                         "MasteryXP": 2000
                     },
@@ -718,7 +1360,7 @@ const cookingshowChallenges = [
                     "IsPlayable": true,
                     "IsLocked": false,
                     "HideProgression": false,
-                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_COMMUNITY",
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_EXPLORATION",
 					"Icon": "challenge_category_discovery",
 					"LocationId": "LOCATION_PARENT_ELEGANT",
 					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
@@ -746,13 +1388,13 @@ const cookingshowChallenges = [
 					"InclusionData": {
 						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
 					},
-                    "Tags": ["story", "easy", "feats"]
+                    "Tags": ["story", "medium", "discovery"]
                 },
 				{
 					"Id": "7ad6fbb6-a39c-46fc-9fa0-524f80b50d28",
 					"Name": "UI_CHALLENGES_POTATO_DISCOVARY_GET_JOURNALIST_DISGUISE_NAME",
 					"Description": "UI_CHALLENGES_POTATO_DISCOVARY_GET_JOURNALIST_DISGUISE_DESC",
-					"ImageName": "images/challenges/potato/potato_discovery_free_press.jpg",
+					"ImageName": "images/challenges/potato/potato_discovery_free_press.jpg", // update image
                     "Rewards": {
                         "MasteryXP": 2000
                     },
@@ -760,7 +1402,7 @@ const cookingshowChallenges = [
                     "IsPlayable": true,
                     "IsLocked": false,
                     "HideProgression": false,
-                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_COMMUNITY",
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_EXPLORATION",
 					"Icon": "challenge_category_discovery",
 					"LocationId": "LOCATION_PARENT_ELEGANT",
 					"ParentLocationId": "LOCATION_PARENT_ELEGANT",
@@ -788,7 +1430,7 @@ const cookingshowChallenges = [
 					"InclusionData": {
 						"ContractIds": ["358e3f41-9acc-4896-a22a-4a3107611520"]
 					},
-                    "Tags": ["story", "easy", "feats"]
+                    "Tags": ["story", "medium", "discovery"]
                 }
 		]
 	},
@@ -956,7 +1598,7 @@ const cookingshowChallenges = [
                 {
                     "Id": "0661ad26-207c-4e18-bcb4-58cc2f96ef02",
                     "Name": "UI_CHALLENGES_POTATO_MISSIONSTORY_COMPLETED_NAME",
-                    "ImageName": "images/challenges/Opulent/missionstory_wrapper.jpg",
+                    "ImageName": "images/challenges/potato/potato_feats_full_menu.jpg",
                     "Description": "UI_CHALLENGES_POTATO_MISSIONSTORY_COMPLETED_DESC",
                     "Rewards": {
                         "MasteryXP": 4000
@@ -1030,7 +1672,7 @@ const cookingshowChallenges = [
                 {
                     "Id": "7ae58ab1-6427-4225-b77b-0f863743ab6c",
                     "Name": "UI_CHALLENGES_POTATO_NO_BODY_NO_CRIME_NAME",
-                    "ImageName": "images/challenges/Opulent/missionstory_wrapper.jpg",
+                    "ImageName": "images/challenges/potato/potato_feats_no_body_no_crime.jpg",
                     "Description": "UI_CHALLENGES_POTATO_NO_BODY_NO_CRIME_DESC",
                     "Rewards": {
                         "MasteryXP": 4000
@@ -1086,10 +1728,10 @@ const cookingshowChallenges = [
                     }
                 },
                 {
-                    "Id": "329bda57-95c4-4327-85ef-5ee135b7ef88", // complete mission without show's cancelling
+                    "Id": "c5546413-421b-4dfe-9c21-7019ed3f22b0", // complete mission without show's cancelling
                     "Name": "UI_CHALLENGES_POTATO_CLEAN_RUN_NAME",
-                    "ImageName": "images/challenges/Opulent/missionstory_wrapper.jpg",
-                    "Description": "UI_CHALLENGES_POTATO_CLEAN_RUN_DESC", // WT done, BT - done
+                    "ImageName": "images/challenges/potato/potato_feats_clean_run.jpg",
+                    "Description": "UI_CHALLENGES_POTATO_CLEAN_RUN_DESC",
                     "Rewards": {
                         "MasteryXP": 4000
                     },
@@ -1132,12 +1774,12 @@ const cookingshowChallenges = [
                 {
                     "Id": "329bda57-95c4-4327-85ef-5ee135b7ef88", // wait for show is ended
                     "Name": "UI_CHALLENGES_POTATO_THE_END_NAME",
-                    "ImageName": "images/challenges/Opulent/missionstory_wrapper.jpg",
+                    "ImageName": "images/challenges/potato/potato_feats_the_end.jpg",
                     "Description": "UI_CHALLENGES_POTATO_THE_END_DESC",
                     "Rewards": {
-                        "MasteryXP": 4000
+                        
                     },
-                    "Drops": [],
+                    "Drops": ["STARTING_LOCATION_SKIP5MINUTES"],
                     "IsPlayable": true,
                     "IsLocked": false,
                     "HideProgression": false,
@@ -3746,7 +4388,9 @@ module.exports = function ChallengesPlugin(controller) {
 	controller.configManager.configs["Entrances"][
 		"assembly:/_pro/scenes/missions/elegant/scene_potato.entity"
 	] = [
-		"cef7b74a-bd2c-4ee9-94cd-4af5b4613556"
+		"cef7b74a-bd2c-4ee9-94cd-4af5b4613556",
+        "a3361887-bd9c-4cd6-acd9-f3fd6088ccc1",
+        "457feb5d-c481-4ab1-ab25-d6ea4b2b2b89"
 	]
 	controller.configManager.configs["AgencyPickups"][
 		"assembly:/_pro/scenes/missions/elegant/scene_potato.entity"
@@ -3762,5 +4406,38 @@ module.exports = function ChallengesPlugin(controller) {
 		"b9660a54-5d89-49f1-8141-8cc2307bad41",
 		 "80133265-3e70-4953-ac83-7006b795d013"
 	]
+    const missionStories = controller.configManager.configs["MissionStories"];
+    if (missionStories) {
+        missionStories["ec9c7b89-1813-4413-85ca-8c933572d8d6"] = {
+            "CommonRepositoryId": "ec9c7b89-1813-4413-85ca-8c933572d8d6",
+            "Location": "LOCATION_PARENT_ELEGANT",
+            "SubLocation": "LOCATION_ELEGANT_LLAMA",
+            "Summary": "OPPORTUNITY_JUDGECONSPIRACY_DESC",
+            "Title": "OPPORTUNITY_JUDGECONSPIRACY_TITLE",
+            "Briefing": "OPPORTUNITY_JUDGECONSPIRACY_FLAVOR_DESC",
+            "Image": "images/contracts/dysg_missions/Mendoza_Potato/op_ajudgeconspiracy.jpg",
+            "IsMainOpportunity": true
+        };
 
+        missionStories["3fbb389f-adaa-4c94-9794-4cb2935b44a6"] = {
+            "CommonRepositoryId": "3fbb389f-adaa-4c94-9794-4cb2935b44a6",
+            "Location": "LOCATION_PARENT_ELEGANT",
+            "SubLocation": "LOCATION_ELEGANT_LLAMA",
+            "Summary": "OPPORTUNITY_STONEHOSTAGE_DESC",
+            "Title": "OPPORTUNITY_STONEHOSTAGE_TITLE",
+            "Briefing": "OPPORTUNITY_STONEHOSTAGE_FLAVOR_DESC",
+            "Image": "images/contracts/dysg_missions/Mendoza_Potato/op_stonehostage.jpg",
+            "IsMainOpportunity": false
+        };
+    }
+    const missions = controller.configManager.configs["Missions"];
+    if (missions && missions[LOCATION_KEY]) {
+        missions[LOCATION_KEY].MissionStories = missions[LOCATION_KEY].MissionStories || [];
+        if (!missions[LOCATION_KEY].MissionStories.includes(STORY_JUDGE)) {
+            missions[LOCATION_KEY].MissionStories.push(STORY_JUDGE);
+        }
+        if (!missions[LOCATION_KEY].MissionStories.includes(STORY_STONE)) {
+            missions[LOCATION_KEY].MissionStories.push(STORY_STONE);
+        }
+    }
 }
