@@ -1,0 +1,14 @@
+{
+  "patches": [
+    {
+      "id": "245704dc-188f-41c2-a370-f95890ca87be",
+      "bricks": [
+        "assembly:/_pro/scenes/missions/elegant/scene_potato_mild.brick"
+      ],
+      "hardbricks": [],
+      "clearDefaultBricks": false,
+      "resetVRBricks": false
+    }
+  ],
+  "configFileVersion": 1.12
+}

@@ -1702,7 +1702,8 @@
 		}
 	],
 	"peacockPlugins": [
-		"PotatoChallenges.plugin.js"
+		"PotatoChallenges.plugin.js",
+		"HayVariantVector.plugin.js"
 	],
 	"blobsFolders": [
 		"blobs"
