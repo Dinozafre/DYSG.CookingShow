@@ -39,7 +39,7 @@ module.exports = function HayVariantVector(controller) {
         "KevinRudd.FreelancerVariations"
 
     const freelancerDeployed =
-        controller.smf.modIsInstalled(
+        controller.smf.modEnabledForUser(
             freelancerVariationsMod
         )
 
@@ -457,7 +457,7 @@ module.exports = function HayVariantVector(controller) {
     ) {
 
         const variantDeployed =
-            controller.smf.modIsInstalled(
+            controller.smf.modEnabledForUser(
                 variant.modId
             )
 
