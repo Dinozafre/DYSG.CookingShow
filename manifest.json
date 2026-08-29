@@ -1703,7 +1703,9 @@
 	],
 	"peacockPlugins": [
 		"PotatoChallenges.plugin.js",
-		"HayVariantVector.plugin.js"
+		"HayVariantVector.plugin.js",
+		"VectorCleanup.plugin.js",
+		"ColoradoDefaultVector.plugin.js"
 	],
 	"blobsFolders": [
 		"blobs"
