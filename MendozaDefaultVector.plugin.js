@@ -1,4 +1,3 @@
-
 const {
     log,
     LogLevel
@@ -21,8 +20,7 @@ const path = require("path")
 
 module.exports = function DefaultMendozaVector(controller) {
 
-    const prefix =
-        "[Default Mendoza Vector]"
+    const prefix = "[Default Mendoza Vector]"
 
     if (
         Math.abs(PEACOCKVER) < 6000 ||
@@ -31,7 +29,6 @@ module.exports = function DefaultMendozaVector(controller) {
             "8.0.0"
         ) < 0
     ) {
-
         log(
             LogLevel.ERROR,
             `${prefix} This plugin requires Peacock v8.0.0 or above!`
@@ -41,16 +38,10 @@ module.exports = function DefaultMendozaVector(controller) {
     }
 
 
-    const vectorId =
-        "DefaultMendozaVector"
-
-
-    const cleanupPlugin =
-        "VectorCleanup.plugin.js"
-
-
-    const freelancerVariationsMod =
-        "KevinRudd.FreelancerVariations"
+    const vectorId = "DefaultMendozaVector"
+    const vectorPluginFile = "MendozaDefaultVector.plugin.js"
+    const cleanupPlugin = "VectorCleanup.plugin.js"
+    const freelancerVariationsMod = "KevinRudd.FreelancerVariations"
 
 
     const freelancerEnabled =
@@ -60,8 +51,8 @@ module.exports = function DefaultMendozaVector(controller) {
             freelancerVariationsMod
         )
 
-    const cleanupPaths = [
 
+    const cleanupPaths = [
         path.resolve(
             "plugins",
             cleanupPlugin
@@ -83,7 +74,6 @@ module.exports = function DefaultMendozaVector(controller) {
 
 
     if (!cleanupInstalled) {
-
         log(
             LogLevel.WARN,
             `${prefix} VectorCleanup.js was not found in the plugins folder. Please install VectorCleanup.js so this vector can be automatically removed from VariantCollector.json if this plugin is deleted.`
@@ -92,27 +82,30 @@ module.exports = function DefaultMendozaVector(controller) {
 
 
     const variants = [
-
         {
-            name:
-                "Mendoza Normal",
+            name: "Mendoza Normal",
 
             contractId:
-               "89500fa3-2466-4c52-8b90-9890cc5039ee",
+                "89500fa3-2466-4c52-8b90-9890cc5039ee",
 
             brick:
                 "assembly:/_pro/scenes/missions/elegant/mission_mild_sapo.brick"
-        }
+        },
+        {
+            name: "Mendoza Normal Showdown",
 
+            contractId:
+                "8caa8f0e-ac39-4088-95c1-42075afe8213",
+
+            brick:
+                "assembly:/_pro/scenes/missions/elegant/mission_hot_sapo.brick"
+        }
     ]
 
 
-    function findConfigPath(
-        filename
-    ) {
+    function findConfigPath(filename) {
 
         const possiblePaths = [
-
             path.resolve(
                 filename
             ),
@@ -121,7 +114,6 @@ module.exports = function DefaultMendozaVector(controller) {
                 "plugins",
                 filename
             )
-
         ]
 
 
@@ -129,13 +121,11 @@ module.exports = function DefaultMendozaVector(controller) {
             const possiblePath
             of possiblePaths
         ) {
-
             if (
                 existsSync(
                     possiblePath
                 )
             ) {
-
                 return possiblePath
             }
         }
@@ -145,12 +135,9 @@ module.exports = function DefaultMendozaVector(controller) {
     }
 
 
-    function loadConfig(
-        configPath
-    ) {
+    function loadConfig(configPath) {
 
         try {
-
             return JSON.parse(
                 readFileSync(
                     configPath,
@@ -158,9 +145,7 @@ module.exports = function DefaultMendozaVector(controller) {
                 )
             )
 
-        } catch (
-            error
-        ) {
+        } catch (error) {
 
             log(
                 LogLevel.ERROR,
@@ -172,7 +157,6 @@ module.exports = function DefaultMendozaVector(controller) {
     }
 
 
- 
     function saveConfig(
         configPath,
         config
@@ -192,12 +176,9 @@ module.exports = function DefaultMendozaVector(controller) {
                 "utf8"
             )
 
-
             return true
 
-        } catch (
-            error
-        ) {
+        } catch (error) {
 
             log(
                 LogLevel.ERROR,
@@ -215,37 +196,30 @@ module.exports = function DefaultMendozaVector(controller) {
         brick
     ) {
 
-        let changed =
-            false
+        let changed = false
 
 
         let patch =
             config.patches.find(
                 patch =>
-                    patch.id ===
-                    contractId
+                    patch.id === contractId
             )
 
 
         if (!patch) {
 
             patch = {
-
-                id:
-                    contractId,
+                id: contractId,
 
                 bricks: [],
 
                 hardbricks: [],
 
-                clearDefaultBricks:
-                    false,
+                clearDefaultBricks: false,
 
-                resetVRBricks:
-                    false,
+                resetVRBricks: false,
 
-                vectorMarkers:
-                    {}
+                vectorMarkers: {}
             }
 
 
@@ -254,8 +228,7 @@ module.exports = function DefaultMendozaVector(controller) {
             )
 
 
-            changed =
-                true
+            changed = true
         }
 
 
@@ -265,11 +238,9 @@ module.exports = function DefaultMendozaVector(controller) {
             )
         ) {
 
-            patch.bricks =
-                []
+            patch.bricks = []
 
-            changed =
-                true
+            changed = true
         }
 
 
@@ -283,38 +254,41 @@ module.exports = function DefaultMendozaVector(controller) {
                 brick
             )
 
-            changed =
-                true
+            changed = true
         }
 
 
         if (
             !patch.vectorMarkers ||
-            typeof patch.vectorMarkers !==
-                "object" ||
+            typeof patch.vectorMarkers !== "object" ||
             Array.isArray(
                 patch.vectorMarkers
             )
         ) {
 
-            patch.vectorMarkers =
-                {}
+            patch.vectorMarkers = {}
 
-            changed =
-                true
+            changed = true
         }
 
 
+        const existingMarker =
+            patch.vectorMarkers[brick]
+
+
         if (
-            patch.vectorMarkers[brick] !==
-            vectorId
+            !existingMarker ||
+            typeof existingMarker !== "object" ||
+            existingMarker.pluginId !== vectorId ||
+            existingMarker.pluginFile !== vectorPluginFile
         ) {
 
-            patch.vectorMarkers[brick] =
-                vectorId
+            patch.vectorMarkers[brick] = {
+                pluginId: vectorId,
+                pluginFile: vectorPluginFile
+            }
 
-            changed =
-                true
+            changed = true
         }
 
 
@@ -322,93 +296,74 @@ module.exports = function DefaultMendozaVector(controller) {
     }
 
 
-    function removeBrick(
-        config,
-        contractId,
-        brick
+     function removeBrick(
+    config,
+    contractId,
+    brick
+) {
+
+    if (
+        !config ||
+        !Array.isArray(
+            config.patches
+        )
     ) {
+        return false
+    }
+
+    let changed = false
+
+    for (const patch of config.patches) {
 
         if (
-            !config ||
-            !Array.isArray(
-                config.patches
+            patch.id !== contractId
+        ) {
+            continue
+        }
+
+        const marker =
+            patch.vectorMarkers &&
+            patch.vectorMarkers[brick]
+
+        if (
+            !marker ||
+            marker.pluginId !== vectorId ||
+            marker.pluginFile !== vectorPluginFile
+        ) {
+            continue
+        }
+
+        if (
+            Array.isArray(
+                patch.bricks
             )
         ) {
 
-            return false
-        }
+            const oldLength =
+                patch.bricks.length
 
-
-        let changed =
-            false
-
-
-        for (
-            const patch
-            of config.patches
-        ) {
-
-            if (
-                patch.id !==
-                contractId
-            ) {
-
-                continue
-            }
-
-
-            if (
-                Array.isArray(
-                    patch.bricks
+            patch.bricks =
+                patch.bricks.filter(
+                    existingBrick =>
+                        existingBrick !== brick
                 )
-            ) {
-
-                const oldLength =
-                    patch.bricks.length
-
-
-                patch.bricks =
-                    patch.bricks.filter(
-                        existingBrick =>
-                            existingBrick !==
-                            brick
-                    )
-
-
-                if (
-                    patch.bricks.length !==
-                    oldLength
-                ) {
-
-                    changed =
-                        true
-                }
-            }
-
 
             if (
-                patch.vectorMarkers &&
-                typeof patch.vectorMarkers ===
-                    "object" &&
-                !Array.isArray(
-                    patch.vectorMarkers
-                ) &&
-                Object.prototype.hasOwnProperty.call(
-                    patch.vectorMarkers,
-                    brick
-                )
+                patch.bricks.length !==
+                oldLength
             ) {
-
-                delete patch.vectorMarkers[brick]
-
-                changed =
-                    true
+                changed = true
             }
         }
 
+        delete patch.vectorMarkers[brick]
 
-        return changed
+        changed = true
     }
+
+    return changed
+}
+
 
     let variantCollectorPath =
         findConfigPath(
@@ -447,9 +402,7 @@ module.exports = function DefaultMendozaVector(controller) {
                 `${prefix} Created VariantCollector.json.`
             )
 
-        } catch (
-            error
-        ) {
+        } catch (error) {
 
             log(
                 LogLevel.ERROR,
@@ -460,6 +413,7 @@ module.exports = function DefaultMendozaVector(controller) {
         }
     }
 
+
     const variantCollector =
         loadConfig(
             variantCollectorPath
@@ -467,7 +421,6 @@ module.exports = function DefaultMendozaVector(controller) {
 
 
     if (!variantCollector) {
-
         return
     }
 
@@ -487,8 +440,7 @@ module.exports = function DefaultMendozaVector(controller) {
     }
 
 
-    let variantCollectorChanged =
-        false
+    let variantCollectorChanged = false
 
 
     for (
@@ -496,9 +448,7 @@ module.exports = function DefaultMendozaVector(controller) {
         of variants
     ) {
 
-        if (
-            freelancerEnabled
-        ) {
+        if (freelancerEnabled) {
 
             if (
                 removeBrick(
@@ -508,10 +458,7 @@ module.exports = function DefaultMendozaVector(controller) {
                 )
             ) {
 
-                variantCollectorChanged =
-                    true
-
-
+                variantCollectorChanged = true
             }
 
 
@@ -527,17 +474,12 @@ module.exports = function DefaultMendozaVector(controller) {
             )
         ) {
 
-            variantCollectorChanged =
-                true
-
-
+            variantCollectorChanged = true
         }
     }
 
 
-    if (
-        variantCollectorChanged
-    ) {
+    if (variantCollectorChanged) {
 
         if (
             saveConfig(
@@ -554,10 +496,7 @@ module.exports = function DefaultMendozaVector(controller) {
     }
 
 
-
-    if (
-        !freelancerEnabled
-    ) {
+    if (!freelancerEnabled) {
 
         for (
             const patch
@@ -586,8 +525,7 @@ module.exports = function DefaultMendozaVector(controller) {
                 patch.clearDefaultBricks
             ) {
 
-                contract.Data.Bricks =
-                    []
+                contract.Data.Bricks = []
             }
 
 
@@ -595,8 +533,7 @@ module.exports = function DefaultMendozaVector(controller) {
                 !contract.Data.RandomBricks
             ) {
 
-                contract.Data.RandomBricks =
-                    {}
+                contract.Data.RandomBricks = {}
             }
 
 
@@ -617,8 +554,7 @@ module.exports = function DefaultMendozaVector(controller) {
                 contract.Data.VR = [
 
                     {
-                        Quality:
-                            "base",
+                        Quality: "base",
 
                         Bricks: [
 
@@ -631,8 +567,7 @@ module.exports = function DefaultMendozaVector(controller) {
                     },
 
                     {
-                        Quality:
-                            "better",
+                        Quality: "better",
 
                         Bricks: [
 
@@ -686,4 +621,3 @@ module.exports = function DefaultMendozaVector(controller) {
         `${prefix} Plugin successfully loaded.`
     )
 }
-

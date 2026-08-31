@@ -4430,14 +4430,4 @@ module.exports = function ChallengesPlugin(controller) {
             "IsMainOpportunity": false
         };
     }
-    const missions = controller.configManager.configs["Missions"];
-    if (missions && missions[LOCATION_KEY]) {
-        missions[LOCATION_KEY].MissionStories = missions[LOCATION_KEY].MissionStories || [];
-        if (!missions[LOCATION_KEY].MissionStories.includes(STORY_JUDGE)) {
-            missions[LOCATION_KEY].MissionStories.push(STORY_JUDGE);
-        }
-        if (!missions[LOCATION_KEY].MissionStories.includes(STORY_STONE)) {
-            missions[LOCATION_KEY].MissionStories.push(STORY_STONE);
-        }
-    }
 }

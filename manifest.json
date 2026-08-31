@@ -1699,13 +1699,25 @@
 			"toChunk": 1,
 			"portFromChunk1": false,
 			"comment": "act_fr_stand_armscrossed"
+		},
+		{
+			"runtimeID": "00EF59757F9CE38C",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "setpiece_hips_stand_laptop_100cm"
+		},
+		{
+			"runtimeID": "00CE1A13A7FC6C3D",
+			"toChunk": 1,
+			"portFromChunk1": false,
+			"comment": "setpiece_qloc_unique_copperhead_cameracrane"
 		}
 	],
 	"peacockPlugins": [
 		"PotatoChallenges.plugin.js",
-		"HayVariantVector.plugin.js",
-		"VectorCleanup.plugin.js",
-		"ColoradoDefaultVector.plugin.js"
+		"PotatoVariantVector.plugin.js",
+		"MendozaDefaultVector.plugin.js",
+		"VectorCleanup.plugin.js"
 	],
 	"blobsFolders": [
 		"blobs"
